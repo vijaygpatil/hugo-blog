@@ -1,0 +1,18 @@
+baseURL = "https://blog.patilvijayg.synology.me/"
+languageCode = "en-us"
+title = "Vijay's Homelab & Tech Blog"
+theme = "PaperMod"
+
+[params]
+  description = "Homelab experiments, DIY projects, and technical notes on AI and software engineering"
+  ShowReadingTime = true
+  ShowToc = true
+  defaultTheme = "auto"
+  homeInfoParams = { Title = "Hi, I'm Vijay 👋", Content = "Welcome to my homelab and tech blog. I write about DIY projects, AI experiments, and software engineering." }
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
