@@ -1,0 +1,55 @@
+name: Deploy to Synology NAS
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: 'latest'
+
+    - name: Build Hugo site
+      run: hugo --minify
+
+    - name: Prepare target directory on NAS
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SYNOLOGY_HOST }}
+        username: ${{ secrets.SYNOLOGY_USERNAME }}
+        password: ${{ secrets.SYNOLOGY_PASSWORD }}
+        port: ${{ secrets.SYNOLOGY_SSH_PORT }}
+        script: |
+          mkdir -p /volume2/web/blog
+
+    - name: Copy built files to Synology
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.SYNOLOGY_HOST }}
+        username: ${{ secrets.SYNOLOGY_USERNAME }}
+        password: ${{ secrets.SYNOLOGY_PASSWORD }}
+        port: ${{ secrets.SYNOLOGY_SSH_PORT }}
+        source: "public/*"
+        target: "/volume2/web/blog/"
+        strip_components: 1
+
+    - name: Health Check
+      run: |
+        sleep 10
+        HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://blog.patilvijayg.synology.me/ || echo "000")
+        if [ "$HTTP_STATUS" = "200" ]; then
+          echo "✅ Blog is accessible (HTTP $HTTP_STATUS)"
+        else
+          echo "⚠️  Blog returned HTTP status $HTTP_STATUS (may need Web Station setup)"
+        fi
