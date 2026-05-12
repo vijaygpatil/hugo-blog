@@ -2,7 +2,7 @@
 title: "DynamoDB 101: Designing for Billions of Records"
 date: 2024-08-15
 tags: ["aws", "dynamodb", "database", "backend", "architecture"]
-description: "A deep dive into DynamoDB's data model — partition keys, sort keys, GSIs, LSIs, and capacity planning — with a real-world example from a high-scale availability service."
+description: "A deep dive into DynamoDB's data model — partition keys, sort keys, GSIs, LSIs, and capacity planning — with a real-world example from a high-scale e-commerce order tracking service."
 ---
 
 When you hit the limits of relational databases at scale, DynamoDB becomes an attractive option. But it's a fundamentally different beast — it rewards you for understanding its internals and punishes you for trying to treat it like Postgres. This post covers the mental model you need to design DynamoDB tables that perform well and cost predictably at billions of records.
@@ -53,31 +53,31 @@ This lets you efficiently query:
 
 All of these are **O(1) operations** — DynamoDB jumps directly to the partition and scans only the relevant range.
 
-## A Real-World Example: Availability Service
+## A Real-World Example: Order Tracking Service
 
-Here's how this looks in production. This is based on a real service tracking receipt/expense item availability at scale — processing millions of events per day across tens of thousands of companies.
+Here's how this looks in production. Consider a service tracking order line items for users at scale — processing millions of events per day across tens of thousands of merchants.
 
 ```
-Table: availability
+Table: orders
 
 Partition Key: user_uuid      (UUID — uniquely identifies a user)
-Sort Key:      receipt_uuid   (UUID — uniquely identifies a receipt)
+Sort Key:      order_uuid     (UUID — uniquely identifies an order)
 ```
 
-Each item in this table represents one receipt's availability state for one user. The composite key means:
-- You can instantly look up one user's one receipt: O(1)
-- You can list all receipts for a user: O(items in partition) — fast range scan
-- Hot partition risk is minimal — receipts distribute across all users
+Each item in this table represents one order for one user. The composite key means:
+- You can instantly look up one user's one order: O(1)
+- You can list all orders for a user: O(items in partition) — fast range scan
+- Hot partition risk is minimal — orders distribute across all users
 
 Sample item structure:
 ```json
 {
   "user_uuid": "a3f2b1c4-...",
-  "receipt_uuid": "7d9e3f2a-...",
-  "status": "AVAILABLE",
-  "provider": "MASTERCARD",
-  "provider_group": "MASTERCARD_US",
-  "transaction_date": "2024-08-01",
+  "order_uuid": "7d9e3f2a-...",
+  "status": "SHIPPED",
+  "merchant": "ACME_CORP",
+  "merchant_group": "ACME_US",
+  "order_date": "2024-08-01",
   "amount": 47.50,
   "currency": "USD",
   "last_updated": "2024-08-01T14:23:11Z",
@@ -95,17 +95,17 @@ An LSI shares the *same partition key* as the base table but uses a *different s
 
 **Use case**: Multiple sort orders for the same partition.
 
-In our availability table, an LSI was added for provider-grouped queries:
+In our orders table, an LSI was added for merchant-grouped queries:
 
 ```
-LSI: providerGroupDateIndex
+LSI: merchantGroupDateIndex
   Partition Key: user_uuid          (same as base table)
-  Sort Key:      provider_group + # + transaction_date
+  Sort Key:      merchant_group + # + order_date
 ```
 
 This composite sort key (with a delimiter `#`) enables queries like:
-- "All MASTERCARD_US receipts for user X" 
-- "All MASTERCARD_US receipts for user X in August 2024"
+- "All ACME_US orders for user X"
+- "All ACME_US orders for user X in August 2024"
 
 The trick with compound sort keys is encoding multiple dimensions into a single string with a consistent delimiter, then using `begins_with()` or `between` for range queries.
 
@@ -120,19 +120,19 @@ A GSI is essentially a separate table with its own partition key and optional so
 
 **Use case**: Access patterns that don't share the base table's partition key.
 
-In the availability service:
+In the order tracking service:
 
 ```
-GSI: companyUUIDIndex
-  Partition Key: company_uuid
-  Sort Key:      transaction_date
+GSI: merchantUUIDIndex
+  Partition Key: merchant_uuid
+  Sort Key:      order_date
 ```
 
 This allows operations like:
-- "All receipts for company X" (for administrative or reporting purposes)
-- "All receipts for company X in a given time range"
+- "All orders for merchant X" (for merchant dashboards or reporting)
+- "All orders for merchant X in a given time range"
 
-Without this GSI, answering "show me all receipts for this company" would require a full table scan — which is both slow and expensive.
+Without this GSI, answering "show me all orders for this merchant" would require a full table scan — which is both slow and expensive.
 
 **GSI important caveats:**
 
@@ -238,14 +238,14 @@ DynamoDB's TTL feature automatically deletes items after a specified timestamp. 
 ```json
 {
   "user_uuid": "...",
-  "receipt_uuid": "...",
+  "order_uuid": "...",
   "ttl": 1756684800
 }
 ```
 
 TTL deletions happen within 48 hours of expiry (not exactly at expiry). They don't consume capacity units. They do generate delete events in DynamoDB Streams (useful for cache invalidation).
 
-In the availability service, TTL is set ~6 months in the future for each item. Old receipts automatically expire without any maintenance job.
+In the order tracking service, TTL is set ~6 months in the future for each item. Old orders automatically expire without any maintenance job.
 
 ## Transactions
 
@@ -256,16 +256,16 @@ dynamoDbClient.transactWriteItems(request -> request
     .transactItems(
         TransactWriteItem.builder()
             .put(Put.builder()
-                .tableName("receipts")
-                .item(receiptItem)
-                .conditionExpression("attribute_not_exists(receipt_uuid)")
+                .tableName("orders")
+                .item(orderItem)
+                .conditionExpression("attribute_not_exists(order_uuid)")
                 .build())
             .build(),
         TransactWriteItem.builder()
             .update(Update.builder()
                 .tableName("user_counts")
                 .key(Map.of("user_uuid", AttributeValue.fromS(userId)))
-                .updateExpression("ADD receipt_count :one")
+                .updateExpression("ADD order_count :one")
                 .expressionAttributeValues(Map.of(":one", AttributeValue.fromN("1")))
                 .build())
             .build()
@@ -283,14 +283,14 @@ DynamoDB supports conditional expressions on writes — the write only proceeds 
 ```java
 // Only create if item doesn't already exist
 PutItemRequest.builder()
-    .tableName("receipts")
+    .tableName("orders")
     .item(item)
     .conditionExpression("attribute_not_exists(partition_key)")
     .build();
 
 // Optimistic locking with a version attribute
 UpdateItemRequest.builder()
-    .tableName("receipts")
+    .tableName("orders")
     .updateExpression("SET #s = :new_status, version = :new_version")
     .conditionExpression("version = :expected_version")
     .expressionAttributeValues(Map.of(
