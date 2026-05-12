@@ -7,7 +7,7 @@ enableCodeCopy = true
 enableImageLazyLoading = true
 
 [header]
-  layout = "hamburger"
+  layout = "basic"
   showTitle = true
 
 [footer]
