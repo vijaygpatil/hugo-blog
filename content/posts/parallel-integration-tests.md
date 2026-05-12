@@ -5,7 +5,7 @@ tags: ["testing", "junit5", "java", "spring-boot", "ci-cd", "performance"]
 description: "Our integration test suite was taking nearly 3 hours. Here's how we cut it to 42 minutes using JUnit 5 parallel execution, @ResourceLock for shared state, and isolated mock templates — including the race conditions we fixed along the way."
 ---
 
-Three-hour CI runs are a productivity killer. By the time your test suite finishes, you've lost context, picked up three other tasks, and now need to re-engage with the original change. We had this problem with two integration test workflows — our standard suite (253 tests, 170 minutes) and a specialized USO workflow suite (58 minutes). Here's how we parallelized both, the race conditions we hit, and what we ended up with.
+Three-hour CI runs are a productivity killer. By the time your test suite finishes, you've lost context, picked up three other tasks, and now need to re-engage with the original change. We had this problem with two integration test workflows — our standard suite (253 tests, 170 minutes) and a specialized end-to-end workflow suite (58 minutes). Here's how we parallelized both, the race conditions we hit, and what we ended up with.
 
 ## The Starting Point
 
@@ -14,7 +14,7 @@ Before any changes, the test profiles looked like this:
 | Suite | Tests | Duration |
 |-------|-------|----------|
 | Standard | 253 | 170 minutes |
-| USO workflow | ~60 | 58 minutes |
+| End-to-end workflow | ~60 | 58 minutes |
 
 These ran sequentially, one test at a time. With the number of tests, each test averaged roughly 40 seconds. That's not slow per test — it's just too many tests to run sequentially.
 
@@ -367,9 +367,9 @@ junit.jupiter.execution.parallel.config.fixed.parallelism=3
 | Suite | Before | After | Improvement |
 |-------|--------|-------|-------------|
 | Standard (253 tests) | 170 minutes | 42 minutes | **4x faster** |
-| USO workflow (~60 tests) | 58 minutes | 27 minutes | **2.1x faster** |
+| End-to-end workflow (~60 tests) | 58 minutes | 27 minutes | **2.1x faster** |
 
-The standard suite showed a larger gain because it had more parallelism headroom (253 independent tests vs ~60). The USO suite had more tests with shared state requiring locks, limiting parallelism.
+The standard suite showed a larger gain because it had more parallelism headroom (253 independent tests vs ~60). The end-to-end workflow suite had more tests with shared state requiring locks, limiting parallelism.
 
 The 4x speedup with a 4-thread pool is close to theoretical maximum — most of the remaining overhead is Spring context startup (which happens once per test class regardless of parallelism) and the serialized sections protected by `@ResourceLock`.
 
