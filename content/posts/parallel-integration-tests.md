@@ -1,6 +1,7 @@
 ---
 title: "From 170 Minutes to 42: Parallelizing Integration Tests with JUnit 5"
 date: 2025-03-10
+draft: true
 tags: ["testing", "junit5", "java", "spring-boot", "ci-cd", "performance"]
 description: "Our integration test suite was taking nearly 3 hours. Here's how we cut it to 42 minutes using JUnit 5 parallel execution, @ResourceLock for shared state, and isolated mock templates — including the race conditions we fixed along the way."
 ---

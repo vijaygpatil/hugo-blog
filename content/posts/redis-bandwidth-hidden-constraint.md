@@ -1,6 +1,7 @@
 ---
 title: "Redis Bandwidth: The Hidden Constraint That Will Bite You"
 date: 2024-09-20
+draft: true
 tags: ["redis", "aws", "elasticache", "performance", "backend", "debugging"]
 description: "CPU and memory get all the attention, but network bandwidth is the constraint that actually takes down Redis clusters under load. Here's what we learned — including a Redisson bug that caused 100% CPU on application pods."
 ---

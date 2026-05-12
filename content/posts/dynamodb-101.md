@@ -1,6 +1,7 @@
 ---
 title: "DynamoDB 101: Designing for Billions of Records"
 date: 2024-08-15
+draft: true
 tags: ["aws", "dynamodb", "database", "backend", "architecture"]
 description: "A deep dive into DynamoDB's data model — partition keys, sort keys, GSIs, LSIs, and capacity planning — with a real-world example from a high-scale e-commerce order tracking service."
 ---
