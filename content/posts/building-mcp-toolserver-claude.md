@@ -82,8 +82,6 @@ A bit of context on how this works: our services run a full integration test sui
 
 The database investigation layer. This one has an interesting design I'll cover in the design decisions section:
 
-- `get_report_audit` — complete audit trail for a workflow item: all status changes, approvals, rejections, timing
-- `get_report_workflow` — full workflow analysis: every approval step, every approver, delegation chains, email notifications
 - `execute_query` / `describe_table` — direct SQL execution (integration environment only) and schema inspection
 
 ### Layer 2: Skills (Intent)
