@@ -57,10 +57,10 @@ The foundation. These wrap Elasticsearch queries with domain-specific defaults:
 
 Operational monitoring queries built for specific services and deployment events:
 
-- `ses_deploy_snapshot` — a before/after deployment health check: captures error rates, pod versions, processing volume, and error trends. Run it once before deploying, once after, compare.
-- `ses_health_check` — post-deployment error summary, excluding known/expected errors so signal isn't buried in noise
-- `ebs_notification_analysis` — analyzes notification delivery: how many succeeded, how many timed out, how many hit invalid addresses, broken down by notification type
-- `edls_hdl_health_check` — migration health: successful migrations, failed migrations, "no data found" cases, stuck migrations, processing times
+- `service_deploy_snapshot` — a before/after deployment health check: captures error rates, pod versions, processing volume, and error trends. Run it once before deploying, once after, compare.
+- `service_health_check` — post-deployment error summary, excluding known/expected errors so signal isn't buried in noise
+- `notification_analysis` — analyzes notification delivery: how many succeeded, how many timed out, how many hit invalid addresses, broken down by notification type
+- `pipeline_health_check` — migration health: successful migrations, failed migrations, "no data found" cases, stuck migrations, processing times
 
 **Analysis Tools**
 
@@ -74,10 +74,10 @@ Higher-level tools that investigate specific types of problems end-to-end:
 
 This category is particularly valuable before any deployment. These tools answer: "is it safe to ship?"
 
-- `ses_integration_test_summary` — finds recent test runs, reports pass/fail/skip counts, identifies which pod ran them
-- `ses_integration_test_errors` — gets the actual exception messages from a specific test run
-- `ses_integration_test_trace` — traces a single failing test by correlation ID to find exactly what happened in the service when the test ran
-- `ses_integration_test_version_based_analysis` — the most powerful one: groups test runs by application version, identifies tests that have **never passed** in the current version (critical failures vs. flaky tests), shows the last time each failing test passed and in which version
+- `integration_test_summary` — finds recent test runs, reports pass/fail/skip counts, identifies which pod ran them
+- `integration_test_errors` — gets the actual exception messages from a specific test run
+- `integration_test_trace` — traces a single failing test by correlation ID to find exactly what happened in the service when the test ran
+- `integration_test_version_analysis` — the most powerful one: groups test runs by application version, identifies tests that have **never passed** in the current version (critical failures vs. flaky tests), shows the last time each failing test passed and in which version
 - `integration_test_reporter` — orchestrates all the above into a single comprehensive markdown report: summary table, per-test analysis with Kibana links, root cause categories, recommendations
 
 **Schema + Query Tools**
@@ -112,11 +112,11 @@ description: >
 
 # Integration Test Report
 
-1. Call `ses_integration_test_summary` with timeRange: "2h"
+1. Call `integration_test_summary` with timeRange: "2h"
 2. Identify the most recent test run
-3. Call `ses_integration_test_version_based_analysis` with timeRange: "7d"
+3. Call `integration_test_version_analysis` with timeRange: "7d"
 4. For any critical failures (never passed in current version):
-   - Call `ses_integration_test_trace` for each failing test
+   - Call `integration_test_trace` for each failing test
 5. Call `integration_test_reporter` to generate full markdown report
 6. Summarize: total tests, critical failures, last pass for each failing test,
    go/no-go recommendation
@@ -154,7 +154,7 @@ Three examples that show what this actually changes:
 
 **Before:** Before releasing a new version: manually check the integration test dashboard (is the test pod still running? did it finish?), open the version history to see which tests were failing before this version and which are new failures, check error rates in the service health dashboard, check the deployment history to see when the current version went out. Four tabs, 15 minutes, easy to miss something.
 
-**After:** "Check integration tests before deployment." The `ses_integration_test_version_based_analysis` tool identifies every test that has never passed in the current version. The `integration_test_reporter` generates a full markdown report with per-test analysis, Kibana links, and a go/no-go recommendation. Saved to a file. 2 minutes.
+**After:** "Check integration tests before deployment." The `integration_test_version_analysis` tool identifies every test that has never passed in the current version. The `integration_test_reporter` generates a full markdown report with per-test analysis, Kibana links, and a go/no-go recommendation. Saved to a file. 2 minutes.
 
 ### Support Question Triage
 
@@ -184,7 +184,7 @@ The query library is a simple Markdown file with sections like "Query 2: Get wor
 
 Individual tools are useful. The compounding value comes from skills that chain tools together into coherent investigations.
 
-The `ses_release_monitor` skill is a good example: it calls the version-based failure analysis, traces the most critical failing tests individually, fetches the git diff between the last-passing version and the current one, and writes a comprehensive markdown report. None of those tools individually answers "is this deployment safe?" — but the skill does.
+The `release_monitor` skill is a good example: it calls the version-based failure analysis, traces the most critical failing tests individually, fetches the git diff between the last-passing version and the current one, and writes a comprehensive markdown report. None of those tools individually answers "is this deployment safe?" — but the skill does.
 
 When I think about what made the investment worthwhile, it's not the tool count, it's that every common investigation pattern now has a skill. The list of things Claude can do end-to-end without me guiding it through each step is what changed the daily experience.
 
@@ -192,7 +192,7 @@ When I think about what made the investment worthwhile, it's not the tool count,
 
 Early versions of the skills were too broad — one skill that tried to handle "any production issue" would balloon into a decision tree that was hard to maintain and inconsistent in behavior.
 
-The current approach: one skill per question type, each skill does one investigation pattern well. The `ask-support-question` skill handles support triage. The `integration-test-report` skill handles pre-deployment checks. The `ses-deploy-snapshot` skill handles the before/after deployment health comparison. Narrow scope = predictable behavior = trustworthy output.
+The current approach: one skill per question type, each skill does one investigation pattern well. The `ask-support-question` skill handles support triage. The `integration-test-report` skill handles pre-deployment checks. The `service-deploy-snapshot` skill handles the before/after deployment health comparison. Narrow scope = predictable behavior = trustworthy output.
 
 ## What Generalizes
 
