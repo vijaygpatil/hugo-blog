@@ -55,11 +55,9 @@ The foundation. These wrap Elasticsearch queries with domain-specific defaults:
 
 **Health Check Tools**
 
-Operational monitoring queries built for specific services and deployment events:
+Operational monitoring queries built for deployment events:
 
-- `service_deploy_snapshot` — a before/after deployment health check: captures error rates, pod versions, processing volume, and error trends. Run it once before deploying, once after, compare.
 - `service_health_check` — post-deployment error summary, excluding known/expected errors so signal isn't buried in noise
-- `notification_analysis` — analyzes notification delivery: how many succeeded, how many timed out, how many hit invalid addresses, broken down by notification type
 - `pipeline_health_check` — migration health: successful migrations, failed migrations, "no data found" cases, stuck migrations, processing times
 
 **Analysis Tools**
@@ -67,12 +65,12 @@ Operational monitoring queries built for specific services and deployment events
 Higher-level tools that investigate specific types of problems end-to-end:
 
 - `analyze_api_failure` — investigates failed API calls by searching logs for the correlation ID, identifying the error type, explaining the root cause, and listing which fields the endpoint supports vs. rejects
-- `analyze_link_access` — traces a link from generation through click, identifies if the right context was set, generates SQL queries to verify the database state
-- `analyze_record_matching` — given a user identifier, pulls matching scores, identifies why two records did or didn't merge, calculates which scoring factors were decisive
 
 **Integration Test Tools**
 
 This category is particularly valuable before any deployment. These tools answer: "is it safe to ship?"
+
+A bit of context on how this works: our services run a full integration test suite on a scheduled cadence in a dedicated non-production environment. Each test run executes in its own pod, and every test request carries a correlation ID that flows through the service logs. That means you can trace exactly what the service did — or failed to do — for any individual test. The tools below are built on top of that structure.
 
 - `integration_test_summary` — finds recent test runs, reports pass/fail/skip counts, identifies which pod ran them
 - `integration_test_errors` — gets the actual exception messages from a specific test run
