@@ -180,13 +180,11 @@ The Apple Music plugin for LMS uses your Apple Music subscription to stream dire
 
 The Tidal plugin supports Tidal Connect as well as direct library integration. Hi-res FLAC streams if you have a Tidal HiFi subscription — and with the WIIM players handling DAC duties, you're actually getting the benefit of those high-resolution files.
 
-{{< figure src="/images/lms-tidal.png" alt="LMS Tidal plugin showing Tidal library and new releases" caption="Tidal integrated into LMS — hi-res streams available end-to-end" >}}
-
 ### Spotify
 
 The Spotify plugin works with Spotify Connect, so it shows up as a playback target in the Spotify app as well as being browsable from within LMS.
 
-{{< figure src="/images/lms-spotify.png" alt="LMS Spotify plugin" caption="Spotify via LMS plugin — browse and play directly from the LMS interface" >}}
+{{< figure src="/images/lms-spotify-tidal.png" alt="LMS Spotify and Tidal plugins showing streaming library integration" caption="Spotify and Tidal integrated into LMS — browse and play directly alongside your local library" >}}
 
 ### Installing Plugins
 
