@@ -66,8 +66,8 @@ Operational monitoring queries built for specific services and deployment events
 
 Higher-level tools that investigate specific types of problems end-to-end:
 
-- `analyze_connect_api` — investigates failed API calls by searching logs for the correlation ID, identifying the error type, explaining the root cause, and listing which fields the endpoint supports vs. rejects
-- `analyze_deeplink` — traces a link from generation through click, identifies if the right context was set, generates SQL queries to verify the database state
+- `analyze_api_failure` — investigates failed API calls by searching logs for the correlation ID, identifying the error type, explaining the root cause, and listing which fields the endpoint supports vs. rejects
+- `analyze_link_access` — traces a link from generation through click, identifies if the right context was set, generates SQL queries to verify the database state
 - `analyze_record_matching` — given a user identifier, pulls matching scores, identifies why two records did or didn't merge, calculates which scoring factors were decisive
 
 **Integration Test Tools**
