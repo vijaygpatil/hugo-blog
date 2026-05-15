@@ -365,8 +365,6 @@ A few networking notes that make the difference between a smooth setup and a fru
 
 **Static IPs or DHCP reservations** — Assign fixed IPs to the NAS and both Pis. LMS stores player configurations by IP. If a Pi gets a new IP after a DHCP lease renewal, LMS treats it as a new player.
 
-**mDNS/Bonjour** — LMS and PiCorePlayer use mDNS for discovery. If you have a managed switch with IGMP snooping enabled aggressively, mDNS packets can get blocked. Either whitelist multicast or use manual IP configuration in PiCorePlayer if discovery isn't working.
-
 **PoE switch** — I use a PoE+ switch (802.3at, 30W per port). The Pi 4 with PoE HAT draws around 10W under normal load, so standard PoE (802.3af, 15W) is usually fine, but PoE+ gives headroom for the display backlight.
 
 ## Cost Breakdown
