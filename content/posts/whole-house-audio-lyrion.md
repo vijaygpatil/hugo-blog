@@ -31,55 +31,66 @@ Before diving into the details, here's every component in the chain:
 
 ## How It All Connects
 
-```
-                    ┌─────────────────────────────────┐
-                    │         Synology NAS             │
-                    │   ┌─────────────────────────┐   │
-                    │   │  Lyrion Music Server     │   │
-                    │   │     (Docker)             │   │
-                    │   │  • Local hi-res library  │   │
-                    │   │  • Tidal plugin          │   │
-                    │   │  • Spotify plugin        │   │
-                    │   └────────────┬────────────┘   │
-                    └────────────────│─────────────────┘
-                                     │ Network (LAN)
-                    ┌────────────────┴─────────────────┐
-                    │                                   │
-          ┌─────────▼──────────┐           ┌───────────▼────────┐
-          │  Raspberry Pi #1   │           │  Raspberry Pi #2   │
-          │  (PoE powered)     │           │  (PoE powered)     │
-          │  PiCorePlayer      │           │  PiCorePlayer      │
-          │  7" Touchscreen    │           │  7" Touchscreen    │
-          └─────────┬──────────┘           └───────────┬────────┘
-                    │       Squeezebox protocol         │
-                    └──────────────┬────────────────────┘
-                                   │ (synchronized stream)
-                          ┌────────┴────────┐
-                          │                 │
-               ┌──────────▼──────┐ ┌────────▼─────────┐
-               │   WIIM Pro #1   │ │   WIIM Pro #2    │
-               │  (analog out)   │ │  (analog out)    │
-               └──────────┬──────┘ └────────┬─────────┘
-                          │                 │
-               ┌──────────▼──────┐ ┌────────▼─────────┐
-               │  AudioSource    │ │  AudioSource     │
-               │  AD5012 #1      │ │  AD5012 #2       │
-               │  12-ch Class D  │ │  12-ch Class D   │
-               └──┬──┬──┬──┬────┘ └──┬──┬──┬──┬──────┘
-                  │  │  │  │         │  │  │  │
-              Zone 1  2  3  4     Zone 4  5  ..
-                  │  │  │  │         │  │  │
-           ┌──────▼──┐ ┌▼─────┐   ┌──▼──┐ ┌▼──────┐
-           │OSD SVC- │ │OSD   │   │OSD  │ │OSD    │
-           │300 Vol  │ │SVC-  │   │SVC- │ │SVC-   │
-           │Control  │ │300   │   │300  │ │300    │
-           └──────┬──┘ └┬─────┘   └──┬──┘ └┬──────┘
-                  │     │            │     │
-            Sonance MAG8R          Sonance MAG8R
-            + BPS8 subwoofer       + BPS8 subwoofer
-```
+{{< mermaid >}}
+flowchart TD
+    NAS["🖥️ Synology NAS\nLyrion Music Server\n(Docker)\n• Hi-res local library\n• Tidal plugin\n• Spotify plugin"]
 
-The key design insight: **WIIM Pro handles synchronization, AudioSource AD5012 handles zones**. Both WIIM players receive the exact same synchronized audio stream from LMS. Each feeds one AD5012 amplifier. The AD5012's 12 channels then distribute that audio across the house — and the per-zone OSD volume controls let you independently adjust the level in each room without touching the amplifier or the software.
+    PI1["🔌 Raspberry Pi #1\nPoE powered\nPiCorePlayer\n7\" Touchscreen"]
+    PI2["🔌 Raspberry Pi #2\nPoE powered\nPiCorePlayer\n7\" Touchscreen"]
+
+    WIIM1["📻 WIIM Pro #1\nHi-Res DAC\n32-bit/384kHz"]
+    WIIM2["📻 WIIM Pro #2\nHi-Res DAC\n32-bit/384kHz"]
+
+    AMP1["🔊 AudioSource AD5012 #1\n12-Channel Class D\n50W/ch @ 8Ω"]
+    AMP2["🔊 AudioSource AD5012 #2\n12-Channel Class D\n50W/ch @ 8Ω"]
+
+    Z1["Zone 1\nMain Bedroom\n+ Restroom\n4 speakers"]
+    Z2["Zone 2\nUpstairs Corridor\n+ Stairs\n4 speakers"]
+    Z3["Zone 3\nDownstairs Corridor\n+ Dining Room\n4 speakers"]
+    Z4["Zone 4\nKitchen\n4 speakers"]
+    Z5["Zone 5\nLiving Room\n4 speakers"]
+
+    VOL1["🎚️ OSD SVC-300\nIn-wall volume"]
+    VOL2["🎚️ OSD SVC-300\nIn-wall volume"]
+    VOL3["🎚️ OSD SVC-300\nIn-wall volume"]
+    VOL4["🎚️ OSD SVC-300\nIn-wall volume"]
+    VOL5["🎚️ OSD SVC-300\nIn-wall volume"]
+
+    SPK["Sonance MAG8R\n8\" In-Ceiling Speakers\n+ BPS8 Subwoofers"]
+
+    NAS -- "LAN (Squeezebox)" --> PI1
+    NAS -- "LAN (Squeezebox)" --> PI2
+    PI1 -- "Analog out" --> WIIM1
+    PI2 -- "Analog out" --> WIIM2
+    WIIM1 -- "Analog out" --> AMP1
+    WIIM2 -- "Analog out" --> AMP2
+    AMP1 --> VOL1 --> Z1 --> SPK
+    AMP1 --> VOL2 --> Z2 --> SPK
+    AMP1 --> VOL3 --> Z3 --> SPK
+    AMP2 --> VOL4 --> Z4 --> SPK
+    AMP2 --> VOL5 --> Z5 --> SPK
+
+    style NAS fill:#1a73e8,color:#fff
+    style PI1 fill:#34a853,color:#fff
+    style PI2 fill:#34a853,color:#fff
+    style WIIM1 fill:#ff6d00,color:#fff
+    style WIIM2 fill:#ff6d00,color:#fff
+    style AMP1 fill:#9c27b0,color:#fff
+    style AMP2 fill:#9c27b0,color:#fff
+    style VOL1 fill:#607d8b,color:#fff
+    style VOL2 fill:#607d8b,color:#fff
+    style VOL3 fill:#607d8b,color:#fff
+    style VOL4 fill:#607d8b,color:#fff
+    style VOL5 fill:#607d8b,color:#fff
+    style Z1 fill:#263238,color:#fff
+    style Z2 fill:#263238,color:#fff
+    style Z3 fill:#263238,color:#fff
+    style Z4 fill:#263238,color:#fff
+    style Z5 fill:#263238,color:#fff
+    style SPK fill:#4e342e,color:#fff
+{{< /mermaid >}}
+
+The key design insight: **WIIM Pro handles synchronization, AudioSource AD5012 handles zones**. Both WIIM players receive the exact same timing-synchronized audio stream from LMS. Each feeds one AD5012 amplifier. The AD5012's 12 channels distribute that audio across the house — and the per-zone OSD volume controls let you independently adjust the level in each room without touching the amplifier or the software.
 
 
 ## Lyrion Music Server on Synology (Docker)
