@@ -16,6 +16,8 @@ copyright = "&copy; 2024 Vijay Patil"
   headline = "Engineer at heart · Builder by nature · Dad above all"
   bio = "Senior Software Engineer and technical lead with 20+ years experience building enterprise-scale systems in Java and Spring. Currently driving smart expense automation and AI-powered workflows."
   links = [
-    { linkedin = "https://linkedin.com/in/vijaygpatil" },
+    { linkedin = "https://www.linkedin.com/in/patilvijayg" },
     { github = "https://github.com/vijaygpatil" },
+    { facebook = "https://www.facebook.com/patilvijayg" },
+    { garmin = "https://connect.garmin.com/modern/profile/patilvijayg" },
   ]
