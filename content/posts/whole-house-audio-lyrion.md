@@ -2,12 +2,12 @@
 title: "Whole House Audio with Lyrion Music Server, PiCorePlayer, and WIIM"
 date: 2024-12-10
 tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self-hosted"]
-description: "How I built a whole-house synchronized audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — with Apple Music, Tidal, and Spotify support built in."
+description: "How I built a whole-house synchronized audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — with Tidal and Spotify streaming built in alongside a local music library."
 ---
 
-When I started thinking about whole-house audio, I had two requirements: the music had to be perfectly synchronized across every room, and I didn't want a subscription lock-in to some proprietary ecosystem. What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM amplifiers — and it sounds fantastic.
+When I started thinking about whole-house audio, I had two requirements: the music had to be perfectly synchronized across every room, and I didn't want a subscription lock-in to some proprietary ecosystem. What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM players and 12 channel amplifiers — and it sounds fantastic.
 
-This post walks through the complete architecture, how everything connects, and how I stream from Apple Music, Tidal, and Spotify on top of my local music library.
+This post walks through the complete architecture, how everything connects, and how I stream from Tidal and Spotify on top of my local music library.
 
 ## The Stack at a Glance
 
@@ -22,7 +22,7 @@ Before diving into the details, here's every component in the chain:
 | Power | PoE HAT on Raspberry Pi | Single ethernet cable per Pi — no power brick |
 | Amplifiers | WIIM Pro + 12-channel amp | Drives all in-ceiling/in-wall speakers |
 | Zones | WIIM Pro (living room + home theater) | Stereo zones with synchronized playback |
-| Streaming | LMS plugins | Apple Music, Tidal, Spotify via built-in plugins |
+| Streaming | LMS plugins | Tidal, Spotify via built-in plugins |
 
 ## How It All Connects
 
@@ -34,7 +34,6 @@ Before diving into the details, here's every component in the chain:
                     │   │     (Docker)             │   │
                     │   │                          │   │
                     │   │  • Local music library   │   │
-                    │   │  • Apple Music plugin    │   │
                     │   │  • Tidal plugin          │   │
                     │   │  • Spotify plugin        │   │
                     │   └────────────┬────────────┘   │
@@ -166,15 +165,9 @@ This is the killer feature. In LMS, you select multiple players and group them:
 
 Once grouped, LMS sends the same audio stream to all players with timing synchronization. Walk from the kitchen to the living room to the home theater — the music follows you with zero echo or delay between rooms. This is something proprietary whole-house audio systems charge thousands of dollars for.
 
-## Streaming Services: Apple Music, Tidal, Spotify
+## Streaming Services: Tidal and Spotify
 
 LMS has a plugin ecosystem, and the streaming service plugins are genuinely excellent. They appear as first-class library items inside LMS — no need to switch apps.
-
-### Apple Music
-
-The Apple Music plugin for LMS uses your Apple Music subscription to stream directly through LMS to all your players. Your playlists, library, and recommendations all show up in the LMS interface.
-
-{{< figure src="/images/lms-apple-music.png" alt="LMS interface showing Apple Music playlists and albums" caption="Apple Music fully integrated into LMS — playlists and library browsable alongside local music" >}}
 
 ### Tidal
 
@@ -188,7 +181,7 @@ The Spotify plugin works with Spotify Connect, so it shows up as a playback targ
 
 ### Installing Plugins
 
-All three plugins install from the LMS plugin manager — no manual file copying needed:
+Both plugins install from the LMS plugin manager — no manual file copying needed:
 
 1. In LMS web interface, go to **Settings → Plugins**
 2. Search for the plugin by name
@@ -223,7 +216,7 @@ A few networking notes that make the difference between a smooth setup and a fru
 | In-ceiling/in-wall speakers | Varies |
 | **Software** | **$0** |
 
-The software stack — LMS, PiCorePlayer, Jivelite — is completely free and open source. The streaming service plugins are maintained by the community. You pay for the streaming subscriptions themselves (Apple Music, Tidal, Spotify), but those are the same subscriptions you'd pay regardless.
+The software stack — LMS, PiCorePlayer, Jivelite — is completely free and open source. The streaming service plugins are maintained by the community. You pay for the streaming subscriptions themselves (Tidal, Spotify), but those are the same subscriptions you'd pay regardless.
 
 Compare this to a Sonos whole-house setup for the same number of zones and speaker count: you're looking at $2,000+ just for the Sonos hardware, plus the ongoing risk of a company deciding to brick older hardware or change their subscription model. With this setup, the software will keep working as long as the hardware does.
 
