@@ -24,6 +24,8 @@ Before diving into the details, here's every component in the chain:
 | Power | PoE HAT on Raspberry Pi | Single ethernet cable per Pi — no power brick |
 | Amplifiers | WIIM Pro + 12-channel amp | Drives all in-ceiling/in-wall speakers |
 | Zones | WIIM Pro (living room + home theater) | Stereo zones with synchronized playback |
+| In-ceiling speakers | Sonance MAG8R (8" 2-way) | Hi-res capable, 40Hz–20kHz, 90dB |
+| Subwoofers | Sonance BPS8 (bandpass) | Low-end reinforcement, 35Hz–150Hz |
 | Streaming | LMS plugins | Tidal, Spotify via built-in plugins |
 
 ## How It All Connects
@@ -167,6 +169,46 @@ This is the killer feature. In LMS, you select multiple players and group them:
 
 Once grouped, LMS sends the same audio stream to all players with timing synchronization. Walk from the kitchen to the living room to the home theater — the music follows you with zero echo or delay between rooms. This is something proprietary whole-house audio systems charge thousands of dollars for.
 
+## In-Ceiling Speakers: Sonance MAG Series
+
+The speakers are the final link in the chain, and they're worth choosing carefully — especially when the rest of the system is capable of delivering hi-res audio. I use Sonance MAG series speakers throughout the house: the MAG8R for main in-ceiling coverage and the BPS8 bandpass subwoofer for low-end reinforcement.
+
+### Sonance MAG8R — 8" 2-Way In-Ceiling Speaker
+
+The MAG8R is an audiophile-grade in-ceiling speaker designed for high-fidelity music playback, not just background fill. The 8" woofer gives it enough cone area to reproduce lower midrange with real body, and the pivoting tweeter lets you aim the high-frequency dispersion toward the listening area rather than straight down at the floor.
+
+| Specification | Value |
+|---------------|-------|
+| Driver configuration | 8" poly cone woofer + 1" pivoting silk dome tweeter |
+| Frequency response | 40Hz – 20kHz |
+| Sensitivity | 90dB (1W/1m) |
+| Impedance | 8Ω |
+| Power handling | 100W continuous |
+| Crossover | Internal 2-way crossover |
+
+The 90dB sensitivity means it produces 90dB of output from just 1 watt — efficient enough that the 12-channel amplifier doesn't have to work hard to reach comfortable listening levels. At hi-res listening volumes, these are genuinely musical speakers, not just "ceiling speakers."
+
+### Sonance BPS8 — 8" Passive Bandpass In-Ceiling Subwoofer
+
+The BPS8 is a bandpass subwoofer designed specifically for in-ceiling installation. The bandpass enclosure design filters the output to a tight low-frequency band — it only reproduces what a standard in-ceiling speaker can't: the real bottom end. This pairing is what makes hi-res playback of bass-heavy material (orchestral, electronic, jazz) feel physically present rather than just acoustically correct.
+
+| Specification | Value |
+|---------------|-------|
+| Driver | 8" long-excursion woofer |
+| Frequency response | 35Hz – 150Hz (bandpass filtered) |
+| Sensitivity | 88dB (1W/1m) |
+| Impedance | 8Ω |
+| Power handling | 150W continuous |
+| Design | Sealed bandpass enclosure, in-ceiling mount |
+
+The BPS8 pairs with the 12-channel amplifier — two channels per subwoofer or one dedicated channel depending on your amplifier layout. The bandpass design means you don't need a crossover network: it naturally rolls off above 150Hz, handing off cleanly to the MAG8Rs for everything above that.
+
+### Why This Speaker Choice Matters for Hi-Res
+
+Most in-ceiling speakers are designed for speech intelligibility and background music. The MAG series is designed for music. The combination of the MAG8R's extended high-frequency response to 20kHz and the BPS8's low extension to 35Hz covers the full audible spectrum — the same range that hi-res recordings at 24-bit/192kHz actually contain information in.
+
+Playing a 24-bit/192kHz FLAC through a system that caps at 16kHz and rolls off below 80Hz defeats the purpose of the entire chain above it. The Sonance MAG series is what makes the hi-res investment audible.
+
 ## Streaming Services: Tidal and Spotify
 
 LMS has a plugin ecosystem, and the streaming service plugins are genuinely excellent. They appear as first-class library items inside LMS — no need to switch apps.
@@ -266,7 +308,8 @@ A few networking notes that make the difference between a smooth setup and a fru
 | WIIM Pro (×3) | ~$80 each |
 | 12-channel amplifier | ~$300 |
 | Stereo amplifiers (×2) | ~$100 each |
-| In-ceiling/in-wall speakers | Varies |
+| Sonance MAG8R in-ceiling speakers | Varies by room count |
+| Sonance BPS8 bandpass subwoofers | Varies by room count |
 | **Software** | **$0** |
 
 The software stack — LMS, PiCorePlayer, Jivelite — is completely free and open source. The streaming service plugins are maintained by the community. You pay for the streaming subscriptions themselves (Tidal, Spotify), but those are the same subscriptions you'd pay regardless.
