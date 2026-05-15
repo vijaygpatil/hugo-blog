@@ -9,7 +9,7 @@ The whole reason I built this instead of buying a Sonos or any other off-the-she
 
 I wanted 24-bit/192kHz FLAC files from my local library to play at exactly that quality, end to end, across every room in the house simultaneously. And I wanted audiophile-grade in-ceiling speakers — not whatever fits inside a proprietary puck — driven by real amplifiers with real power.
 
-What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, WIIM Pro players and AudioSource 12-channel amplifiers driving Sonance in-ceiling speakers. Lyrion Music Server passes hi-res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
+What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, WIIM Pro players and AudioSource 12-channel amplifiers driving Sonance in-ceiling speakers. Lyrion Music Server passes hi-res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room. Beyond the local library, the same system plays Tidal and Spotify, thousands of internet radio stations, and podcasts — all from one interface, without switching apps.
 
 {{< youtube GUH1wj-1sA0 >}}
 
