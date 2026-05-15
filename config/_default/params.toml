@@ -1,10 +1,13 @@
-colorScheme = "ocean"
+colorScheme = "congo"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 
 enableSearch = true
 enableCodeCopy = true
 enableImageLazyLoading = true
+
+[author]
+  image = "avatar.jpg"
 
 [header]
   layout = "basic"
