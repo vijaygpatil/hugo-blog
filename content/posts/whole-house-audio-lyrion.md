@@ -384,7 +384,20 @@ A few networking notes that make the difference between a smooth setup and a fru
 
 The software stack — LMS, PiCorePlayer, Jivelite — is completely free and open source. The streaming service plugins are maintained by the community. You pay for the streaming subscriptions themselves (Tidal, Spotify), but those are the same subscriptions you'd pay regardless.
 
-Compare this to a Sonos whole-house setup for the same number of zones and speaker count: you're looking at $2,000+ just for the Sonos hardware, plus the ongoing risk of a company deciding to brick older hardware or change their subscription model. With this setup, the software will keep working as long as the hardware does.
+This build is not cheap — the Sonance MAG8R speakers and BPS8 subwoofers are audiophile-grade components, and the AudioSource AD5012 amplifiers are purpose-built for distributed whole-house audio. The total investment is higher than a Sonos setup. But what you get in return is in a completely different category:
+
+| Capability | This System | Sonos |
+|---|---|---|
+| Max audio quality | 32-bit / 384kHz FLAC, DSD128 | 24-bit / 48kHz (capped) |
+| Speaker choice | Any in-ceiling speaker you choose | Sonos-branded hardware only |
+| Amplifier power | 50W/channel × 24 channels | Built-in, fixed, not upgradeable |
+| Zone volume control | Physical in-wall knob per zone | App only |
+| Cloud dependency | None — fully local | Requires Sonos cloud for setup and features |
+| Hardware longevity | Works as long as hardware runs | Company has bricked older hardware remotely |
+| Software lock-in | Open source, community maintained | Proprietary, discontinued when Sonos decides |
+| Hi-res library support | Full passthrough — hear what you paid for | Resamples everything internally |
+
+Sonos is a polished consumer product that works well within its limits. This system has no limits worth caring about. If you want hi-res audio from your library actually delivered to your ears — not resampled, not capped, not dependent on a company's business model — this is the architecture that delivers it.
 
 ## What Works Really Well
 
