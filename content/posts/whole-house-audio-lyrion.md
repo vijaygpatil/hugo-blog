@@ -5,13 +5,13 @@ tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self
 description: "How I built a whole-house hi-res audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — playing 32-bit/384kHz FLAC and DSD from a local library, with Tidal and Spotify built in."
 ---
 
-The whole reason I built this instead of buying a Sonos or any other off-the-shelf system: **hi-res audio**. Proprietary systems resample or cap your music before it reaches the speakers. I wanted 24-bit/192kHz FLAC files from my local library to play at exactly that quality, end to end, across every room in the house simultaneously.
+The whole reason I built this instead of buying a Sonos or any other off-the-shelf system: **Hi-Res Audio**. Proprietary systems resample or cap your music before it reaches the speakers. I wanted 24-bit/192kHz FLAC files from my local library to play at exactly that quality, end to end, across every room in the house simultaneously.
 
-What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM players and 12-channel amplifiers. Lyrion Music Server passes hi-res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
+What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, WIIM Pro players and AudioSource 12-channel amplifiers. Lyrion Music Server passes Hi-Res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
 
 {{< youtube GUH1wj-1sA0 >}}
 
-This post walks through the complete architecture, how everything connects, and how I play my local hi-res library alongside Tidal and Spotify streaming.
+This post walks through the complete architecture, how everything connects, and how I play my local Hi-Res library alongside Tidal and Spotify streaming.
 
 ## The Stack at a Glance
 
@@ -21,9 +21,9 @@ Before diving into the details, here's every component in the chain:
 |-------|-----------|------|
 | Music Server | Lyrion Music Server (LMS) | Central brain — indexes library, streams to players |
 | Host | Synology NAS (Docker container) | Runs LMS 24/7 without dedicated hardware |
-| Players | PiCorePlayer on Raspberry Pi 4 | Receives stream from LMS, outputs to WIIM |
-| Display | 7" Raspberry Pi touchscreen | Control panel per Pi — browse and play |
-| Power | PoE HAT on Raspberry Pi | Single ethernet cable per Pi — no power brick |
+| Controller | PiCorePlayer on Raspberry Pi 4 | Wall-mounted touchscreen — controls LMS, displays now-playing |
+| Display | 7" Raspberry Pi touchscreen | Jivelite UI — browse library, control playback by touch |
+| Power | PoE on Raspberry Pi | Single ethernet cable per Pi — no power brick |
 | Synchronization | WIIM Pro (×2) | Receives stream, feeds both amplifiers in sync |
 | Amplifiers | AudioSource AD5012 (×2) | 12-channel Class D, drives all speaker zones |
 | Zone control | OSD Audio SVC-300 (per zone) | In-wall volume knob per zone |
@@ -60,10 +60,10 @@ flowchart TD
 
     SPK["Sonance MAG8R<br/>8in In-Ceiling Speakers<br/>+ BPS8 Subwoofers"]
 
-    NAS -->|"LAN Squeezebox"| PI1
-    NAS -->|"LAN Squeezebox"| PI2
-    PI1 -->|"Analog out"| WIIM1
-    PI2 -->|"Analog out"| WIIM2
+    PI1 -.->|"control"| NAS
+    PI2 -.->|"control"| NAS
+    NAS -->|"LAN audio stream sync group"| WIIM1
+    NAS -->|"LAN audio stream sync group"| WIIM2
     WIIM1 -->|"Analog out"| AMP1
     WIIM2 -->|"Analog out"| AMP2
     AMP1 --> VOL1 --> Z1 --> SPK
@@ -92,7 +92,7 @@ flowchart TD
     style SPK fill:#4e342e,color:#fff
 {{< /mermaid >}}
 
-The key design insight: **WIIM Pro handles synchronization, AudioSource AD5012 handles zones**. Both WIIM players receive the exact same timing-synchronized audio stream from LMS. Each feeds one AD5012 amplifier. The AD5012's 12 channels distribute that audio across the house — and the per-zone OSD volume controls let you independently adjust the level in each room without touching the amplifier or the software.
+The key design insight: **LMS streams directly to the WIIM Pro players, AudioSource AD5012 handles zones**. LMS treats the two WIIM players as a synchronized group — it streams the same timing-locked audio to both simultaneously over the LAN. The Raspberry Pi touchscreens act purely as controllers: they send commands to LMS (play, pause, skip, volume) and display what's playing, but audio never passes through them. Each WIIM Pro feeds one AD5012 amplifier, whose 12 channels distribute audio across the house — with the per-zone OSD volume controls letting you independently adjust the level in each room.
 
 
 ## Lyrion Music Server on Synology (Docker)
@@ -137,7 +137,7 @@ Point LMS at your music folder during initial setup. It scans and indexes everyt
 
 ## PiCorePlayer on Raspberry Pi
 
-PiCorePlayer is a minimal Linux distribution purpose-built to run Squeezelite — the software Squeezebox client that connects to LMS. It boots from a small SD card, runs entirely in RAM, and is extremely stable. My Pis have been running for months without a reboot.
+PiCorePlayer is a minimal Linux distribution built around Squeezelite and Jivelite. In this setup it acts as a **wall-mounted controller**: it connects to LMS over the network, displays album art and playback information on the 7" touchscreen, and lets you browse and control the music by touch. Audio doesn't pass through the Pi — LMS streams directly to the WIIM players. The Pi's job is purely control and display.
 
 ### Hardware Per Pi
 
@@ -171,9 +171,9 @@ This is what makes the system genuinely usable day-to-day. Instead of pulling ou
 
 ## WIIM Pro: Synchronization Bridge
 
-The two WIIM Pro players are the synchronization bridge in this system. They receive the hi-res audio stream from PiCorePlayer over the network and output analog audio to the amplifiers. The critical role they play is not zone management — that's handled by the amplifiers — but keeping both amplifiers perfectly locked to the same audio stream.
+The two WIIM Pro players are the audio endpoint in this system. LMS streams hi-res audio directly to them over the LAN — the Raspberry Pis don't carry audio at all. The critical role the WIIMs play is not zone management — that's handled by the amplifiers — but receiving the timing-synchronized stream from LMS and outputting analog audio to the amplifiers.
 
-Both WIIM players are grouped in LMS and receive identical timing-synchronized streams. This is what makes music in the upstairs corridor match exactly what's playing in the kitchen — the amplifiers are fed the same signal at the same moment.
+LMS groups both WIIM players together as a synchronized pair and streams the same timing-locked audio to both simultaneously. This is what makes music in the upstairs corridor match exactly what's playing in the kitchen — both amplifiers are fed the same signal at the same moment. You also get LMS-level volume control across the synchronized group from any controller (the touchscreen, the web UI, or the mobile app), which is more convenient than adjusting the amplifiers directly.
 
 ## AudioSource AD5012: 12-Channel Amplifier
 
@@ -231,13 +231,13 @@ The practical result: you can walk into the kitchen and turn the volume down wit
 
 ### Synchronized Playback
 
-This is the killer feature — and it's the WIIM Pro players that make it work, not the amplifiers.
+This is the killer feature — and it's achieved by grouping both WIIM Pro players together in LMS as a synchronized pair.
 
-Both WIIM Pros receive the exact same audio stream from LMS and lock to a shared playback clock. This timing lock is what keeps the upstairs corridor in perfect step with the kitchen, the dining room, the bedroom — every zone. Walk anywhere in the house and the music is identical, with zero echo or delay between rooms.
+LMS sends the same timing-locked audio stream to both WIIM players simultaneously. This timing lock is what keeps the upstairs corridor in perfect step with the kitchen, the dining room, the bedroom — every zone. Walk anywhere in the house and the music is identical, with zero echo or delay between rooms.
 
-The AudioSource AD5012 amplifiers play no role in synchronization. They simply amplify whatever the WIIM Pro feeds them and distribute it across their 12 channels. The sync happens upstream, between the two WIIM players, before the signal ever reaches the amps.
+The AudioSource AD5012 amplifiers play no role in synchronization. They simply amplify whatever the WIIM Pro feeds them and distribute it across their 12 channels. The sync happens upstream in LMS, before the signal ever reaches the amps.
 
-The practical result: every one of the five zones, across both amplifiers and 20 speakers, plays in perfect lockstep. Adjust volume in any zone independently using the OSD SVC-300 wall knob — the sync remains unaffected. This is something proprietary whole-house audio systems charge thousands of dollars for.
+The LMS sync group also gives you a single volume control across both players — adjust volume from the touchscreen or the LMS web interface and both WIIMs respond together. Per-room fine-tuning is still available via the OSD SVC-300 wall knobs, but the overall level is managed from LMS. This is something proprietary whole-house audio systems charge thousands of dollars for.
 
 ## In-Ceiling Speakers: Sonance MAG Series
 
@@ -370,17 +370,17 @@ A few networking notes that make the difference between a smooth setup and a fru
 ## Cost Breakdown
 
 | Component | Approximate Cost |
-|-----------|-----------------|
-| Synology NAS (already owned) | $0 incremental |
-| Raspberry Pi 4 (×2) | ~$70 each |
-| PoE HAT (×2) | ~$20 each |
-| 7" touchscreen (×2) | ~$80 each |
-| WIIM Pro (×2) | ~$80 each |
-| AudioSource AD5012 (×2) | ~$400 each |
-| OSD Audio SVC-300 volume control (×5) | ~$40 each |
-| Sonance MAG8R in-ceiling speakers | Varies by room count |
-| Sonance BPS8 bandpass subwoofers | Varies by room count |
-| **Software** | **$0** |
+|-----------|------------------|
+| Synology NAS (already owned) | $0 incremental   |
+| Raspberry Pi 4 (×2) | ~$70 each        |
+| PoE HAT (×2) | ~$20 each        |
+| 7" touchscreen (×2) | ~$80 each        |
+| WIIM Pro (×2) | ~$150 each       |
+| AudioSource AD5012 (×2) | ~$400 each       |
+| OSD Audio SVC-300 volume control (×5) | ~$40 each        |
+| Sonance MAG8R in-ceiling speakers | ~$250 pair       |
+| Sonance BPS8 bandpass subwoofers | ~$1430 each      |
+| **Software** | **$0**           |
 
 The software stack — LMS, PiCorePlayer, Jivelite — is completely free and open source. The streaming service plugins are maintained by the community. You pay for the streaming subscriptions themselves (Tidal, Spotify), but those are the same subscriptions you'd pay regardless.
 
