@@ -170,11 +170,11 @@ This sounds obvious but it's the single most important reliability decision. Bef
 
 ### Schema Docs as Executable Context
 
-The database schema is stored as XML files — one per table, ~900 tables total. Each file contains every column, its data type, its nullable status, and all foreign key relationships.
+The database schema is stored as XML files — one per table, covering hundreds of tables across the system. Each file contains every column, its data type, its nullable status, and all foreign key relationships.
 
 Rather than trying to memorize this or embed it in prompts, the CLAUDE.md instructs Claude to read the relevant XML file before generating any SQL query. Combined with a reusable query library of known-correct queries for common investigations, this means SQL queries are correct on the first attempt almost every time.
 
-The query library is a simple Markdown file with sections like "Query 2: Get workflow step history with approvers/delegates." When a new investigation requires a query that doesn't exist in the library, Claude builds it from the schema docs and the library gets updated. It's a living document that gets better with use.
+The query library is a simple Markdown file with sections for each common investigation pattern. When a new investigation requires a query that doesn't exist in the library, Claude builds it from the schema docs and the library gets updated. It's a living document that gets better with use.
 
 ### Skills Are the ROI
 
