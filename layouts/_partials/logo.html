@@ -1,7 +1,7 @@
 {{- if .Site.Params.header.logo }}
-  {{- $logo := resources.Get .Site.Params.header.logo }}
+  {{- $logo := resources.Get "avatar1-face.jpg" }}
   {{- if $logo }}
-    {{- $logo = $logo.Resize "80x80 webp" }}
+    {{- $logo = $logo.Fill "80x80 Center webp" }}
     <a href="{{ "" | relLangURL }}" class="mr-3 flex-shrink-0">
       <img
         src="{{ $logo.Permalink }}"
