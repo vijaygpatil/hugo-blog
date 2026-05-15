@@ -1,13 +1,15 @@
 ---
-title: "Whole House Audio with Lyrion Music Server, PiCorePlayer, and WIIM"
+title: "Hi-Res Whole House Audio with Lyrion Music Server, PiCorePlayer, and WIIM"
 date: 2024-12-10
-tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self-hosted"]
-description: "How I built a whole-house synchronized audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — with full hi-res audio passthrough (32-bit/384kHz FLAC, DSD128) and Tidal and Spotify streaming built in."
+tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self-hosted", "hi-res-audio"]
+description: "How I built a whole-house hi-res audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — playing 32-bit/384kHz FLAC and DSD from a local library, with Tidal and Spotify built in."
 ---
 
-When I started thinking about whole-house audio, I had two requirements: the music had to be perfectly synchronized across every room, and I didn't want a subscription lock-in to some proprietary ecosystem. What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM players and 12 channel amplifiers — and it sounds fantastic.
+The whole reason I built this instead of buying a Sonos or any other off-the-shelf system: **hi-res audio**. Proprietary systems resample or cap your music before it reaches the speakers. I wanted 24-bit/192kHz FLAC files from my local library to play at exactly that quality, end to end, across every room in the house simultaneously.
 
-This post walks through the complete architecture, how everything connects, and how I stream from Tidal and Spotify on top of my local music library.
+What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM players and 12-channel amplifiers. Lyrion Music Server passes hi-res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
+
+This post walks through the complete architecture, how everything connects, and how I play my local hi-res library alongside Tidal and Spotify streaming.
 
 ## The Stack at a Glance
 
