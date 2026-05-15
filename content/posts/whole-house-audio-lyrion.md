@@ -22,8 +22,9 @@ Before diving into the details, here's every component in the chain:
 | Players | PiCorePlayer on Raspberry Pi 4 | Receives stream from LMS, outputs to WIIM |
 | Display | 7" Raspberry Pi touchscreen | Control panel per Pi — browse and play |
 | Power | PoE HAT on Raspberry Pi | Single ethernet cable per Pi — no power brick |
-| Amplifiers | WIIM Pro + 12-channel amp | Drives all in-ceiling/in-wall speakers |
-| Zones | WIIM Pro (living room + home theater) | Stereo zones with synchronized playback |
+| Synchronization | WIIM Pro (×2) | Receives stream, feeds both amplifiers in sync |
+| Amplifiers | AudioSource AD5012 (×2) | 12-channel Class D, drives all speaker zones |
+| Zone control | OSD Audio SVC-300 (per zone) | In-wall volume knob per zone |
 | In-ceiling speakers | Sonance MAG8R (8" 2-way) | Hi-res capable, 40Hz–20kHz, 90dB |
 | Subwoofers | Sonance BPS8 (bandpass) | Low-end reinforcement, 35Hz–150Hz |
 | Streaming | LMS plugins | Tidal, Spotify via built-in plugins |
@@ -36,8 +37,7 @@ Before diving into the details, here's every component in the chain:
                     │   ┌─────────────────────────┐   │
                     │   │  Lyrion Music Server     │   │
                     │   │     (Docker)             │   │
-                    │   │                          │   │
-                    │   │  • Local music library   │   │
+                    │   │  • Local hi-res library  │   │
                     │   │  • Tidal plugin          │   │
                     │   │  • Spotify plugin        │   │
                     │   └────────────┬────────────┘   │
@@ -51,29 +51,36 @@ Before diving into the details, here's every component in the chain:
           │  PiCorePlayer      │           │  PiCorePlayer      │
           │  7" Touchscreen    │           │  7" Touchscreen    │
           └─────────┬──────────┘           └───────────┬────────┘
-                    │                                   │
-                    │         Squeezecast/UPnP          │
+                    │       Squeezebox protocol         │
                     └──────────────┬────────────────────┘
-                                   │
-              ┌────────────────────┼───────────────────┐
-              │                    │                   │
-    ┌─────────▼──────┐   ┌─────────▼──────┐   ┌───────▼────────┐
-    │  WIIM Pro      │   │  WIIM Pro      │   │  WIIM Pro      │
-    │  (Whole House) │   │  (Living Room) │   │  (Home Theater)│
-    └────────┬───────┘   └───────┬────────┘   └───────┬────────┘
-             │                   │                    │
-    ┌────────▼───────┐   ┌───────▼────────┐   ┌──────▼─────────┐
-    │ 12-Channel Amp │   │  Stereo Amp    │   │  Stereo Amp    │
-    └────────┬───────┘   └───────┬────────┘   └──────┬─────────┘
-             │                   │                    │
-    ┌────────▼───────┐   ┌───────▼────────┐   ┌──────▼─────────┐
-    │ In-ceiling &   │   │  Living Room   │   │  Home Theater  │
-    │ in-wall spkrs  │   │  Speakers      │   │  Speakers      │
-    │ (whole house)  │   │                │   │                │
-    └────────────────┘   └────────────────┘   └────────────────┘
+                                   │ (synchronized stream)
+                          ┌────────┴────────┐
+                          │                 │
+               ┌──────────▼──────┐ ┌────────▼─────────┐
+               │   WIIM Pro #1   │ │   WIIM Pro #2    │
+               │  (analog out)   │ │  (analog out)    │
+               └──────────┬──────┘ └────────┬─────────┘
+                          │                 │
+               ┌──────────▼──────┐ ┌────────▼─────────┐
+               │  AudioSource    │ │  AudioSource     │
+               │  AD5012 #1      │ │  AD5012 #2       │
+               │  12-ch Class D  │ │  12-ch Class D   │
+               └──┬──┬──┬──┬────┘ └──┬──┬──┬──┬──────┘
+                  │  │  │  │         │  │  │  │
+              Zone 1  2  3  4     Zone 4  5  ..
+                  │  │  │  │         │  │  │
+           ┌──────▼──┐ ┌▼─────┐   ┌──▼──┐ ┌▼──────┐
+           │OSD SVC- │ │OSD   │   │OSD  │ │OSD    │
+           │300 Vol  │ │SVC-  │   │SVC- │ │SVC-   │
+           │Control  │ │300   │   │300  │ │300    │
+           └──────┬──┘ └┬─────┘   └──┬──┘ └┬──────┘
+                  │     │            │     │
+            Sonance MAG8R          Sonance MAG8R
+            + BPS8 subwoofer       + BPS8 subwoofer
 ```
 
-The key insight in this architecture: **PiCorePlayer acts as a Squeezebox client**. It connects to LMS over the network, receives the audio stream, and forwards it to the WIIM player. The WIIM then handles the actual digital-to-analog conversion and feeds the amplifier. Every device that LMS knows about can be synchronized to play the same audio at exactly the same time — no drift, no echo between rooms.
+The key design insight: **WIIM Pro handles synchronization, AudioSource AD5012 handles zones**. Both WIIM players receive the exact same synchronized audio stream from LMS. Each feeds one AD5012 amplifier. The AD5012's 12 channels then distribute that audio across the house — and the per-zone OSD volume controls let you independently adjust the level in each room without touching the amplifier or the software.
+
 
 ## Lyrion Music Server on Synology (Docker)
 
@@ -149,17 +156,65 @@ The 7" touchscreen runs Jivelite — the graphical front-end for Squeezebox play
 
 This is what makes the system genuinely usable day-to-day. Instead of pulling out your phone to change a track, you tap the screen on the wall. The display also shows what's playing in every other zone and lets you switch between them.
 
-## WIIM Players and Amplifiers
+## WIIM Pro: Synchronization Bridge
 
-The WIIM Pro players are where the audio leaves the digital realm. Each WIIM receives the audio stream from PiCorePlayer (via UPnP/AirPlay or direct Squeezebox protocol) and outputs analog audio to the connected amplifier.
+The two WIIM Pro players are the synchronization bridge in this system. They receive the hi-res audio stream from PiCorePlayer over the network and output analog audio to the amplifiers. The critical role they play is not zone management — that's handled by the amplifiers — but keeping both amplifiers perfectly locked to the same audio stream.
 
-### Zone Breakdown
+Both WIIM players are grouped in LMS and receive identical timing-synchronized streams. This is what makes music in the upstairs corridor match exactly what's playing in the kitchen — the amplifiers are fed the same signal at the same moment.
 
-**Whole-House Zone** — WIIM Pro connected to a 12-channel amplifier. This drives in-ceiling and in-wall speakers throughout the house — kitchen, hallways, bedrooms, outdoor areas. All channels play the same audio simultaneously.
+## AudioSource AD5012: 12-Channel Amplifier
 
-**Living Room Zone** — Dedicated WIIM Pro into a stereo amplifier driving the living room speakers. Separate zone means I can play something different here when entertaining, or lock it to the whole-house sync.
+Each WIIM Pro feeds one AudioSource AD5012 — a 12-channel Class D amplifier designed specifically for whole-house distributed audio. With two AD5012s in the setup, there are 24 amplified channels total, organized into the speaker zones throughout the house.
 
-**Home Theater Zone** — Third WIIM Pro into the home theater receiver/amplifier. When I want background music while watching something, it's its own zone. When I want the whole house in sync, I group it with the others in LMS.
+| Specification | Value |
+|---------------|-------|
+| Channels | 12 (6 stereo pairs) |
+| Power output | 50W/channel @ 8Ω |
+| Power output | 75W/channel @ 4Ω |
+| Bridged mono | 125W @ 8Ω |
+| Amplifier class | Class D (digital) |
+| Frequency response | 20Hz – 20kHz ±0dB |
+| THD+N | <0.2% |
+| Signal-to-noise ratio | 100dB (A-weighted) |
+| Channel separation | 65dB @ 1kHz |
+| Inputs | 12× RCA line-in, 2× Bus RCA, 1× Optical PCM |
+| Speaker terminals | Phoenix-style connectors |
+| Power modes | On / Auto signal-sensing / 12V trigger |
+
+The Class D design means the AD5012 runs cool and efficiently even with 12 channels active — important for a unit that's running 24/7 in a rack or closet. The optical PCM input is particularly useful: it accepts the digital signal directly, skipping an extra analog conversion stage.
+
+### Speaker Zones
+
+The 12 channels on each AD5012 are organized into stereo zones. The five whole-house zones, and what's in each:
+
+| Zone | Rooms | Speakers |
+|------|-------|----------|
+| Zone 1 | Main Bedroom + Main Restroom | 4 speakers |
+| Zone 2 | Upstairs Corridor + Stairs | 4 speakers |
+| Zone 3 | Downstairs Corridor + Dining Room | 4 speakers (2 + 2) |
+| Zone 4 | Kitchen | 4 speakers |
+| Zone 5 | Living Room | 4 speakers |
+
+Each zone draws 2 channels from an AD5012 (one stereo pair). With 20 speakers across 5 zones, the two AD5012s together cover the entire house.
+
+## OSD Audio SVC-300: Per-Zone Volume Control
+
+Volume in each zone is controlled independently using the OSD Audio SVC-300 in-wall volume control — one per zone, mounted in the wall like a light switch.
+
+| Specification | Value |
+|---------------|-------|
+| Power handling | 300W peak / 150W RMS per channel |
+| Frequency response | 20Hz – 20kHz |
+| Attenuation range | 52dB (12-step rotary knob) |
+| Impedance matching | 1, 2, 4, 6, or 8 speaker pairs |
+| Wiring | Accepts up to 14-gauge wire |
+| Enclosure | Standard single-gang wall box |
+| Finish options | White, Ivory, Almond (included) |
+| Warranty | 5 years |
+
+The SVC-300 sits between the amplifier output and the speakers for each zone. Turning the knob attenuates the signal in 12 steps across 52dB of range — enough to go from full volume to nearly silent. The impedance matching feature matters when running multiple speakers per zone: it prevents the amplifier from seeing an impedance load that's too low.
+
+The practical result: you can walk into the kitchen and turn the volume down without touching a phone, app, or the amplifier itself. Each room behaves independently even though all rooms are playing the same synchronized source.
 
 ### Synchronized Playback
 
@@ -305,9 +360,9 @@ A few networking notes that make the difference between a smooth setup and a fru
 | Raspberry Pi 4 (×2) | ~$70 each |
 | PoE HAT (×2) | ~$20 each |
 | 7" touchscreen (×2) | ~$80 each |
-| WIIM Pro (×3) | ~$80 each |
-| 12-channel amplifier | ~$300 |
-| Stereo amplifiers (×2) | ~$100 each |
+| WIIM Pro (×2) | ~$80 each |
+| AudioSource AD5012 (×2) | ~$400 each |
+| OSD Audio SVC-300 volume control (×5) | ~$40 each |
 | Sonance MAG8R in-ceiling speakers | Varies by room count |
 | Sonance BPS8 bandpass subwoofers | Varies by room count |
 | **Software** | **$0** |
