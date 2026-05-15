@@ -154,9 +154,9 @@ Three examples that show what this actually changes:
 
 ### Support Question Triage
 
-**Before:** A support message arrives: a user's workflow approval is stuck, they can't figure out why. Find the user in the system (which field is the login ID again?), look up their pending workflow, query the workflow step table to find the current step, figure out who the assigned approver is and whether they're active, check if there's a delegation in place. Requires knowing 4-5 table names and their join columns from memory. 20+ minutes.
+**Before:** A support message arrives: something isn't working for a user and a colleague needs an answer fast. Find the user in the system (which field is the login ID again?), trace their state across several related tables, figure out what's blocking them and why. Requires knowing 4-5 table names and their join columns from memory. 20+ minutes.
 
-**After:** Paste the Slack message. The `ask-support-question` skill detects the question type, uses the schema docs to generate correct SQL for each relevant table, Claude interprets the results and identifies whether the issue is an inactive approver, a missing delegation, or a configuration problem. Ready-to-run SQL queries included for the customer's production database. Under 3 minutes.
+**After:** Paste the support message. The `ask-support-question` skill detects the question type, reads the relevant schema docs to generate correct SQL for each table, and Claude interprets the results to identify the root cause. Ready-to-run queries included. Under 3 minutes.
 
 ## Key Design Decisions
 
