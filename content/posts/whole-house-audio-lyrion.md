@@ -33,37 +33,37 @@ Before diving into the details, here's every component in the chain:
 
 {{< mermaid >}}
 flowchart TD
-    NAS["🖥️ Synology NAS\nLyrion Music Server\n(Docker)\n• Hi-res local library\n• Tidal plugin\n• Spotify plugin"]
+    NAS["Synology NAS<br/>Lyrion Music Server<br/>Hi-res library · Tidal · Spotify"]
 
-    PI1["🔌 Raspberry Pi #1\nPoE powered\nPiCorePlayer\n7\" Touchscreen"]
-    PI2["🔌 Raspberry Pi #2\nPoE powered\nPiCorePlayer\n7\" Touchscreen"]
+    PI1["Raspberry Pi 1<br/>PiCorePlayer<br/>PoE + 7in Touchscreen"]
+    PI2["Raspberry Pi 2<br/>PiCorePlayer<br/>PoE + 7in Touchscreen"]
 
-    WIIM1["📻 WIIM Pro #1\nHi-Res DAC\n32-bit/384kHz"]
-    WIIM2["📻 WIIM Pro #2\nHi-Res DAC\n32-bit/384kHz"]
+    WIIM1["WIIM Pro 1<br/>Hi-Res DAC<br/>32-bit / 384kHz"]
+    WIIM2["WIIM Pro 2<br/>Hi-Res DAC<br/>32-bit / 384kHz"]
 
-    AMP1["🔊 AudioSource AD5012 #1\n12-Channel Class D\n50W/ch @ 8Ω"]
-    AMP2["🔊 AudioSource AD5012 #2\n12-Channel Class D\n50W/ch @ 8Ω"]
+    AMP1["AudioSource AD5012 1<br/>12-Channel Class D<br/>50W per channel"]
+    AMP2["AudioSource AD5012 2<br/>12-Channel Class D<br/>50W per channel"]
 
-    Z1["Zone 1\nMain Bedroom\n+ Restroom\n4 speakers"]
-    Z2["Zone 2\nUpstairs Corridor\n+ Stairs\n4 speakers"]
-    Z3["Zone 3\nDownstairs Corridor\n+ Dining Room\n4 speakers"]
-    Z4["Zone 4\nKitchen\n4 speakers"]
-    Z5["Zone 5\nLiving Room\n4 speakers"]
+    VOL1["OSD SVC-300<br/>In-wall volume"]
+    VOL2["OSD SVC-300<br/>In-wall volume"]
+    VOL3["OSD SVC-300<br/>In-wall volume"]
+    VOL4["OSD SVC-300<br/>In-wall volume"]
+    VOL5["OSD SVC-300<br/>In-wall volume"]
 
-    VOL1["🎚️ OSD SVC-300\nIn-wall volume"]
-    VOL2["🎚️ OSD SVC-300\nIn-wall volume"]
-    VOL3["🎚️ OSD SVC-300\nIn-wall volume"]
-    VOL4["🎚️ OSD SVC-300\nIn-wall volume"]
-    VOL5["🎚️ OSD SVC-300\nIn-wall volume"]
+    Z1["Zone 1<br/>Main Bedroom + Restroom<br/>4 speakers"]
+    Z2["Zone 2<br/>Upstairs Corridor + Stairs<br/>4 speakers"]
+    Z3["Zone 3<br/>Downstairs Corridor + Dining<br/>4 speakers"]
+    Z4["Zone 4<br/>Kitchen<br/>4 speakers"]
+    Z5["Zone 5<br/>Living Room<br/>4 speakers"]
 
-    SPK["Sonance MAG8R\n8\" In-Ceiling Speakers\n+ BPS8 Subwoofers"]
+    SPK["Sonance MAG8R<br/>8in In-Ceiling Speakers<br/>+ BPS8 Subwoofers"]
 
-    NAS -- "LAN (Squeezebox)" --> PI1
-    NAS -- "LAN (Squeezebox)" --> PI2
-    PI1 -- "Analog out" --> WIIM1
-    PI2 -- "Analog out" --> WIIM2
-    WIIM1 -- "Analog out" --> AMP1
-    WIIM2 -- "Analog out" --> AMP2
+    NAS -->|"LAN Squeezebox"| PI1
+    NAS -->|"LAN Squeezebox"| PI2
+    PI1 -->|"Analog out"| WIIM1
+    PI2 -->|"Analog out"| WIIM2
+    WIIM1 -->|"Analog out"| AMP1
+    WIIM2 -->|"Analog out"| AMP2
     AMP1 --> VOL1 --> Z1 --> SPK
     AMP1 --> VOL2 --> Z2 --> SPK
     AMP1 --> VOL3 --> Z3 --> SPK
