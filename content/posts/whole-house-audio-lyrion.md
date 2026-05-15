@@ -5,9 +5,11 @@ tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self
 description: "How I built a whole-house hi-res audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — playing 32-bit/384kHz FLAC and DSD from a local library, with Tidal and Spotify built in."
 ---
 
-The whole reason I built this instead of buying a Sonos or any other off-the-shelf system: **Hi-Res Audio**. Proprietary systems resample or cap your music before it reaches the speakers. I wanted 24-bit/192kHz FLAC files from my local library to play at exactly that quality, end to end, across every room in the house simultaneously.
+The whole reason I built this instead of buying a Sonos or any other off-the-shelf system: **Hi-Res Audio**. Proprietary systems resample or cap your music before it reaches the speakers. Sonos, for example, caps audio at 24-bit/48kHz — regardless of what you're paying for the hardware or the streaming subscription. A Tidal HiFi subscription can stream 24-bit/192kHz FLAC, but Sonos silently resamples it down before it ever reaches your speakers. You pay premium prices for hardware, premium prices for hi-res streaming, and get CD-quality audio in return.
 
-What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, WIIM Pro players and AudioSource 12-channel amplifiers. Lyrion Music Server passes Hi-Res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
+I wanted 24-bit/192kHz FLAC files from my local library to play at exactly that quality, end to end, across every room in the house simultaneously. And I wanted audiophile-grade in-ceiling speakers — not whatever fits inside a proprietary puck — driven by real amplifiers with real power.
+
+What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, WIIM Pro players and AudioSource 12-channel amplifiers driving Sonance in-ceiling speakers. Lyrion Music Server passes hi-res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
 
 {{< youtube GUH1wj-1sA0 >}}
 
