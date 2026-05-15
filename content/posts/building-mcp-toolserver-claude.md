@@ -33,6 +33,29 @@ A well-designed MCP toolserver is like giving Claude a fully equipped workstatio
 
 The system I built has two distinct layers that work together. Understanding the distinction is the key architectural insight.
 
+{{< mermaid >}}
+graph TD
+    U["👤 Engineer"] -->|"types a question"| CM["CLAUDE.md\nRouting Layer"]
+    CM -->|"routes to"| SK["Skills\n(Markdown procedure files)"]
+    SK -->|"invokes"| T1["Log Search Tools"]
+    SK -->|"invokes"| T2["Health Check Tools"]
+    SK -->|"invokes"| T3["Analysis Tools"]
+    SK -->|"invokes"| T4["Integration Test Tools"]
+    SK -->|"invokes"| T5["Schema + Query Tools"]
+    T1 --> ES["Elasticsearch / Logs"]
+    T2 --> ES
+    T3 --> ES
+    T4 --> ES
+    T5 --> DB["Database"]
+    ES -->|"structured results"| CL["Claude\n(reasoning)"]
+    DB -->|"structured results"| CL
+    CL -->|"narrative answer"| U
+
+    style CM fill:#f5a623,color:#000
+    style SK fill:#7ed321,color:#000
+    style CL fill:#4a90e2,color:#fff
+{{< /mermaid >}}
+
 ### Layer 1: MCP Tools (Execution)
 
 Tools are TypeScript functions that know how to do one thing well. Each tool encapsulates:
@@ -120,6 +143,30 @@ description: >
 
 The skill doesn't contain logic — it contains *procedure*. Claude supplies the reasoning; the skill supplies the domain-specific workflow.
 
+{{< mermaid >}}
+sequenceDiagram
+    participant E as Engineer
+    participant C as Claude
+    participant S as Skill
+    participant T as Tools
+    participant SY as Systems
+
+    E->>C: "check integration tests before deployment"
+    C->>S: load integration-test-report skill
+    S-->>C: procedure: call these tools in this order
+    C->>T: integration_test_summary(timeRange: 2h)
+    T->>SY: query log index
+    SY-->>T: test run results
+    T-->>C: structured summary
+    C->>T: integration_test_version_analysis(timeRange: 7d)
+    T->>SY: query by version
+    SY-->>T: failure history
+    T-->>C: critical failures identified
+    C->>T: integration_test_reporter()
+    T-->>C: markdown report generated
+    C-->>E: go/no-go recommendation + report
+{{< /mermaid >}}
+
 **Tools without skills are just API calls. Skills without tools are just prompts. Together they create something that behaves like a domain expert who knows exactly which systems to check and in what order.**
 
 ### The CLAUDE.md Routing Layer
@@ -139,6 +186,15 @@ Without `CLAUDE.md`, you'd need to repeat these instructions in every conversati
 ## Before and After
 
 Three examples that show what this actually changes:
+
+{{< mermaid >}}
+xychart-beta horizontal
+    title "Time to answer (minutes)"
+    x-axis ["Log Investigation", "Pre-Deployment Check", "Support Triage"]
+    y-axis "Minutes" 0 --> 25
+    bar [20, 15, 20]
+    bar [0.5, 2, 3]
+{{< /mermaid >}}
 
 ### Log Investigation
 
