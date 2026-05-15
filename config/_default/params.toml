@@ -12,7 +12,6 @@ enableImageLazyLoading = true
 [header]
   layout = "basic"
   showTitle = true
-  logo = "avatar1.jpg"
 
 [footer]
   showCopyright = true

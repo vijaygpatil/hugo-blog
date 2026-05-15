@@ -1,18 +1,3 @@
-{{- if .Site.Params.header.logo }}
-  {{- $logo := resources.Get "avatar1-face.jpg" }}
-  {{- if $logo }}
-    {{- $logo = $logo.Fill "80x80 Center webp" }}
-    <a href="{{ "" | relLangURL }}" class="mr-3 flex-shrink-0">
-      <img
-        src="{{ $logo.Permalink }}"
-        width="40"
-        height="40"
-        class="h-10 w-10 rounded-full object-cover"
-        alt="{{ .Site.Title }}"
-      />
-    </a>
-  {{- end }}
-{{- end }}
 {{- if .Site.Params.header.showTitle | default true }}
   <a
     class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
