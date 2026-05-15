@@ -2,7 +2,7 @@
 title: "Whole House Audio with Lyrion Music Server, PiCorePlayer, and WIIM"
 date: 2024-12-10
 tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self-hosted"]
-description: "How I built a whole-house synchronized audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — with Tidal and Spotify streaming built in alongside a local music library."
+description: "How I built a whole-house synchronized audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — with full hi-res audio passthrough (32-bit/384kHz FLAC, DSD128) and Tidal and Spotify streaming built in."
 ---
 
 When I started thinking about whole-house audio, I had two requirements: the music had to be perfectly synchronized across every room, and I didn't want a subscription lock-in to some proprietary ecosystem. What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM players and 12 channel amplifiers — and it sounds fantastic.
@@ -190,6 +190,57 @@ Both plugins install from the LMS plugin manager — no manual file copying need
 
 {{< figure src="/images/lms-plugins.png" alt="LMS plugin manager showing installed streaming service plugins" caption="LMS plugin manager — streaming services install in seconds" >}}
 
+## Hi-Res Audio: The Real Reason to Build This
+
+This is the aspect that most whole-house audio comparisons gloss over, and it's the main reason I built this system instead of buying something off the shelf.
+
+Proprietary systems like Sonos cap out at 24-bit/48kHz. That's CD-quality at best — fine, but not what you're getting from a high-resolution music library or a Tidal HiFi subscription streaming 24-bit/192kHz FLAC. The hardware is simply incapable of passing those files through at full quality.
+
+This setup doesn't have that limitation.
+
+### Lyrion Music Server: Full Hi-Res Passthrough
+
+LMS serves audio files natively — it doesn't transcode or downsample unless you tell it to. What's on disk is what gets sent to the player:
+
+| Format | Support |
+|--------|---------|
+| FLAC | Up to 32-bit / 384kHz |
+| WAV / AIFF | Up to 32-bit / 384kHz |
+| ALAC | Up to 24-bit / 192kHz |
+| MP3, AAC, OGG | Standard lossy formats |
+| DSD64 / DSD128 | Native DSD or DSD-over-PCM (DoP) |
+| MQA | Via Tidal plugin (unfolds to 24-bit/96kHz) |
+
+The key setting is in LMS under **Settings → Player → Audio**: ensure the output bitrate and sample rate are set to "keep original" rather than any fixed rate. LMS will then pass through whatever the source file contains, including gapless playback for albums where tracks run continuously.
+
+### WIIM Pro: Hi-Res DAC
+
+The WIIM Pro is certified for hi-res audio playback and handles the digital-to-analog conversion at the end of the chain:
+
+| Capability | Specification |
+|-----------|---------------|
+| PCM playback | Up to 32-bit / 384kHz |
+| DSD playback | DSD64 and DSD128 via DoP |
+| Output | Optical (TOSLINK), coaxial S/PDIF, analog RCA |
+| DAC chip | Supports 32-bit processing |
+| Hi-Res certification | Hi-Res Audio certified |
+
+The optical and coaxial outputs pass the digital signal directly to an external DAC or amplifier, letting you use your own DAC if you prefer. The analog RCA outputs use the WIIM's internal DAC — which is genuinely good for the price.
+
+### The Full Chain at 24-bit/192kHz
+
+```
+FLAC file on NAS (24-bit/192kHz)
+  → LMS (passes through unmodified)
+    → PiCorePlayer / Squeezelite (no transcoding)
+      → WIIM Pro (decodes, outputs 24-bit/192kHz)
+        → Amplifier → Speakers
+```
+
+Every link in this chain is capable of handling the full resolution. Nothing throttles it.
+
+Compare this to Sonos, which resamples everything to 16-bit/48kHz internally, or to Bluetooth streaming, which compresses the audio before it even leaves your phone. If you've spent money on a hi-res music library — whether purchased FLAC files or a Tidal HiFi subscription — this setup actually plays it at the quality you paid for.
+
 ## Network Setup
 
 A few networking notes that make the difference between a smooth setup and a frustrating one:
@@ -221,6 +272,8 @@ The software stack — LMS, PiCorePlayer, Jivelite — is completely free and op
 Compare this to a Sonos whole-house setup for the same number of zones and speaker count: you're looking at $2,000+ just for the Sonos hardware, plus the ongoing risk of a company deciding to brick older hardware or change their subscription model. With this setup, the software will keep working as long as the hardware does.
 
 ## What Works Really Well
+
+**Full hi-res audio, end to end.** This is the reason to build this over any proprietary system. LMS passes FLAC files through unmodified — 24-bit/192kHz stays 24-bit/192kHz. WIIM Pro decodes it at full quality. Nothing in the chain caps or resamples. If you have a hi-res library, you actually hear it.
 
 **Synchronization is flawless.** Walk through the house and the music is perfectly in step everywhere. No echo, no delay. This is the hardest thing to get right and LMS has solved it for 20 years.
 
