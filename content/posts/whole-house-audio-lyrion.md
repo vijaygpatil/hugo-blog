@@ -5,7 +5,15 @@ tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self
 description: "How I built a whole-house hi-res audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — playing 32-bit/384kHz FLAC and DSD from a local library, with Tidal and Spotify built in."
 ---
 
-The whole reason I built this instead of buying a Sonos or any other off-the-shelf system: **Hi-Res Audio**. Proprietary systems resample or cap your music before it reaches the speakers. Sonos and similar systems cap audio at 24-bit/48kHz — you pay premium prices for hardware and hi-res streaming, and get CD-quality audio in return. I wanted every room in the house playing 24-bit/192kHz FLAC at full quality, through audiophile-grade in-ceiling speakers driven by real amplifiers. So I built it. Lyrion Music Server streams hi-res files unmodified from a Synology NAS, WIIM Pro decodes them at full quality, and AudioSource 12-channel amplifiers distribute synchronized audio across five zones of Sonance in-ceiling speakers — nothing in the chain resamples or caps. The same system plays Tidal, Spotify, internet radio, and podcasts from one interface.
+Walk into any room in my house and the same music is playing — perfectly in sync, no echo, no delay. Kitchen, bedroom, upstairs corridor, dining room. One song, everywhere, at the same moment.
+
+That's the easy part to describe. The harder part: every note is arriving at exactly the quality it was recorded. 24-bit/192kHz FLAC from my local library, uncompressed, unmodified, untouched by any resampling engine. The way the artist and engineer heard it in the studio.
+
+Most whole-house audio systems can't say that. Sonos caps audio at 24-bit/48kHz — you pay premium prices for the hardware and a hi-res streaming subscription, and it quietly resamples everything before it reaches your speakers. You never hear what you paid for.
+
+I wanted more. Audiophile-grade Sonance in-ceiling speakers in every room. Real 12-channel amplifiers with real power. A music server that streams hi-res files unmodified and handles Tidal, Spotify, internet radio, and podcasts from a single interface — with synchronized playback across the whole house.
+
+So I built it. This post is the complete guide to how.
 
 {{< youtube GUH1wj-1sA0 >}}
 
