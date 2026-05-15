@@ -121,7 +121,7 @@ A skill is a Markdown file that Claude reads at invocation time. It tells Claude
 
 Here's a simplified example of what a skill definition looks like:
 
-```markdown
+{{< highlight markdown >}}
 ---
 name: integration-test-report
 description: >
@@ -139,7 +139,7 @@ description: >
 5. Call `integration_test_reporter` to generate full markdown report
 6. Summarize: total tests, critical failures, last pass for each failing test,
    go/no-go recommendation
-```
+{{< /highlight >}}
 
 The skill doesn't contain logic — it contains *procedure*. Claude supplies the reasoning; the skill supplies the domain-specific workflow.
 
