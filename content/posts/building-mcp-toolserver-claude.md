@@ -187,14 +187,11 @@ Without `CLAUDE.md`, you'd need to repeat these instructions in every conversati
 
 Three examples that show what this actually changes:
 
-{{< mermaid >}}
-xychart-beta horizontal
-    title "Time to answer (minutes)"
-    x-axis ["Log Investigation", "Pre-Deployment Check", "Support Triage"]
-    y-axis "Minutes" 0 --> 25
-    bar [20, 15, 20]
-    bar [0.5, 2, 3]
-{{< /mermaid >}}
+| Scenario | Before | After |
+|---|---|---|
+| Log Investigation | ~20 min | ~30 sec |
+| Pre-Deployment Check | ~15 min | ~2 min |
+| Support Question Triage | ~20 min | ~3 min |
 
 ### Log Investigation
 
