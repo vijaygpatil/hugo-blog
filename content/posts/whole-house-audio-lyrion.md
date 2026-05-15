@@ -9,6 +9,8 @@ The whole reason I built this instead of buying a Sonos or any other off-the-she
 
 What I ended up with is a fully self-hosted setup built around open-source software, a few Raspberry Pis, and WIIM players and 12-channel amplifiers. Lyrion Music Server passes hi-res files through unmodified. WIIM Pro decodes them at full quality. Nothing in the chain caps or resamples. And it's perfectly synchronized across every room.
 
+{{< youtube GUH1wj-1sA0 >}}
+
 This post walks through the complete architecture, how everything connects, and how I play my local hi-res library alongside Tidal and Spotify streaming.
 
 ## The Stack at a Glance
