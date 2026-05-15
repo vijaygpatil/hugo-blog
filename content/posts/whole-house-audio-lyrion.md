@@ -167,11 +167,11 @@ The 7" touchscreen runs Jivelite — the graphical front-end for Squeezebox play
 
 {{< figure src="/images/jivelite-nowplaying.png" alt="Jivelite now-playing screen on 7-inch touchscreen showing album art" caption="Jivelite on the 7\" display — album art, track info, and full playback controls by touch" >}}
 
-This is what makes the system genuinely usable day-to-day. Instead of pulling out your phone to change a track, you tap the screen on the wall. The display also shows what's playing in every other zone and lets you switch between them.
+This is what makes the system genuinely usable day-to-day. Instead of pulling out your phone to change a track, you tap the screen on the wall. The display shows album art, track info including track format, bitrate and sampling information and full playback controls. 
 
 ## WIIM Pro: Synchronization Bridge
 
-The two WIIM Pro players are the audio endpoint in this system. LMS streams hi-res audio directly to them over the LAN — the Raspberry Pis don't carry audio at all. The critical role the WIIMs play is not zone management — that's handled by the amplifiers — but receiving the timing-synchronized stream from LMS and outputting analog audio to the amplifiers.
+The two WIIM Pro players are the audio endpoint in this system. LMS streams hi-res audio directly to them over the LAN — the Raspberry Pis don't carry audio at all when I am playing local music files. The critical role the WIIMs play is not zone management — that's handled by the amplifiers — but receiving the timing-synchronized stream from LMS and outputting analog audio to the amplifiers.
 
 LMS groups both WIIM players together as a synchronized pair and streams the same timing-locked audio to both simultaneously. This is what makes music in the upstairs corridor match exactly what's playing in the kitchen — both amplifiers are fed the same signal at the same moment. You also get LMS-level volume control across the synchronized group from any controller (the touchscreen, the web UI, or the mobile app), which is more convenient than adjusting the amplifiers directly.
 
@@ -346,12 +346,14 @@ The optical and coaxial outputs pass the digital signal directly to an external 
 ```
 FLAC file on NAS (24-bit/192kHz)
   → LMS (passes through unmodified)
-    → PiCorePlayer / Squeezelite (no transcoding)
-      → WIIM Pro (decodes, outputs 24-bit/192kHz)
-        → Amplifier → Speakers
+    → WIIM Pro (receives stream directly from LMS, decodes, outputs 24-bit/192kHz)
+      → AudioSource AD5012 (amplifies, distributes to zones)
+        → OSD SVC-300 (per-zone volume) → Sonance MAG8R / BPS8 speakers
+
+  [Raspberry Pi / PiCorePlayer = touchscreen controller only, not in audio path]
 ```
 
-Every link in this chain is capable of handling the full resolution. Nothing throttles it.
+Every link in the audio path is capable of handling the full resolution. Nothing throttles it. The Raspberry Pi touchscreens sit outside this chain entirely — they send control commands to LMS (play, pause, volume, track selection) but carry no audio signal.
 
 Compare this to Sonos, which resamples everything to 16-bit/48kHz internally, or to Bluetooth streaming, which compresses the audio before it even leaves your phone. If you've spent money on a hi-res music library — whether purchased FLAC files or a Tidal HiFi subscription — this setup actually plays it at the quality you paid for.
 
