@@ -187,14 +187,10 @@ Each WIIM Pro feeds one AudioSource AD5012 — a 12-channel Class D amplifier de
 | Power output | 50W/channel @ 8Ω |
 | Power output | 75W/channel @ 4Ω |
 | Bridged mono | 125W @ 8Ω |
-| Amplifier class | Class D (digital) |
 | Frequency response | 20Hz – 20kHz ±0dB |
 | THD+N | <0.2% |
 | Signal-to-noise ratio | 100dB (A-weighted) |
 | Channel separation | 65dB @ 1kHz |
-| Inputs | 12× RCA line-in, 2× Bus RCA, 1× Optical PCM |
-| Speaker terminals | Phoenix-style connectors |
-| Power modes | On / Auto signal-sensing / 12V trigger |
 
 The Class D design means the AD5012 runs cool and efficiently even with 12 channels active — important for a unit that's running 24/7 in a rack or closet. The optical PCM input is particularly useful: it accepts the digital signal directly, skipping an extra analog conversion stage.
 
@@ -222,10 +218,6 @@ Volume in each zone is controlled independently using the OSD Audio SVC-300 in-w
 | Frequency response | 20Hz – 20kHz |
 | Attenuation range | 52dB (12-step rotary knob) |
 | Impedance matching | 1, 2, 4, 6, or 8 speaker pairs |
-| Wiring | Accepts up to 14-gauge wire |
-| Enclosure | Standard single-gang wall box |
-| Finish options | White, Ivory, Almond (included) |
-| Warranty | 5 years |
 
 The SVC-300 sits between the amplifier output and the speakers for each zone. Turning the knob attenuates the signal in 12 steps across 52dB of range — enough to go from full volume to nearly silent. The impedance matching feature matters when running multiple speakers per zone: it prevents the amplifier from seeing an impedance load that's too low.
 
@@ -251,12 +243,10 @@ The MAG8R is an audiophile-grade in-ceiling speaker designed for high-fidelity m
 
 | Specification | Value |
 |---------------|-------|
-| Driver configuration | 8" poly cone woofer + 1" pivoting silk dome tweeter |
 | Frequency response | 40Hz – 20kHz |
 | Sensitivity | 90dB (1W/1m) |
 | Impedance | 8Ω |
 | Power handling | 100W continuous |
-| Crossover | Internal 2-way crossover |
 
 The 90dB sensitivity means it produces 90dB of output from just 1 watt — efficient enough that the 12-channel amplifier doesn't have to work hard to reach comfortable listening levels. At hi-res listening volumes, these are genuinely musical speakers, not just "ceiling speakers."
 
@@ -266,12 +256,10 @@ The BPS8 is a bandpass subwoofer designed specifically for in-ceiling installati
 
 | Specification | Value |
 |---------------|-------|
-| Driver | 8" long-excursion woofer |
 | Frequency response | 35Hz – 150Hz (bandpass filtered) |
 | Sensitivity | 88dB (1W/1m) |
 | Impedance | 8Ω |
 | Power handling | 150W continuous |
-| Design | Sealed bandpass enclosure, in-ceiling mount |
 
 The BPS8 pairs with the 12-channel amplifier — two channels per subwoofer or one dedicated channel depending on your amplifier layout. The bandpass design means you don't need a crossover network: it naturally rolls off above 150Hz, handing off cleanly to the MAG8Rs for everything above that.
 
