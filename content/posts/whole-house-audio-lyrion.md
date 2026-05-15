@@ -231,11 +231,13 @@ The practical result: you can walk into the kitchen and turn the volume down wit
 
 ### Synchronized Playback
 
-This is the killer feature. In LMS, you select multiple players and group them:
+This is the killer feature — and it's the WIIM Pro players that make it work, not the amplifiers.
 
-{{< figure src="/images/lms-sync-groups.png" alt="LMS synchronization groups showing all three zones grouped together" caption="LMS player grouping — all three zones synchronized, music plays in perfect lockstep" >}}
+Both WIIM Pros receive the exact same audio stream from LMS and lock to a shared playback clock. This timing lock is what keeps the upstairs corridor in perfect step with the kitchen, the dining room, the bedroom — every zone. Walk anywhere in the house and the music is identical, with zero echo or delay between rooms.
 
-Once grouped, LMS sends the same audio stream to all players with timing synchronization. Walk from the kitchen to the living room to the home theater — the music follows you with zero echo or delay between rooms. This is something proprietary whole-house audio systems charge thousands of dollars for.
+The AudioSource AD5012 amplifiers play no role in synchronization. They simply amplify whatever the WIIM Pro feeds them and distribute it across their 12 channels. The sync happens upstream, between the two WIIM players, before the signal ever reaches the amps.
+
+The practical result: every one of the five zones, across both amplifiers and 20 speakers, plays in perfect lockstep. Adjust volume in any zone independently using the OSD SVC-300 wall knob — the sync remains unaffected. This is something proprietary whole-house audio systems charge thousands of dollars for.
 
 ## In-Ceiling Speakers: Sonance MAG Series
 
@@ -388,7 +390,7 @@ Compare this to a Sonos whole-house setup for the same number of zones and speak
 
 **Full hi-res audio, end to end.** This is the reason to build this over any proprietary system. LMS passes FLAC files through unmodified — 24-bit/192kHz stays 24-bit/192kHz. WIIM Pro decodes it at full quality. Nothing in the chain caps or resamples. If you have a hi-res library, you actually hear it.
 
-**Synchronization is flawless.** Walk through the house and the music is perfectly in step everywhere. No echo, no delay. This is the hardest thing to get right and LMS has solved it for 20 years.
+**Synchronization is flawless.** Walk through the house and the music is perfectly in step everywhere. No echo, no delay. The two WIIM Pro players lock to a shared clock and keep both amplifiers playing in perfect unison across all five zones.
 
 **The touchscreen is underrated.** Having a physical display with album art and touch controls in each zone is significantly more convenient than a phone app, especially when hands are occupied in the kitchen.
 
@@ -408,7 +410,7 @@ Compare this to a Sonos whole-house setup for the same number of zones and speak
 
 ## Summary
 
-This setup has been running reliably for over a year. The combination of LMS's rock-solid synchronization engine, PiCorePlayer's stability, and WIIM's clean analog output hits a sweet spot of performance, flexibility, and cost that proprietary systems can't match.
+This setup has been running reliably for over a year. The combination of LMS's rock-solid library management and streaming integration, PiCorePlayer's stability, WIIM Pro's hi-res DAC and synchronization, and the 12-channel AudioSource amplifiers hits a sweet spot of performance, flexibility, and cost that proprietary systems can't match.
 
 The whole stack is self-hosted and open-source at its core. No cloud dependency, no subscription to a hardware ecosystem, no risk of the manufacturer deciding your hardware is obsolete. The music plays as long as the hardware runs — which, for a Raspberry Pi and a NAS, is a very long time.
 
