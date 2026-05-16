@@ -2,13 +2,13 @@ locale = "en"
 languageDirection = "ltr"
 weight = 1
 
-title = "Vijay's Homelab & Tech Blog"
+title = "Vijay's Notebooks"
 copyright = "&copy; 2024 Vijay Patil"
 
 [params]
   dateFormat = "2 January 2006"
   mainSections = ["posts"]
-  description = "Homelab experiments, DIY projects, and technical notes on AI and software engineering"
+  description = "A personal collection — homelab experiments, Urdu ghazals and nazms, and notes on things worth keeping."
 
 [params.author]
   name = "Vijay Patil"
