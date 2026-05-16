@@ -1,6 +1,7 @@
 ---
 title: "Poets"
 description: "Profiles of the great Urdu poets — their lives, their times, and what makes their poetry endure."
+groupByYear: false
 ---
 
 Urdu poetry was shaped by a handful of extraordinary voices, each working within the same inherited forms — the ghazal, the nazm, the rubai — but arriving at something entirely their own. These poets did not merely write verse; they gave a language its emotional vocabulary.

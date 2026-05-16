@@ -1,6 +1,7 @@
 ---
 title: "Ghazals"
 description: "Urdu ghazals — the original verse, word-by-word meanings, and English explanations. An attempt to share the depth of this poetic tradition with those who don't read Urdu."
+groupByYear: false
 ---
 
 Ghazal is one of the oldest and most refined poetic forms in the world — born in Arabic, perfected in Persian, and carried to its greatest heights in Urdu by poets like Ghalib, Mir, and Faiz. Each ghazal is built from self-contained couplets (*sher*), united by a rhyme and refrain, circling a theme of longing, love, separation, or the search for meaning.
