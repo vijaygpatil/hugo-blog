@@ -1,6 +1,5 @@
 ---
 title: "Hazaron Khwahishen Aisi — Mirza Ghalib"
-date: 2026-05-15
 tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's most celebrated ghazal — each couplet unpacked word by word, with the layered meanings behind his anguished poetry of desire and ruin."
 ---

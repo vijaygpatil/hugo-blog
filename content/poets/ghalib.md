@@ -1,6 +1,5 @@
 ---
 title: "Mirza Ghalib — The Poet of Ruins and Longing"
-date: 2026-05-15
 tags: ["ghalib", "urdu", "poetry", "biography"]
 description: "Mirza Asadullah Khan Ghalib (1797–1869) — his life in Delhi, his poetry of desire and irony, and why he remains the most read Urdu poet two centuries after his death."
 ---

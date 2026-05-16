@@ -1,6 +1,5 @@
 ---
 title: "Mir Taqi Mir — The First and Deepest Grief"
-date: 2026-05-15
 tags: ["mir", "urdu", "poetry", "biography"]
 description: "Mir Taqi Mir (1723–1810) — the poet Ghalib himself deferred to. The man who found the Urdu language before it had fully found itself, and gave it its vocabulary of loss."
 ---
