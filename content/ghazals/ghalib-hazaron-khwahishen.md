@@ -29,10 +29,6 @@ Par itna jaante hain kal woh jaata tha ke hum nikle
 हज़ारों ख़्वाहिशें ऐसी कि हर ख़्वाहिश पे दम निकले<br/>
 बहुत निकले मेरे अरमान, लेकिन फिर भी कम निकले
 </div>
-<div class="transliteration">
-Hazaron khwahishen aisi ke har khwahish pe dam nikle<br/>
-Bahut nikle mere armaan, lekin phir bhi kam nikle
-</div>
 </div>
 
 <div class="word-meaning">
@@ -72,10 +68,6 @@ Bahut nikle mere armaan, lekin phir bhi kam nikle
 डरे क्यों मेरा क़ातिल, क्या रहेगा उसकी गर्दन पर<br/>
 वो ख़ून जो चश्म-ए-तर से उम्र भर यूँ दम-ब-दम निकले
 </div>
-<div class="transliteration">
-Dare kyon mera qaatil kya rahega us ki gardan par<br/>
-Woh khoon jo chashm-e-tar se umr bhar yun dam-ba-dam nikle
-</div>
 </div>
 
 <div class="word-meaning">
@@ -113,10 +105,6 @@ Woh khoon jo chashm-e-tar se umr bhar yun dam-ba-dam nikle
 निकाला चाहता है काम क्या तासीर-ए-मय से तू<br/>
 वो सरमस्ती कहाँ जिससे मेरे ख़ुम में से दम निकले
 </div>
-<div class="transliteration">
-Nikaala chahta hai kaam kya ta'seer-e-may se tu<br/>
-Woh sarmasti kahan jis se mare khum mein se dam nikle
-</div>
 </div>
 
 <div class="word-meaning">
@@ -150,10 +138,6 @@ Woh sarmasti kahan jis se mare khum mein se dam nikle
 <div class="hindi">
 मोहब्बत में नहीं है फ़र्क़ जीने और मरने का<br/>
 उसी को देख कर जीते हैं जिस काफ़िर पे दम निकले
-</div>
-<div class="transliteration">
-Mohabbat mein nahin hai farq jeene aur marne ka<br/>
-Usi ko dekh kar jeete hain jis kaafir pe dam nikle
 </div>
 </div>
 
@@ -192,10 +176,6 @@ Usi ko dekh kar jeete hain jis kaafir pe dam nikle
 <div class="hindi">
 कहाँ मयख़ाने का दरवाज़ा ग़ालिब और कहाँ वाइज़<br/>
 पर इतना जानते हैं कल वो जाता था कि हम निकले
-</div>
-<div class="transliteration">
-Kahan maikhaane ka darwaaza Ghalib aur kahan waa'iz<br/>
-Par itna jaante hain kal woh jaata tha ke hum nikle
 </div>
 </div>
 
