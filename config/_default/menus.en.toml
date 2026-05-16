@@ -19,11 +19,6 @@
   weight = 35
 
 [[main]]
-  name = "Kavita"
-  pageRef = "kavita"
-  weight = 40
-
-[[main]]
   name = "Poets"
   pageRef = "poets"
   weight = 50
