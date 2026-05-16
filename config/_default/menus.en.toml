@@ -7,3 +7,8 @@
   name = "Tags"
   pageRef = "tags"
   weight = 20
+
+[[main]]
+  name = "Ghazals"
+  pageRef = "ghazals"
+  weight = 30
