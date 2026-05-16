@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's ghazal of missed arrival — the meeti
 showDate: false
 ---
 
+{{< youtube 34MDD93NIyQ >}}
+
 yeh na thi hamari qismat ki visaal-e-yaar hota<br>
 agar aur jeete rehte yahi intizaar hota
 

@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's ghazal of dispersal — the beauty of 
 showDate: false
 ---
 
+{{< youtube QqiQwIL0uS8 >}}
+
 sab kahan kuchh lala-o-gul mein numayan ho gayin<br>
 KHaak mein kya sooraten hongi ki pinhan ho gayin
 

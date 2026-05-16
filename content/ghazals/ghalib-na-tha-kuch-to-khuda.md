@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's metaphysical ghazal — before the wor
 showDate: false
 ---
 
+{{< youtube uXq4yHYUpzM >}}
+
 na tha kuch to KHuda tha kuch na hota to KHuda hota<br>
 duboya mujh ko hone ne na hota main to kya hota
 

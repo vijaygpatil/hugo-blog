@@ -5,6 +5,8 @@ description: "A close reading of Ahmad Faraz's most celebrated ghazal — each c
 showDate: false
 ---
 
+{{< youtube MtrRXLuEUyI >}}
+
 Ranjish hi sahi dil hi dukhane ke liye aa<br>
 Aa phir se mujhe chhoD ke jaane ke liye aa
 

@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's brief, luminous ghazal — the mood th
 showDate: false
 ---
 
+{{< youtube Ecsrx1lah2A >}}
+
 unke dekhe se jo aa jaati hai munh par raunaq<br>
 woh samajhte hain ki bimaar ka haal acha hai
 

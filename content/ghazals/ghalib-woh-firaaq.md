@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's ghazal of total loss — where is that
 showDate: false
 ---
 
+{{< youtube Nq8wdvKg_ss >}}
+
 woh firaaq aur woh visaal kahan<br>
 woh shab-o-roz-o-maah-o-saal kahan
 
