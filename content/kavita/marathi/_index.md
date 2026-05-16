@@ -2,6 +2,7 @@
 title: "Marathi Kavita"
 description: "Marathi lyric poems — the original Devanagari, Roman transliteration, word-by-word meanings, and English explanations. Modern kavita from the tradition of Mangesh Padgaonkar, Suresh Bhat, and Vinda Karandikar."
 groupByYear: false
+showDate: false
 ---
 
 Marathi has one of the oldest continuous literary traditions in India. From the abhangas of the Varkari saints — Dnyaneshwar, Namdev, Tukaram — to the modern lyric poets of the twentieth century, the language has always carried its feeling at full intensity.

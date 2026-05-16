@@ -2,6 +2,7 @@
 title: "Hindi Kavita"
 description: "Hindi lyric poems — the original Devanagari, Roman transliteration, word-by-word meanings, and English explanations. Modern kavita from Harivansh Rai Bachchan, Gulzar, and the great tradition of Hindi lyric verse."
 groupByYear: false
+showDate: false
 ---
 
 Hindi poetry in the modern era found its voice in the *Chhayavaad* movement of the 1920s and 30s — a turn toward the inner world, toward nature, toward the textures of personal feeling. What followed was decades of lyric poets who wrote about love, loss, time, and longing with an intimacy the language had not quite attempted before.
