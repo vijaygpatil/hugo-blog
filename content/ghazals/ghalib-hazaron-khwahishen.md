@@ -5,9 +5,20 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's most celebrated ghazal — each couplet unpacked word by word, with the layered meanings behind his anguished poetry of desire and ruin."
 ---
 
-Mirza Asadullah Khan Ghalib (1797–1869) is the undisputed master of the Urdu ghazal. He wrote during the twilight of the Mughal empire in Delhi, watching a civilization collapse around him while producing verse of impossible elegance. This ghazal — *Hazaron Khwahishen Aisi* — is perhaps his most quoted, a meditation on desire, destruction, and the peculiar joy of longing.
+Hazaron khwahishen aisi ke har khwahish pe dam nikle<br>
+Bahut nikle mere armaan, lekin phir bhi kam nikle
 
-The refrain (*radif*) throughout is **"ke dam nikalte"** — meaning "that breath should escape" or "that life should leave" — returning at the end of each couplet. The rhyme (*qafia*) is the long vowel ending before the radif. Every couplet (*sher*) is complete in itself; a ghazal is not a continuous narrative but a string of separate, self-contained gems.
+Dare kyon mera qaatil kya rahega us ki gardan par<br>
+Woh khoon jo chashm-e-tar se umr bhar yun dam-ba-dam nikle
+
+Nikaala chahta hai kaam kya ta'seer-e-may se tu<br>
+Woh sarmasti kahan jis se mare khum mein se dam nikle
+
+Mohabbat mein nahin hai farq jeene aur marne ka<br>
+Usi ko dekh kar jeete hain jis kaafir pe dam nikle
+
+Kahan maikhaane ka darwaaza Ghalib aur kahan waa'iz<br>
+Par itna jaante hain kal woh jaata tha ke hum nikle
 
 ---
 
