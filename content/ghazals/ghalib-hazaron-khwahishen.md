@@ -205,12 +205,3 @@ Par itna jaante hain kal woh jaata tha ke hum nikle
 
 </div>
 
----
-
-## A Note on Ghalib's Style
-
-Ghalib is notoriously difficult. He himself famously wrote: *"मैं जानता हूँ सवाब-ए-तआत-ओ-ज़ुह्द, पर तबीयत इधर नहीं आती"* — "I know the rewards of piety and abstinence, but my nature does not turn that way." He was candid about his love of wine, his disdain for religious performance, and his commitment to pleasure and beauty.
-
-His couplets are compressed to the point of opacity — the same sher can be read as a love poem, a mystical poem about the divine, or a satirical commentary on social pretension. That multiplicity is the point. Urdu critics speak of *ma'ni-aafariini* — the creation of meaning — and Ghalib was its supreme practitioner.
-
-Reading him slowly, couplet by couplet, is the only way.
