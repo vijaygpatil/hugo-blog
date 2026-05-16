@@ -47,4 +47,5 @@ He asked, in one of his most famous poems, *Mujhse pehli si mohabbat mere mehboo
 
 ---
 
-*Ghazals and poems by Faiz — coming soon.*
+*Ghazals by Faiz Ahmad Faiz on this site:*
+- [Gulon Mein Rang Bhare](/ghazals/faiz-gulon-mein-rang-bhare/)
