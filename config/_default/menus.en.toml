@@ -19,6 +19,16 @@
   weight = 35
 
 [[main]]
+  name = "Marathi Kavita"
+  pageRef = "marathi-kavita"
+  weight = 40
+
+[[main]]
+  name = "Hindi Kavita"
+  pageRef = "hindi-kavita"
+  weight = 45
+
+[[main]]
   name = "Poets"
   pageRef = "poets"
-  weight = 40
+  weight = 50
