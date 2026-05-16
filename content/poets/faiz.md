@@ -52,3 +52,4 @@ He asked, in one of his most famous poems, *Mujhse pehli si mohabbat mere mehboo
 
 *Nazms by Faiz Ahmad Faiz on this site:*
 - [Mujhse Pehli Si Mohabbat Mere Mehboob Na Maang](/nazms/faiz-mujhse-pehli-si-mohabbat/)
+- [Yaad](/nazms/faiz-yaad/)
