@@ -1,7 +1,7 @@
 ---
-title: "Mohabbat Karne Wale Kam Na Honge — Hafiz Jalandhari"
-tags: ["hafiz-jalandhari", "urdu", "ghazal", "classical"]
-description: "A close reading of Hafiz Jalandhari's ghazal of love outlasted — flowers and dew, a slow mercy, the crowd of the world's griefs against the single weight of one person's absence. Each couplet a different angle on what it means to be missing from someone's gathering."
+title: "Mohabbat Karne Wale Kam Na Honge — Hafeez Hoshiarpuri"
+tags: ["hafeez-hoshiarpuri", "urdu", "ghazal", "classical"]
+description: "A close reading of Hafeez Hoshiarpuri's ghazal of love outlasted — flowers and dew, a slow mercy, the crowd of the world's griefs against the single weight of one person's absence. Each couplet a different angle on what it means to be missing from someone's gathering."
 showDate: false
 ---
 
@@ -351,6 +351,6 @@ This is among the ghazal's most precise observations about the psychology of los
 
 The maqta closes the ghazal with painful asymmetry. *Bad-guman* — harbouring ill thoughts, being suspicious, allowing dark assumptions about the other — the speaker confesses to this about the beloved. He thinks ill of them. He doubts them. And then the final turn: they will not be *barham* — upset, disturbed, thrown into disarray — about him to anywhere near the same degree. His disturbance is large; their disturbance about him is small. His preoccupation with them is not matched. The ghazal that opened with "lovers of yours will not be few, but I will not be among them" ends here: not only is he absent from the gathering, but the intensity of his feeling for them has no corresponding intensity in the other direction.
 
-The pen name *'Hafiz'* used here is not Hafiz Shirazi — the great Persian poet — but **Hafiz Jalandhari** (1900–1982), who adopted this pen name in the tradition of classical poets. He is best remembered today as the poet who wrote *Pak sar zameen shad baad* — Pakistan's national anthem — but his ghazals show a different, more interior dimension of his work.
+The pen name *'Hafiz'* used here belongs to **Hafeez Hoshiarpuri** (1912–1994), a Punjabi-born Urdu poet whose ghazals were set to music by many of the great classical vocalists of his era. He is distinct from Hafiz Jalandhari, who also used a similar pen name — the shared *hafeez/hafiz* has caused attribution confusion across many printed editions.
 
 </div>

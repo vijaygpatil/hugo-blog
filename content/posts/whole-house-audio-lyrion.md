@@ -5,7 +5,7 @@ tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self
 description: "How I built a whole-house hi-res audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — playing 32-bit/384kHz FLAC and DSD from a local library, with Tidal and Spotify built in."
 ---
 
-Walk into any room in my house and the same music is playing — perfectly in sync, no echo, no delay. Kitchen, bedroom, upstairs corridor, dining room. One song, everywhere, at the same moment.
+Walk into any room in my house and the same music is playing — perfectly in sync, no echo, no delay. Kitchen, bedroom, upstairs, downstairs, living room, dining room. One song, everywhere, at the same moment.
 
 That's the easy part to describe. The harder part: every note is arriving at exactly the quality it was recorded. 24-bit/192kHz FLAC from my local library, uncompressed, unmodified, untouched by any resampling engine. The way the artist and engineer heard it in the studio.
 
