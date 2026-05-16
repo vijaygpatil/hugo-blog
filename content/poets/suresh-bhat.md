@@ -38,4 +38,4 @@ Bhat endures because he found, in the ghazal form, a structure perfectly suited 
 ---
 
 *Kavitas by Suresh Bhat on this site:*
-- [रुण झुण रुण झुण](/marathi-kavita/sureshbhat-run-jhun/)
+- [रुण झुण रुण झुण](/kavita/marathi/sureshbhat-run-jhun/)

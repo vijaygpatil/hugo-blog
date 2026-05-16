@@ -44,5 +44,5 @@ Padgaonkar achieved this. Lines from *Bhaatukali*, from *Salonkha Maazha Sansar*
 ---
 
 *Kavitas by Mangesh Padgaonkar on this site:*
-- [भातुकलीच्या खेळामधली](/marathi-kavita/padgaonkar-bhaatukali/)
-- [शुक्रतारा मंद वारा](/marathi-kavita/padgaonkar-shuktara/)
+- [भातुकलीच्या खेळामधली](/kavita/marathi/padgaonkar-bhaatukali/)
+- [शुक्रतारा मंद वारा](/kavita/marathi/padgaonkar-shuktara/)

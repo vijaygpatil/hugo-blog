@@ -46,5 +46,5 @@ These are not universal human experiences in the abstract sense — they are ver
 ---
 
 *Kavitas by Gulzar on this site:*
-- [मेरा कुछ सामान](/hindi-kavita/gulzar-mera-kuch-samaan/)
-- [तेरे बिना ज़िंदगी से](/hindi-kavita/gulzar-tere-bina/)
+- [मेरा कुछ सामान](/kavita/hindi/gulzar-mera-kuch-samaan/)
+- [तेरे बिना ज़िंदगी से](/kavita/hindi/gulzar-tere-bina/)

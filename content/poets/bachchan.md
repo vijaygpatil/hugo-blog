@@ -46,5 +46,5 @@ His poems of acceptance — *Jo Beet Gayi*, and the others — survive because t
 ---
 
 *Kavitas by Harivansh Rai Bachchan on this site:*
-- [जो बीत गई सो बात गई](/hindi-kavita/bachchan-jo-beet-gayi/)
-- [मधुशाला — चुनी हुई रुबाइयाँ](/hindi-kavita/bachchan-madhushala/)
+- [जो बीत गई सो बात गई](/kavita/hindi/bachchan-jo-beet-gayi/)
+- [मधुशाला — चुनी हुई रुबाइयाँ](/kavita/hindi/bachchan-madhushala/)
