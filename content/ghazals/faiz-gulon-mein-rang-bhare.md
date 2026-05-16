@@ -5,7 +5,7 @@ description: "A close reading of Faiz Ahmad Faiz's ghazal of spring and separati
 showDate: false
 ---
 
-{{< youtube GnMf9FHreSo >}}
+{{< youtube hR8FEdC6aAs >}}
 
 gulon mein rang bhare baad-e-nau-bahaar chale<br>
 chale bhi aao ki gulshan ka karobar chale
