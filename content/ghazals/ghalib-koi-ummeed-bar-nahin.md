@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's great ghazal of unassuaged longing —
 showDate: false
 ---
 
+{{< youtube Laq4-MoFP1Q >}}
+
 koi ummeed bar nahin aati<br>
 koi soorat nazar nahin aati
 

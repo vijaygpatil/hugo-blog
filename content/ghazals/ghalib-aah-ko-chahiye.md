@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's ghazal on the slow work of longing —
 showDate: false
 ---
 
+{{< youtube Qy5y4BgPnRI >}}
+
 aah ko chaahiye ek umr asar hone tak<br>
 kaun jeeta hai teri zulf ke sar hone tak
 

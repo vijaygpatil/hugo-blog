@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's ghazal defending the heart's right to 
 showDate: false
 ---
 
+{{< youtube 6X91l5k7Vd4 >}}
+
 dil hi to hai na sang-o-khisht dard se bhar na aaye kyun<br>
 royenge hum hazaar baar koi humein sataye kyun
 

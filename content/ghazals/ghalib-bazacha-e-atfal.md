@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's great philosophical ghazal — the wor
 showDate: false
 ---
 
+{{< youtube 0Zfw0KB-AhA >}}
+
 bazacha-e-atfal hai duniya mere aage<br>
 hota hai shab-o-roz tamasha mere aage
 

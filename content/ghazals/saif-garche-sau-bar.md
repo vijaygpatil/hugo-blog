@@ -5,6 +5,8 @@ description: "A close reading of Saifuddin Saif's ghazal of repeated passage —
 showDate: false
 ---
 
+{{< youtube 4e1Oz5YegAY >}}
+
 garche sau bar gham-e-hijr se jaan guzri hai<br>
 phir bhi jo dil pe guzarti thi kahan guzri hai<br>
 <br>

@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's ghazal in which the poet addresses his
 showDate: false
 ---
 
+{{< youtube MyfUOGcNdsg >}}
+
 dil-e-nadan tujhe hua kya hai<br>
 aakhir is dard ki dawa kya hai
 

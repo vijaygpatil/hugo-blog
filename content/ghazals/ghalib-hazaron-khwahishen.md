@@ -5,6 +5,8 @@ description: "A close reading of Ghalib's most celebrated ghazal — each couple
 showDate: false
 ---
 
+{{< youtube Hc_CL_hiles >}}
+
 Hazaron khwahishen aisi ke har khwahish pe dam nikle<br>
 Bahut nikle mere armaan, lekin phir bhi kam nikle
 

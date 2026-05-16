@@ -5,6 +5,8 @@ description: "A close reading of Sudarshan Fakir's ghazal of restrained grief â€
 showDate: false
 ---
 
+{{< youtube MX8ebbxvuPc >}}
+
 ishq mein ghairat-e-jazbaat ne rone na diya<br>
 warna kya baat thi kis baat ne rone na diya<br>
 <br>

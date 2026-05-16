@@ -5,6 +5,8 @@ description: "A close reading of Ahmad Faraz's ghazal of final parting — dried
 showDate: false
 ---
 
+{{< youtube Uyv0hMg_i5c >}}
+
 Ab ke hum bichhDe to shayad kabhi KHwabon mein milen<br>
 Jis tarah sukhe hue phul kitabon mein milen
 
