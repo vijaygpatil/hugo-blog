@@ -5,6 +5,8 @@ description: "A close reading of Hafeez Hoshiarpuri's ghazal of love outlasted â
 showDate: false
 ---
 
+{{< youtube enpS7hw_ZYM >}}
+
 mohabbat karne wale kam na honge<br>
 teri mahfil mein lekin hum na honge
 
