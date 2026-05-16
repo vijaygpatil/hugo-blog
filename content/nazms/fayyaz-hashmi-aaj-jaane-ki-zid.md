@@ -33,7 +33,7 @@ be-khudi mein ruswa na karo
 
 ---
 
-## بند ۱ — Refrain
+## Band 1 — Refrain
 
 <div class="sher">
 <div class="hindi">
@@ -66,7 +66,7 @@ The opening is the whole poem in two lines. *Zid* is a word charged with a speci
 
 ---
 
-## بند ۲
+## Band 2
 
 <div class="sher">
 <div class="hindi">
@@ -97,7 +97,7 @@ Notice that this verse is different from the shortened popular version: the refr
 
 ---
 
-## بند ۳
+## Band 3
 
 <div class="sher">
 <div class="hindi">
@@ -134,7 +134,7 @@ Notice that this verse is different from the shortened popular version: the refr
 
 ---
 
-## بند ۴
+## Band 4
 
 <div class="sher">
 <div class="hindi">
@@ -169,7 +169,7 @@ This verse makes the concession that gives the poem its honesty: yes, time is a 
 
 ---
 
-## بند ۵
+## Band 5
 
 <div class="sher">
 <div class="hindi">
@@ -206,7 +206,7 @@ The verse opens into the scene around them — the *saman*, the atmosphere of th
 
 ---
 
-## بند ۶ — Final Verse
+## Band 6 — Final Verse
 
 <div class="sher">
 <div class="hindi">

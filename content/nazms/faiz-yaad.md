@@ -29,7 +29,7 @@ Dhal gaya hijr ka din aa bhi gai wasl ki raat
 
 ---
 
-## بند ۱
+## Band 1
 
 <div class="sher">
 <div class="hindi">
@@ -61,7 +61,7 @@ The opening image is exact to its setting: the speaker is in a desert — not th
 
 ---
 
-## بند ۲
+## Band 2
 
 <div class="sher">
 <div class="hindi">
@@ -96,7 +96,7 @@ The two bands together set the poem's visual world: the quivering air above, the
 
 ---
 
-## بند ۳
+## Band 3
 
 <div class="sher">
 <div class="hindi">
@@ -128,7 +128,7 @@ The poem moves from sight (shadows, mirages, flowers) to heat and scent. *Qurbat
 
 ---
 
-## بند ۴
+## Band 4
 
 <div class="sher">
 <div class="hindi">
@@ -162,7 +162,7 @@ The four bands together have built a complete sensory presence of the absent bel
 
 ---
 
-## بند ۵
+## Band 5
 
 <div class="sher">
 <div class="hindi">
@@ -196,7 +196,7 @@ This is the moment the whole poem has been building toward: the sensory accumula
 
 ---
 
-## بند ۶ — Final Band
+## Band 6 — Final Band
 
 <div class="sher">
 <div class="hindi">

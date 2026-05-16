@@ -27,7 +27,7 @@ mera dard aur barha na de
 
 ---
 
-## मुखड़ा — Mukhda
+## Mukhda — Refrain
 
 <div class="sher">
 <div class="hindi">
@@ -63,7 +63,7 @@ The mukhda announces the poem's central refusal in two precise moves. The first 
 
 ---
 
-## بند ۱ — Verse 1
+## Band 1
 
 <div class="sher">
 <div class="hindi">
@@ -99,7 +99,7 @@ This is the poem's central argument, made precise. The *daagh-e-dil* — the wou
 
 ---
 
-## بند ۲ — Verse 2
+## Band 2 — Final Verse
 
 <div class="sher">
 <div class="hindi">
