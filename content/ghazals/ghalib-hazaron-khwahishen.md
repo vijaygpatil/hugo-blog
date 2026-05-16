@@ -1,117 +1,87 @@
 ---
-title: "Hazaron Khwahishen Aisi — Mirza Ghalib"
+title: "हज़ारों ख्वाहिशें ऐसी — मिर्ज़ा ग़ालिब"
 date: 2026-05-15
-tags: ["ghalib", "urdu", "ghazal", "classical"]
-description: "A close reading of Ghalib's most celebrated ghazal — each couplet with transliteration and English meaning."
+tags: ["ghalib", "hindi", "ghazal", "classical"]
+description: "ग़ालिब की सबसे मशहूर ग़ज़ल — हर शेर का अर्थ और भावार्थ हिंदी में।"
 ---
 
 ---
 
-## Sher 1
+## शेर १
 
 <div class="sher">
-<div class="urdu">
-ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے<br/>
-بہت نکلے میرے ارمان، لیکن پھر بھی کم نکلے
-</div>
-<div class="transliteration">
-Hazaron khwahishen aisi ke har khwahish pe dam nikle<br/>
-Bahut nikle mere armaan, lekin phir bhi kam nikle
-</div>
+हज़ारों ख्वाहिशें ऐसी कि हर ख्वाहिश पे दम निकले<br/>
+बहुत निकले मेरे अरमान, लेकिन फिर भी कम निकले
 </div>
 
 <div class="explanation">
 
-Thousands of desires, each so intense it could take a life — and yet, so many of my longings emerged and still they feel too few. The paradox is deliberate: desire is simultaneously consuming and inexhaustible. He has been ruined by wanting, and yet he has not wanted enough. The word *armaan* carries a specific weight in Urdu — it is not just desire but *unfulfilled* desire, a longing that by definition remains ungratified.
+हज़ारों ऐसी तमन्नाएँ थीं कि हर एक के पूरे होने में जान निकल जाए — फिर भी बहुत सी तमन्नाएँ पूरी हुईं, लेकिन दिल कहता है और चाहिए था। ग़ालिब कह रहे हैं कि चाहत कभी खत्म नहीं होती — जितना मिला, उससे ज़्यादा की तलब रही। *अरमान* का मतलब सिर्फ इच्छा नहीं, बल्कि वो अधूरी चाहत जो कभी पूरी नहीं होती।
 
 </div>
 
 ---
 
-## Sher 2
+## शेर २
 
 <div class="sher">
-<div class="urdu">
-ڈرے کیوں میرا قاتل کیا رہے گا اس کی گردن پر<br/>
-وہ خون جو چشمِ تر سے عمر بھر یوں دم بدم نکلے
-</div>
-<div class="transliteration">
-Dare kyon mera qaatil kya rahega us ki gardan par<br/>
-Woh khoon jo chashm-e-tar se umr bhar yun dam-ba-dam nikle
-</div>
+डरे क्यों मेरा क़ातिल, क्या रहेगा उसकी गर्दन पर<br/>
+वो ख़ून जो चश्म-ए-तर से उम्र भर यूँ दम-ब-दम निकले
 </div>
 
 <div class="explanation">
 
-Why should my killer fear? What blood will remain on their hands? The "blood" that has flowed from my weeping eyes throughout my life has already killed me, drop by drop, moment by moment. The cruelty wasn't a single act — it was a slow lifetime of tears. The beloved is the killer, but the real murder weapon is the poet's own grief, and it has been working so long there is nothing left to accuse anyone of.
+मेरा क़ातिल डरे क्यों? उसकी गर्दन पर क्या ख़ून का बोझ होगा? वो ख़ून जो मेरी भीगी आँखों से पूरी उम्र पल-पल बहता रहा — उसी ने मुझे मारा है। ग़ालिब कहते हैं कि महबूब ने एक बार में नहीं मारा, बल्कि ज़िंदगी भर आँसुओं की शक्ल में मेरा ख़ून बहाता रहा। अब उस पर इल्ज़ाम भी क्या लगाएँ।
 
 </div>
 
 ---
 
-## Sher 3
+## शेर ३
 
 <div class="sher">
-<div class="urdu">
-نکالا چاہتا ہے کام کیا تاثیرِ مے سے تو<br/>
-وہ سرمستی کہاں جس سے مرے خُم میں سے دم نکلے
-</div>
-<div class="transliteration">
-Nikaala chahta hai kaam kya ta'seer-e-may se tu<br/>
-Woh sarmasti kahan jis se mare khum mein se dam nikle
-</div>
+निकाला चाहता है काम क्या तासीर-ए-मय से तू<br/>
+वो सरमस्ती कहाँ जिससे मेरे ख़ुम में से दम निकले
 </div>
 
 <div class="explanation">
 
-What do you expect to get from the power of wine? Where is the kind of intoxication that would make the very wine jar sigh? The poet is beyond ordinary drunkenness — he is so consumed by longing that even wine cannot touch him. The wine jar (*khum*) sighing is a beautiful image: if the container itself breathes out in ecstasy, only then might this level of intoxication match what the poet needs. Ordinary wine is not enough for extraordinary grief.
+तू शराब के असर से क्या काम निकालना चाहता है? वो नशा कहाँ है जिससे मेरी शराब की सुराही भी आह भर उठे? ग़ालिब कह रहे हैं कि वो इतने दर्द में डूबे हैं कि साधारण शराब का नशा उन्हें छू भी नहीं सकता। *ख़ुम* यानी शराब की बड़ी सुराही — अगर वो भी दम भरे तभी ग़ालिब की तलब पूरी होगी।
 
 </div>
 
 ---
 
-## Sher 4
+## शेर ४
 
 <div class="sher">
-<div class="urdu">
-محبت میں نہیں ہے فرق جینے اور مرنے کا<br/>
-اسی کو دیکھ کر جیتے ہیں جس کافر پہ دم نکلے
-</div>
-<div class="transliteration">
-Mohabbat mein nahin hai farq jeene aur marne ka<br/>
-Usi ko dekh kar jeete hain jis kaafir pe dam nikle
-</div>
+मोहब्बत में नहीं है फ़र्क़ जीने और मरने का<br/>
+उसी को देख कर जीते हैं जिस काफ़िर पे दम निकले
 </div>
 
 <div class="explanation">
 
-In love, there is no difference between living and dying. We live only by looking at the one for whom life itself is worth surrendering. The word *kaafir* in Urdu poetry does not mean an enemy of religion — it means the beloved who is faithless to the lover, cruel in their indifference. To live while continuously dying for such a person: this is the condition of the lover. Living and dying have become the same thing.
+प्यार में जीना और मरना एक ही बात है। हम उसी को देखकर जीते हैं जिसके लिए जान देने को तैयार हैं। *काफ़िर* यहाँ दुश्मन नहीं, बल्कि वो महबूब है जो बेवफ़ा है, जो परवाह नहीं करता। उसी की एक झलक जीने का कारण बन जाती है — और उसी पर सब कुछ लुटाने की तमन्ना भी।
 
 </div>
 
 ---
 
-## Sher 5 — Maqta
+## शेर ५ — मक़्ता
 
 <div class="sher">
-<div class="urdu">
-کہاں میخانے کا دروازہ غالبؔ اور کہاں واعظ<br/>
-پر اتنا جانتے ہیں کل وہ جاتا تھا کہ ہم نکلے
-</div>
-<div class="transliteration">
-Kahan maikhaane ka darwaaza Ghalib aur kahan waa'iz<br/>
-Par itna jaante hain kal woh jaata tha ke hum nikle
-</div>
+कहाँ मयख़ाने का दरवाज़ा ग़ालिबؔ और कहाँ वाइज़<br/>
+पर इतना जानते हैं कल वो जाता था कि हम निकले
 </div>
 
 <div class="explanation">
 
-How far apart are the tavern door and the preacher, O Ghalib — but this much we know: yesterday, as he was leaving, I was coming out. The *maqta* (final couplet) traditionally includes the poet's pen name and a wry turn. Here Ghalib catches himself — and the preacher — at the same door. The one who condemns the tavern and the poet who inhabits it are not as different as they pretend. The irony is gentle and devastating at once: Ghalib has been caught in his own joke.
+मयख़ाने का दरवाज़ा और वाइज़ (उपदेशक) — दोनों में कितना फ़र्क़ है, ग़ालिब! लेकिन इतना ज़रूर पता है कि कल जब वो वहाँ से जा रहा था, तभी हम निकल रहे थे। *मक़्ता* में ग़ालिब ने अपना नाम लेकर ख़ुद पर हँसा है — जो मयख़ाने की निंदा करता है और जो उसमें रहता है, दोनों एक ही दरवाज़े से आते-जाते हैं।
 
 </div>
 
 ---
 
-## About This Ghazal
+## इस ग़ज़ल के बारे में
 
-Mirza Ghalib (1797–1869) wrote during the twilight of the Mughal empire in Delhi. The refrain (*radif*) throughout is **"ke dam nikalte / dam nikle"** — *that breath should escape, that life should leave* — returning at the end of every couplet. Each *sher* is self-contained; a ghazal is not a continuous narrative but a string of separate, self-sufficient gems. This one circles a single obsession: the inexhaustibility of longing, and the strange way desire both kills and sustains.
+मिर्ज़ा असदउल्लाह ख़ाँ ग़ालिब (१७९७–१८६९) उर्दू ग़ज़ल के सबसे बड़े शायर माने जाते हैं। इस ग़ज़ल की *रदीफ़* (हर शेर के अंत में आने वाला शब्द) है — **"दम निकले"** — यानी साँस निकल जाए, जान चली जाए। हर शेर अपने आप में पूरा है; ग़ज़ल कोई कहानी नहीं होती, बल्कि अलग-अलग मोतियों की माला होती है। यह ग़ज़ल एक ही जुनून के इर्द-गिर्द घूमती है — चाहत की बेइंतिहाई, और उस अजीब हालत का बयान जिसमें तमन्ना इंसान को जिलाती भी है और मारती भी।

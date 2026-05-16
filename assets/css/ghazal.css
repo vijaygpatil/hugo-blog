@@ -1,73 +1,32 @@
-/* Urdu / Arabic script — RTL rendering */
-.urdu {
-  direction: rtl;
-  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Alvi Nastaleeq", serif;
-  font-size: 1.5rem;
-  line-height: 2.4;
-  text-align: right;
-  color: var(--color-neutral-700);
-}
-
-.dark .urdu {
-  color: var(--color-neutral-300);
-}
-
-/* Each couplet block */
+/* Hindi / Devanagari script */
 .sher {
+  direction: ltr;
+  font-family: "Noto Sans Devanagari", "Mangal", serif;
+  font-size: 1.35rem;
+  line-height: 2.2;
+  text-align: left;
   margin: 2rem 0;
   padding: 1.25rem 1.5rem;
-  border-right: 4px solid var(--color-primary-400);
+  border-left: 4px solid var(--color-primary-400);
   background: var(--color-neutral-50);
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: var(--color-neutral-800);
 }
 
 .dark .sher {
   background: var(--color-neutral-800);
-}
-
-/* Transliteration line */
-.transliteration {
-  font-style: italic;
-  color: var(--color-neutral-500);
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-/* Word meaning table */
-.word-meaning table {
-  width: 100%;
-  margin: 1rem 0;
-  font-size: 0.9rem;
-}
-
-.word-meaning th {
-  background: var(--color-primary-100);
-  padding: 0.4rem 0.75rem;
-  text-align: left;
-  font-weight: 600;
-}
-
-.dark .word-meaning th {
-  background: var(--color-primary-900);
-}
-
-.word-meaning td {
-  padding: 0.35rem 0.75rem;
-  border-bottom: 1px solid var(--color-neutral-200);
-}
-
-.dark .word-meaning td {
-  border-bottom-color: var(--color-neutral-700);
+  color: var(--color-neutral-200);
 }
 
 /* Explanation block */
 .explanation {
-  margin: 1rem 0;
+  direction: ltr;
+  text-align: left;
+  margin: 1rem 0 2rem 0;
   padding: 1rem 1.25rem;
   border-left: 3px solid var(--color-neutral-300);
   font-size: 0.975rem;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .dark .explanation {
