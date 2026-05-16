@@ -1,6 +1,6 @@
 ---
 title: "Hi-Res Whole House Audio with Lyrion Music Server, PiCorePlayer, and WIIM"
-date: 2024-12-10
+date: 2026-03-14
 tags: ["homelab", "audio", "raspberry-pi", "docker", "synology", "lyrion", "self-hosted", "hi-res-audio"]
 description: "How I built a whole-house hi-res audio system using Lyrion Music Server on Synology NAS, PiCorePlayer on Raspberry Pi, and WIIM amplifiers — playing 32-bit/384kHz FLAC and DSD from a local library, with Tidal and Spotify built in."
 ---
