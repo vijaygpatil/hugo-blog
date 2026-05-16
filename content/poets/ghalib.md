@@ -53,3 +53,13 @@ He asked to be buried simply. His grave is in Delhi's Nizamuddin neighbourhood, 
 
 *Ghazals by Ghalib on this site:*
 - [Hazaron Khwahishen Aisi](/ghazals/ghalib-hazaron-khwahishen/)
+- [Aah Ko Chahiye Ek Umr](/ghazals/ghalib-aah-ko-chahiye/)
+- [Yeh Na Thi Hamari Qismat](/ghazals/ghalib-yeh-na-thi-hamari-qismat/)
+- [Dil Hi To Hai Na Sang-o-Khisht](/ghazals/ghalib-dil-hi-to-hai/)
+- [Dil-e-Nadan Tujhe Hua Kya Hai](/ghazals/ghalib-dil-e-nadan/)
+- [Bazacha-e-Atfal Hai Duniya](/ghazals/ghalib-bazacha-e-atfal/)
+- [Na Tha Kuch To Khuda Tha](/ghazals/ghalib-na-tha-kuch-to-khuda/)
+- [Koi Ummeed Bar Nahin Aati](/ghazals/ghalib-koi-ummeed-bar-nahin/)
+- [Woh Firaaq Aur Woh Visal Kahan](/ghazals/ghalib-woh-firaaq/)
+- [Unke Dekhe Se Jo Aa Jaati Hai](/ghazals/ghalib-unke-dekhe-se/)
+- [Sab Kahan Kuchh Lala-o-Gul Mein](/ghazals/ghalib-sab-kahan-kuchh/)
