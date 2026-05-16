@@ -1,14 +1,14 @@
-/* Urdu / Arabic script — RTL rendering */
-.urdu {
-  direction: rtl;
-  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Alvi Nastaleeq", serif;
-  font-size: 1.5rem;
-  line-height: 2.4;
-  text-align: right;
+/* Hindi / Devanagari script */
+.hindi {
+  direction: ltr;
+  font-family: "Noto Sans Devanagari", "Mangal", serif;
+  font-size: 1.35rem;
+  line-height: 2.2;
+  text-align: left;
   color: var(--color-neutral-700);
 }
 
-.dark .urdu {
+.dark .hindi {
   color: var(--color-neutral-300);
 }
 

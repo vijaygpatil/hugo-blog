@@ -25,9 +25,9 @@ Par itna jaante hain kal woh jaata tha ke hum nikle
 ## Sher 1
 
 <div class="sher">
-<div class="urdu">
-ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے<br/>
-بہت نکلے میرے ارمان، لیکن پھر بھی کم نکلے
+<div class="hindi">
+हज़ारों ख़्वाहिशें ऐसी कि हर ख़्वाहिश पे दम निकले<br/>
+बहुत निकले मेरे अरमान, लेकिन फिर भी कम निकले
 </div>
 <div class="transliteration">
 Hazaron khwahishen aisi ke har khwahish pe dam nikle<br/>
@@ -37,23 +37,23 @@ Bahut nikle mere armaan, lekin phir bhi kam nikle
 
 <div class="word-meaning">
 
-| Urdu | Roman | Meaning |
+| Word | Roman | Meaning |
 |------|-------|---------|
-| ہزاروں | Hazaron | Thousands |
-| خواہشیں | khwahishen | desires / longings |
-| ایسی | aisi | such (of such a kind) |
-| کہ | ke | that |
-| ہر | har | every, each |
-| خواہش | khwahish | desire |
-| پہ | pe | on, upon |
-| دم نکلے | dam nikle | breath should escape; life should leave |
-| بہت | bahut | many, a great number |
-| نکلے | nikle | emerged, came out |
-| میرے | mere | my |
-| ارمان | armaan | desires, unfulfilled yearnings |
-| لیکن | lekin | but, however |
-| پھر بھی | phir bhi | even then, still |
-| کم | kam | less, few |
+| हज़ारों | Hazaron | Thousands |
+| ख़्वाहिशें | khwahishen | desires / longings |
+| ऐसी | aisi | such (of such a kind) |
+| कि | ke | that |
+| हर | har | every, each |
+| ख़्वाहिश | khwahish | desire |
+| पे | pe | on, upon |
+| दम निकले | dam nikle | breath should escape; life should leave |
+| बहुत | bahut | many, a great number |
+| निकले | nikle | emerged, came out |
+| मेरे | mere | my |
+| अरमान | armaan | desires, unfulfilled yearnings |
+| लेकिन | lekin | but, however |
+| फिर भी | phir bhi | even then, still |
+| कम | kam | less, few |
 
 </div>
 
@@ -68,9 +68,9 @@ Bahut nikle mere armaan, lekin phir bhi kam nikle
 ## Sher 2
 
 <div class="sher">
-<div class="urdu">
-ڈرے کیوں میرا قاتل کیا رہے گا اس کی گردن پر<br/>
-وہ خون جو چشمِ تر سے عمر بھر یوں دم بدم نکلے
+<div class="hindi">
+डरे क्यों मेरा क़ातिल, क्या रहेगा उसकी गर्दन पर<br/>
+वो ख़ून जो चश्म-ए-तर से उम्र भर यूँ दम-ब-दम निकले
 </div>
 <div class="transliteration">
 Dare kyon mera qaatil kya rahega us ki gardan par<br/>
@@ -80,21 +80,21 @@ Woh khoon jo chashm-e-tar se umr bhar yun dam-ba-dam nikle
 
 <div class="word-meaning">
 
-| Urdu | Roman | Meaning |
+| Word | Roman | Meaning |
 |------|-------|---------|
-| ڈرے | dare | should be afraid |
-| کیوں | kyon | why |
-| میرا | mera | my |
-| قاتل | qaatil | killer, murderer |
-| کیا رہے گا | kya rahega | what will remain |
-| اس کی | us ki | his/her |
-| گردن پر | gardan par | on the neck (i.e., on his conscience) |
-| وہ خون | woh khoon | that blood |
-| چشمِ تر | chashm-e-tar | wet eye; weeping eye |
-| عمر بھر | umr bhar | throughout a lifetime |
-| یوں | yun | like this, thus |
-| دم بدم | dam-ba-dam | breath by breath, moment by moment |
-| نکلے | nikle | emerges, flows |
+| डरे | dare | should be afraid |
+| क्यों | kyon | why |
+| मेरा | mera | my |
+| क़ातिल | qaatil | killer, murderer |
+| क्या रहेगा | kya rahega | what will remain |
+| उसकी | us ki | his/her |
+| गर्दन पर | gardan par | on the neck (i.e., on his conscience) |
+| वो ख़ून | woh khoon | that blood |
+| चश्म-ए-तर | chashm-e-tar | wet eye; weeping eye |
+| उम्र भर | umr bhar | throughout a lifetime |
+| यूँ | yun | like this, thus |
+| दम-ब-दम | dam-ba-dam | breath by breath, moment by moment |
+| निकले | nikle | emerges, flows |
 
 </div>
 
@@ -109,9 +109,9 @@ Woh khoon jo chashm-e-tar se umr bhar yun dam-ba-dam nikle
 ## Sher 3
 
 <div class="sher">
-<div class="urdu">
-نکالا چاہتا ہے کام کیا تاثیرِ مے سے تو<br/>
-وہ سرمستی کہاں جس سے مرے خُم میں سے دم نکلے
+<div class="hindi">
+निकाला चाहता है काम क्या तासीर-ए-मय से तू<br/>
+वो सरमस्ती कहाँ जिससे मेरे ख़ुम में से दम निकले
 </div>
 <div class="transliteration">
 Nikaala chahta hai kaam kya ta'seer-e-may se tu<br/>
@@ -121,18 +121,18 @@ Woh sarmasti kahan jis se mare khum mein se dam nikle
 
 <div class="word-meaning">
 
-| Urdu | Roman | Meaning |
+| Word | Roman | Meaning |
 |------|-------|---------|
-| نکالا چاہتا ہے | nikaala chahta hai | wants to extract, wishes to derive |
-| کام | kaam | work, purpose, use |
-| تاثیر | ta'seer | effect, potency |
-| مے | may | wine |
-| سرمستی | sarmasti | intoxication, drunken ecstasy |
-| کہاں | kahan | where? (implying: nowhere) |
-| جس سے | jis se | such that, whereby |
-| مرے | mare | my |
-| خُم | khum | wine jar, vessel |
-| دم نکلے | dam nikle | breath should escape; the jar should sigh |
+| निकाला चाहता है | nikaala chahta hai | wants to extract, wishes to derive |
+| काम | kaam | work, purpose, use |
+| तासीर | ta'seer | effect, potency |
+| मय | may | wine |
+| सरमस्ती | sarmasti | intoxication, drunken ecstasy |
+| कहाँ | kahan | where? (implying: nowhere) |
+| जिससे | jis se | such that, whereby |
+| मेरे | mare | my |
+| ख़ुम | khum | wine jar, vessel |
+| दम निकले | dam nikle | breath should escape; the jar should sigh |
 
 </div>
 
@@ -147,9 +147,9 @@ Woh sarmasti kahan jis se mare khum mein se dam nikle
 ## Sher 4
 
 <div class="sher">
-<div class="urdu">
-محبت میں نہیں ہے فرق جینے اور مرنے کا<br/>
-اسی کو دیکھ کر جیتے ہیں جس کافر پہ دم نکلے
+<div class="hindi">
+मोहब्बत में नहीं है फ़र्क़ जीने और मरने का<br/>
+उसी को देख कर जीते हैं जिस काफ़िर पे दम निकले
 </div>
 <div class="transliteration">
 Mohabbat mein nahin hai farq jeene aur marne ka<br/>
@@ -159,22 +159,22 @@ Usi ko dekh kar jeete hain jis kaafir pe dam nikle
 
 <div class="word-meaning">
 
-| Urdu | Roman | Meaning |
+| Word | Roman | Meaning |
 |------|-------|---------|
-| محبت | mohabbat | love |
-| میں | mein | in |
-| نہیں | nahin | is not, there is no |
-| فرق | farq | difference |
-| جینے | jeene | living |
-| اور | aur | and |
-| مرنے | marne | dying |
-| اسی | usi | that very one, none other |
-| کو دیکھ کر | ko dekh kar | by seeing, upon beholding |
-| جیتے ہیں | jeete hain | we live |
-| جس | jis | that, the one who |
-| کافر | kaafir | infidel; one who is cruel, faithless (used for the beloved) |
-| پہ | pe | upon, for |
-| دم نکلے | dam nikle | breath should leave; life is worth losing |
+| मोहब्बत | mohabbat | love |
+| में | mein | in |
+| नहीं | nahin | is not, there is no |
+| फ़र्क़ | farq | difference |
+| जीने | jeene | living |
+| और | aur | and |
+| मरने | marne | dying |
+| उसी | usi | that very one, none other |
+| को देख कर | ko dekh kar | by seeing, upon beholding |
+| जीते हैं | jeete hain | we live |
+| जिस | jis | that, the one who |
+| काफ़िर | kaafir | one who is cruel, faithless (used for the beloved) |
+| पे | pe | upon, for |
+| दम निकले | dam nikle | breath should leave; life is worth losing |
 
 </div>
 
@@ -189,9 +189,9 @@ Usi ko dekh kar jeete hain jis kaafir pe dam nikle
 ## Sher 5 (Maqta — the signature couplet)
 
 <div class="sher">
-<div class="urdu">
-کہاں میخانے کا دروازہ غالبؔ اور کہاں واعظ<br/>
-پر اتنا جانتے ہیں کل وہ جاتا تھا کہ ہم نکلے
+<div class="hindi">
+कहाँ मयख़ाने का दरवाज़ा ग़ालिब और कहाँ वाइज़<br/>
+पर इतना जानते हैं कल वो जाता था कि हम निकले
 </div>
 <div class="transliteration">
 Kahan maikhaane ka darwaaza Ghalib aur kahan waa'iz<br/>
@@ -201,21 +201,21 @@ Par itna jaante hain kal woh jaata tha ke hum nikle
 
 <div class="word-meaning">
 
-| Urdu | Roman | Meaning |
+| Word | Roman | Meaning |
 |------|-------|---------|
-| کہاں | kahan | where? (how far apart) |
-| میخانے کا دروازہ | maikhaane ka darwaaza | the door of the tavern |
-| غالبؔ | Ghalib | the poet's pen name (takhallus) |
-| اور کہاں | aur kahan | and where? |
-| واعظ | waa'iz | the preacher, the moralist |
-| پر | par | but |
-| اتنا | itna | this much |
-| جانتے ہیں | jaante hain | we know |
-| کل | kal | yesterday |
-| وہ | woh | he (the preacher) |
-| جاتا تھا | jaata tha | was leaving, was going |
-| کہ | ke | when, as |
-| ہم نکلے | hum nikle | we came out, I emerged |
+| कहाँ | kahan | where? (how far apart) |
+| मयख़ाने का दरवाज़ा | maikhaane ka darwaaza | the door of the tavern |
+| ग़ालिब | Ghalib | the poet's pen name (takhallus) |
+| और कहाँ | aur kahan | and where? |
+| वाइज़ | waa'iz | the preacher, the moralist |
+| पर | par | but |
+| इतना | itna | this much |
+| जानते हैं | jaante hain | we know |
+| कल | kal | yesterday |
+| वो | woh | he (the preacher) |
+| जाता था | jaata tha | was leaving, was going |
+| कि | ke | when, as |
+| हम निकले | hum nikle | we came out, I emerged |
 
 </div>
 
@@ -229,7 +229,7 @@ Par itna jaante hain kal woh jaata tha ke hum nikle
 
 ## A Note on Ghalib's Style
 
-Ghalib is notoriously difficult. He himself famously wrote: *"میں جانتا ہوں ثوابِ طاعت و زہد، پر طبیعت ادھر نہیں آتی"* — "I know the rewards of piety and abstinence, but my nature does not turn that way." He was candid about his love of wine, his disdain for religious performance, and his commitment to pleasure and beauty.
+Ghalib is notoriously difficult. He himself famously wrote: *"मैं जानता हूँ सवाब-ए-तआत-ओ-ज़ुह्द, पर तबीयत इधर नहीं आती"* — "I know the rewards of piety and abstinence, but my nature does not turn that way." He was candid about his love of wine, his disdain for religious performance, and his commitment to pleasure and beauty.
 
 His couplets are compressed to the point of opacity — the same sher can be read as a love poem, a mystical poem about the divine, or a satirical commentary on social pretension. That multiplicity is the point. Urdu critics speak of *ma'ni-aafariini* — the creation of meaning — and Ghalib was its supreme practitioner.
 
