@@ -1,6 +1,7 @@
 ---
 title: "IntelliJ IDEA in 5 Minutes: A Senior Dev's Tour for Beginners"
 date: 2023-04-11
+draft: true
 tags: ["intellij", "java", "spring-boot", "gradle", "developer-tools", "ide", "microservices"]
 description: "A senior developer's 5-minute walkthrough of IntelliJ IDEA for a junior joining a Java Spring Boot Gradle microservices project — the features that matter daily, explained by someone who's used it for 15 years."
 ---
