@@ -17,7 +17,7 @@ tum ko apni qasam jaane jaana<br>
 aaj jaane ki zid na karo<br>
 <br>
 waqt ki qaid mein zindagi hai magar<br>
-chand ghante yahi mere saath raho<br>
+chand ghariyan yahi mere saath raho<br>
 in haseen lamhon ko mat jaane do<br>
 aaj jaane ki zid na karo
 
