@@ -51,3 +51,4 @@ His most famous ghazal begins: *Ranjish hi sahi dil hi dukhane ke liye aa* — "
 
 *Ghazals by Ahmad Faraz on this site:*
 - [Ranjish Hi Sahi](/ghazals/faraz-ranjish-hi-sahi/)
+- [Ab Ke Hum Bichhde](/ghazals/faraz-ab-ke-hum-bichhde/)
