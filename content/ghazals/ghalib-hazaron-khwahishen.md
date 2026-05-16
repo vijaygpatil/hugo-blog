@@ -2,6 +2,7 @@
 title: "Hazaron Khwahishen Aisi — Mirza Ghalib"
 tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's most celebrated ghazal — each couplet unpacked word by word, with the layered meanings behind his anguished poetry of desire and ruin."
+showDate: false
 ---
 
 Hazaron khwahishen aisi ke har khwahish pe dam nikle<br>

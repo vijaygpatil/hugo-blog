@@ -2,6 +2,7 @@
 title: "Faiz Ahmed Faiz — The Poet of Resistance and Beauty"
 tags: ["faiz", "urdu", "poetry", "biography"]
 description: "Faiz Ahmed Faiz (1911–1984) — soldier, communist, prisoner, Nobel Prize nominee. The poet who made political verse feel like a love poem and love poetry feel like revolution."
+showDate: false
 ---
 
 ## The Man
