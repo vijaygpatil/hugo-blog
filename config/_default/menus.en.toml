@@ -4,19 +4,14 @@
   weight = 10
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 20
-
-[[main]]
   name = "Ghazal"
   pageRef = "ghazals"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "Nazm"
   pageRef = "nazms"
-  weight = 35
+  weight = 30
 
 [[main]]
   name = "Kavita"
@@ -27,3 +22,8 @@
   name = "Poets"
   pageRef = "poets"
   weight = 50
+
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 60
