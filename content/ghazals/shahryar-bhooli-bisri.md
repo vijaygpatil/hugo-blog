@@ -3,6 +3,7 @@ title: "Bhooli Bisri Chand Umeedein — Shahryar"
 tags: ["shahryar", "urdu", "ghazal", "modern"]
 description: "A close reading of Shahryar's ghazal of quiet remembrance — forgotten hopes, forgotten stories, and the way a person's memory brings an entire era with it. Four shers of accumulated feeling, sung by Jagjit Singh."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube Ixg2buERtto >}}

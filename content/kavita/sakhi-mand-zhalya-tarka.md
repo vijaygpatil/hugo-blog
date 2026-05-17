@@ -3,6 +3,7 @@ title: "सखी मंद झाल्या तारका"
 tags: ["marathi", "kavita", "sudhir-phadke"]
 description: "सखी मंद झाल्या तारका — सुधीर फडके यांनी गायलेले एक सुंदर मराठी गीत."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube 7Jo3LOMxqps >}}

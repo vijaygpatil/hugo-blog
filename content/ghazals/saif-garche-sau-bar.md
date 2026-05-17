@@ -3,6 +3,7 @@ title: "Garche Sau Bar Gham-e-Hijr Se Jaan Guzri Hai — Saifuddin Saif"
 tags: ["saifuddin-saif", "urdu", "ghazal", "classical"]
 description: "A close reading of Saifuddin Saif's ghazal of repeated passage — the grief of separation that has crossed the soul a hundred times, yet somehow the deepest pain finds no name."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube 4e1Oz5YegAY >}}

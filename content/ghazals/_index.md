@@ -9,3 +9,5 @@ Ghazal is one of the oldest and most refined poetic forms in the world — born 
 The language is dense. A single word in Urdu can carry three layers of meaning simultaneously — the literal, the metaphorical, and the mystical. A good ghazal rewards slow reading.
 
 This section walks through ghazals one couplet at a time — the original Urdu, a Roman transliteration for those who can't read the script, a word-by-word breakdown, and an English explanation of what the poet was actually saying.
+
+The ghazals here are the ones that have stopped me mid-sentence — a single sher that said in two lines what I hadn't been able to say in years.

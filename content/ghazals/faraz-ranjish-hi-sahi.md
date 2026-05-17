@@ -3,6 +3,7 @@ title: "Ranjish Hi Sahi — Ahmad Faraz"
 tags: ["faraz", "urdu", "ghazal", "classical"]
 description: "A close reading of Ahmad Faraz's most celebrated ghazal — each couplet unpacked word by word, the language of a love that has lost everything except the need for one final presence."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube MtrRXLuEUyI >}}

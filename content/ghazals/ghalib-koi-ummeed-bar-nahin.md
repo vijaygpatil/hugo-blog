@@ -3,6 +3,7 @@ title: "Koi Ummeed Bar Nahin Aati — Mirza Ghalib"
 tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's great ghazal of unassuaged longing — no hope is fulfilled, no desire met. Death does not even offer consolation when the very idea of consolation has collapsed."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube Laq4-MoFP1Q >}}

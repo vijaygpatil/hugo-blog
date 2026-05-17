@@ -3,6 +3,7 @@ title: "Bazacha-e-Atfal Hai Duniya — Mirza Ghalib"
 tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's great philosophical ghazal — the world as children's playground, existence as God's pastime, and the poet watching it all with the detachment of one who has understood too much."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube 0Zfw0KB-AhA >}}

@@ -3,6 +3,7 @@ title: "Ishq Mein Ghairat-e-Jazbaat Ne Rone Na Diya — Sudarshan Fakir"
 tags: ["sudarshan-fakir", "urdu", "ghazal", "modern"]
 description: "A close reading of Sudarshan Fakir's ghazal of restrained grief — the pride of feeling that would not allow tears, and the question that undoes everything: otherwise what was it, what stopped the weeping?"
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube MX8ebbxvuPc >}}

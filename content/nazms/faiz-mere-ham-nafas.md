@@ -3,6 +3,7 @@ title: "Mere Ham-Nafas Mere Ham-Nawa — Faiz Ahmad Faiz"
 tags: ["faiz", "urdu", "nazm", "modern", "progressive"]
 description: "A close reading of Faiz's nazm of refusal — don't betray me with friendship, don't pray for my life, don't heal me: the wound of the heart is its own light, and your brief kindness may only deepen the pain."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube xLzgBtw15WQ >}}

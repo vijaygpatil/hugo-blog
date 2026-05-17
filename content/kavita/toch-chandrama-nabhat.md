@@ -3,6 +3,7 @@ title: "तोच चंद्रमा नभात"
 tags: ["marathi", "kavita", "sudhir-phadke"]
 description: "तोच चंद्रमा नभात — सुधीर फडके यांनी गायलेले एक सुंदर मराठी गीत."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube J_vkRBy-kyM >}}

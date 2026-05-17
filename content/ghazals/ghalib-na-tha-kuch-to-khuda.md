@@ -3,6 +3,7 @@ title: "Na Tha Kuch To Khuda Tha — Mirza Ghalib"
 tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's metaphysical ghazal — before the world existed, God was. Before God was conceived, what then? Ghalib pushes thought to the edge of where thought can go."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube uXq4yHYUpzM >}}

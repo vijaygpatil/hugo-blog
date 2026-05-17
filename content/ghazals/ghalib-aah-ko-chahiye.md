@@ -3,6 +3,7 @@ title: "Aah Ko Chahiye Ek Umr — Mirza Ghalib"
 tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal on the slow work of longing — a sigh that needs a lifetime to take effect, a heart that wounds itself making a wound, a tongue that speaks what it has never said."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube Qy5y4BgPnRI >}}

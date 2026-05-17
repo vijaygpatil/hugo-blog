@@ -3,6 +3,7 @@ title: "Ab Ke Hum Bichhde — Ahmad Faraz"
 tags: ["faraz", "urdu", "ghazal", "classical"]
 description: "A close reading of Ahmad Faraz's ghazal of final parting — dried flowers in books, pearls among ruins, two people meeting inside mirages. Each couplet a different face of what separation actually destroys."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube Uyv0hMg_i5c >}}

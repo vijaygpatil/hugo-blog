@@ -3,6 +3,7 @@ title: "Yaad — Faiz Ahmad Faiz"
 tags: ["faiz", "urdu", "nazm", "modern", "progressive"]
 description: "A close reading of Faiz's nazm of longing in solitude — the beloved's presence conjured in the desert of separation, her voice a shadow, her fragrance a slow burning, her gaze dewdrops on the horizon, and finally the hope that the night of union may yet come."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube HszlrDtnICg >}}

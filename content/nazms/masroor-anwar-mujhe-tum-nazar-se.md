@@ -3,6 +3,7 @@ title: "Mujhe Tum Nazar Se Gira To Rahe Ho — Masroor Anwar"
 tags: ["masroor-anwar", "urdu", "nazm", "classical"]
 description: "A close reading of Masroor Anwar's nazm of quiet certainty — you have cast me from your eyes, but you will never be able to forget me. The poem moves through memory, longing, and the strange power of the one who has been abandoned."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube lYB76Ev92ew >}}

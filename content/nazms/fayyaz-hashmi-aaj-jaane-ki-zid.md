@@ -3,6 +3,7 @@ title: "Aaj Jaane Ki Zid Na Karo — Fayyaz Hashmi"
 tags: ["fayyaz-hashmi", "urdu", "nazm", "classical"]
 description: "A close reading of Fayyaz Hashmi's nazm of tender insistence — don't go today, these few moments are free, tomorrow belongs to no one, don't let beauty go unwitnessed in its innocence."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube CfUDuYAasjE >}}

@@ -3,6 +3,7 @@ title: "गेले द्यायचे राहुनी"
 tags: ["marathi", "kavita", "asha-bhosle", "hridaynath-mangeshkar"]
 description: "गेले द्यायचे राहुनी — आशा भोसले यांनी गायलेले, पं. हृदयनाथ मंगेशकर संगीतबद्ध केलेले एक सुंदर मराठी गीत."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube KuKILtrfZIE >}}

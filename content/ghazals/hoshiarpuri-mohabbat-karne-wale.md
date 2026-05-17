@@ -3,6 +3,7 @@ title: "Mohabbat Karne Wale Kam Na Honge — Hafeez Hoshiarpuri"
 tags: ["hafeez-hoshiarpuri", "urdu", "ghazal", "classical"]
 description: "A close reading of Hafeez Hoshiarpuri's ghazal of love outlasted — flowers and dew, a slow mercy, the crowd of the world's griefs against the single weight of one person's absence. Each couplet a different angle on what it means to be missing from someone's gathering."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube enpS7hw_ZYM >}}

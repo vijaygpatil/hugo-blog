@@ -3,6 +3,7 @@ title: "Tujh Ko Dariya-Dili Ki Qasam — Saba Afghani"
 tags: ["saba-afghani", "urdu", "ghazal", "classical"]
 description: "A close reading of Saba Afghani's ghazal of the winehouse — swearing by the cupbearer's generosity, the rounds that keep flowing, flowers blooming on every glance, and a heart that can only hold itself together for so long."
 showDate: false
+showAuthor: false
 ---
 
 {{< youtube kXfbsfRVgq8 >}}
