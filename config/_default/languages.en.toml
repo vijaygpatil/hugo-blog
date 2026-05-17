@@ -2,7 +2,7 @@ locale = "en"
 languageDirection = "ltr"
 weight = 1
 
-title = "Vijay's Notebooks"
+title = "Vijay's Notebook"
 copyright = "&copy; 2024 Vijay Patil"
 
 [params]
