@@ -9,12 +9,12 @@
   weight = 20
 
 [[main]]
-  name = "Ghazals"
+  name = "Ghazal"
   pageRef = "ghazals"
   weight = 30
 
 [[main]]
-  name = "Nazms"
+  name = "Nazm"
   pageRef = "nazms"
   weight = 35
 
