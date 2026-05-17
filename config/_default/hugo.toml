@@ -1,4 +1,4 @@
-baseURL = "https://blog.patilvijayg.synology.me/"
+baseURL = "https://notebook.patilvijayg.synology.me/"
 theme = "congo"
 defaultContentLanguage = "en"
 

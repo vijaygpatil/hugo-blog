@@ -47,7 +47,7 @@ jobs:
     - name: Health Check
       run: |
         sleep 10
-        HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://blog.patilvijayg.synology.me/ || echo "000")
+        HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://notebook.patilvijayg.synology.me/ || echo "000")
         if [ "$HTTP_STATUS" = "200" ]; then
           echo "✅ Blog is accessible (HTTP $HTTP_STATUS)"
         else
