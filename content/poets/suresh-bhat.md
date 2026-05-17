@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Suresh Bhat — The Ghazal's Marathi Voice"
 tags: ["sureshbhat", "marathi", "poetry", "biography"]
 description: "Suresh Bhat (1932–2003) — the poet who brought the Urdu ghazal form into Marathi with such naturalness that it ceased to feel like a borrowed form. His ghazals of rain, longing, and loss are among the most sung poems in the language."

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Harivansh Rai Bachchan — The Poet of the Tavern"
 tags: ["bachchan", "hindi", "poetry", "biography"]
 description: "Harivansh Rai Bachchan (1907–2003) — the poet who made the Sufi tavern metaphor speak in Hindi, whose Madhushala rewrote what the language could say about longing, mortality, and the refusal of despair."
