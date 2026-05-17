@@ -64,3 +64,4 @@ He asked to be buried simply. His grave is in Delhi's Nizamuddin neighbourhood, 
 - [Unke Dekhe Se Jo Aa Jaati Hai](/ghazals/ghalib-unke-dekhe-se/)
 - [Sab Kahan Kuchh Lala-o-Gul Mein](/ghazals/ghalib-sab-kahan-kuchh/)
 - [Be-Khudi Be-Sabab Nahin](/ghazals/ghalib-bekhudi-besabab/)
+- [Har Ek Baat Pe Kahte Ho Tum](/ghazals/ghalib-har-ek-baat/)
