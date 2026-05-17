@@ -7,7 +7,7 @@ enableCodeCopy = true
 enableImageLazyLoading = true
 
 [author]
-  image = "avatar1.jpg"
+  image = "avatar.jpg"
 
 [header]
   layout = "basic"
