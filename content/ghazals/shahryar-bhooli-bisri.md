@@ -5,7 +5,7 @@ description: "A close reading of Shahryar's ghazal of quiet remembrance — forg
 showDate: false
 ---
 
-{{< youtube UPzE6ze-PAo >}}
+{{< youtube Ixg2buERtto >}}
 
 bhooli bisri chand ummeedein chand fasaane yaad aaye<br>
 tum yaad aaye aur tumhare saath zamaane yaad aaye<br>
