@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Kavita"
-  url = "/kavita/marathi/"
+  pageRef = "kavita"
   weight = 40
 
 [[main]]
