@@ -9,3 +9,5 @@ Where the ghazal binds itself to a strict rhyme and refrain — each couplet com
 Some of the most beloved songs in Urdu poetry are nazms: poems that became films, films that became memories. The word *nazm* simply means "poem" — but in classical usage it has come to mean the poem that does not follow the ghazal's rules, that allows itself length and narrative and variation.
 
 This section reads nazms one verse at a time — the original Urdu, word-by-word meanings, and an explanation of what the poet was saying and why it matters.
+
+Every nazm here has touched me in a way I cannot fully explain. These are not a survey of the form — they are the ones that stayed. The ones I return to. Each of them reminds me of a person, and I suspect they always will.

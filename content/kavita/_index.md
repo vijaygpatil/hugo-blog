@@ -10,3 +10,5 @@ Marathi kavita can be devotional or romantic, formal or conversational. It can c
 
 The poems in this section are the ones that have stayed with me — songs that became poems, or poems that became songs, or songs so inseparable from their melody that to read them on the page is to hear them anyway.
 
+Every kavita here has touched me in a way I cannot fully explain. These are not a survey of the tradition — they are the ones I carry. The ones I return to. Each of them reminds me of a person, and I suspect they always will.
+
