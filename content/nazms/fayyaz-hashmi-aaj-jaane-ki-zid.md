@@ -5,6 +5,8 @@ description: "A close reading of Fayyaz Hashmi's nazm of tender insistence — d
 showDate: false
 ---
 
+{{< youtube CfUDuYAasjE >}}
+
 aaj jaane ki zid na karo<br>
 yun hi pahlu mein baithe raho<br>
 <br>

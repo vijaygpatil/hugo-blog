@@ -5,6 +5,8 @@ description: "A close reading of Faiz's great nazm of divided loyalty — do not
 showDate: false
 ---
 
+{{< youtube 3vpfwvHdxOk >}}
+
 maine samjha tha ke tu hai to darakhshaan hai hayaat<br>
 tera gham hai to gham-e-dahar ka jhagda kya hai<br>
 teri soorat se hai aalam mein bahaaron ko sabaat<br>

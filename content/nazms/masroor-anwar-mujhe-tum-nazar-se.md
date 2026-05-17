@@ -5,6 +5,8 @@ description: "A close reading of Masroor Anwar's nazm of quiet certainty — you
 showDate: false
 ---
 
+{{< youtube lYB76Ev92ew >}}
+
 mujhe tum nazar se gira to rahe ho<br>
 mujhe tum kabhi bhi bhula na sako gay
 
