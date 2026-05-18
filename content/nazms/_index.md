@@ -1,5 +1,5 @@
 ---
-title: "Nazms"
+title: "Nazm"
 description: "Urdu nazms — lyric and narrative poems where the form follows the thought, not a fixed scheme. The original verse, word-by-word meanings, and English explanations."
 groupByYear: false
 ---
