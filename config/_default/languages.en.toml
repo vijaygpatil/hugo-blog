@@ -12,7 +12,7 @@ copyright = "&copy; 2024 Vijay Patil"
 
 [params.author]
   name = "Vijay Patil"
-  image = "avatar.jpg"
+  image = "avatarold.jpeg"
   headline = "Engineer at heart · Builder by nature · Dad above all"
   bio = "Senior Software Engineer and technical lead with 20+ years experience building enterprise-scale systems in Java and Spring. Builder of things that matter."
   links = [

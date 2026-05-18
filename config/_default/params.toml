@@ -9,7 +9,7 @@ enableImageLazyLoading = true
 googleAnalytics = "G-5YDF6SB1X1"
 
 [author]
-  image = "avatar.jpg"
+  image = "avatarold.jpeg"
 
 [header]
   layout = "basic"
