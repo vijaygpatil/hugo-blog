@@ -12,8 +12,6 @@ groupByYear: false
 फूल खिले शाखों पे नये और दर्द पुराने याद आये</a>
 </div>
 
----
-
 There is someone who comes to mind without warning — not always, but in the quiet moments when a cold breeze carries the smell of something familiar, or when something new and bright blooms and you notice it alone. It is not grief exactly. It is the particular ache of a person who once made ordinary things feel remarkable, and who, in leaving, made remarkable things feel ordinary again. These lines say what I have not been able to.
 
 The ghazals here are the ones that have stopped me mid-sentence — a single sher that said in two lines what I hadn't been able to say in years.
