@@ -184,25 +184,7 @@ spring.h2.console.enabled=false
 
 ## Application Architecture
 
-Here's how the layers connect in a typical request flow through `expense-datalake-service`:
-
-{{< mermaid >}}
-flowchart TD
-    Client["REST Client"]
-    Controller["ExpenseController\n(REST Layer)"]
-    Service["ExpenseService\n(Business Logic)"]
-    Repository["ExpenseRecordRepository\n(Spring Data JPA)"]
-    H2[("H2 In-Memory DB\n(expense_record table)")]
-
-    Client -->|HTTP GET /expenses| Controller
-    Controller --> Service
-    Service --> Repository
-    Repository -->|SQL via Hibernate| H2
-    H2 -->|ResultSet| Repository
-    Repository --> Service
-    Service --> Controller
-    Controller -->|JSON response| Client
-{{< /mermaid >}}
+A typical request flows: REST client → `ExpenseController` → `ExpenseService` → `ExpenseRecordRepository` → H2 via Hibernate, and back up the same chain as a JSON response.
 
 ## Profile-Based Switching
 

@@ -226,25 +226,9 @@ dependencies {
 }
 ```
 
-## The Task Dependency Graph
+## Running a Release
 
-{{< mermaid >}}
-flowchart TD
-    compileJava["compileJava"]
-    test["test"]
-    build["build"]
-    packageRelease["packageRelease\n(docker build)"]
-    deployRelease["deployRelease\n(docker push + deploy)"]
-    release["release"]
-
-    compileJava --> test
-    test --> build
-    build --> packageRelease
-    packageRelease --> deployRelease
-    deployRelease --> release
-{{< /mermaid >}}
-
-CI runs one command:
+The task chain is: `compileJava → test → build → packageRelease → deployRelease → release`. CI runs one command:
 
 ```bash
 RELEASE_VERSION=1.4.2 ./gradlew release
