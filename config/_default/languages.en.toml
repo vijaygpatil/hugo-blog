@@ -3,7 +3,7 @@ languageDirection = "ltr"
 weight = 1
 
 title = "Vijay's Notebook"
-copyright = "&copy; 2024 Vijay Patil"
+copyright = "&copy; 2014 &ndash; 2025 Vijay Patil"
 
 [params]
   dateFormat = "2 January 2006"
