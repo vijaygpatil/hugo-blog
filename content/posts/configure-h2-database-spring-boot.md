@@ -186,7 +186,7 @@ spring.h2.console.enabled=false
 
 Here's how the layers connect in a typical request flow through `expense-datalake-service`:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
     Client["REST Client"]
     Controller["ExpenseController\n(REST Layer)"]
@@ -202,7 +202,7 @@ flowchart TD
     Repository --> Service
     Service --> Controller
     Controller -->|JSON response| Client
-```
+{{< /mermaid >}}
 
 ## Profile-Based Switching
 

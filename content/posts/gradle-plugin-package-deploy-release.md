@@ -228,7 +228,7 @@ dependencies {
 
 ## The Task Dependency Graph
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
     compileJava["compileJava"]
     test["test"]
@@ -242,7 +242,7 @@ flowchart TD
     build --> packageRelease
     packageRelease --> deployRelease
     deployRelease --> release
-```
+{{< /mermaid >}}
 
 CI runs one command:
 
