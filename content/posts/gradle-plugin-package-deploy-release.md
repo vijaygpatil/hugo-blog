@@ -14,7 +14,7 @@ When we started `expense-backend-service` from scratch in 2017, we made the deci
 
 Gradle addresses the things that frustrated us about Maven:
 
-- **Build scripts are code.** Gradle uses Groovy (or Kotlin) DSL, which means you can use conditionals, loops, functions — anything the language supports. No more XML gymnastics to express something simple.
+- **Build scripts are code.** Gradle uses Groovy DSL, which means you can use conditionals, loops, functions — anything the language supports. No more XML gymnastics to express something simple.
 - **Incremental builds.** Gradle tracks task inputs and outputs and skips tasks whose inputs haven't changed. On a large project this makes a meaningful difference to build times.
 - **Flexible lifecycle.** You define tasks and their dependencies. There is no enforced phase structure you have to work around.
 - **The plugin API is first-class.** Writing a custom plugin is straightforward, and custom plugins can be shared across projects as regular JARs.
@@ -75,13 +75,13 @@ class ReleasePlugin implements Plugin<Project> {
         }
 
         // Register tasks
-        def packageTask = project.tasks.register('packageRelease', PackageTask) {
+        def packageTask = project.tasks.create('packageRelease', PackageTask) {
             it.imageName = extension.imageName
             it.imageTag  = project.version.toString()
-            it.dependsOn project.tasks.named('build')
+            it.dependsOn project.tasks.getByName('build')
         }
 
-        project.tasks.register('deployRelease', DeployTask) {
+        project.tasks.create('deployRelease', DeployTask) {
             it.imageName    = extension.imageName
             it.imageTag     = project.version.toString()
             it.registry     = extension.registry
@@ -89,8 +89,8 @@ class ReleasePlugin implements Plugin<Project> {
         }
 
         // Convenience task — the one CI actually calls
-        project.tasks.register('release') {
-            it.dependsOn project.tasks.named('deployRelease')
+        project.tasks.create('release') {
+            it.dependsOn project.tasks.getByName('deployRelease')
         }
     }
 }
