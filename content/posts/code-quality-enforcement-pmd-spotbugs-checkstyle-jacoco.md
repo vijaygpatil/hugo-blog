@@ -170,7 +170,7 @@ Checkstyle enforces structural and stylistic rules. We use it for the things tha
 
 ```groovy
 checkstyle {
-    toolVersion = '8.22'
+    toolVersion = '8.21'
     configFile = file('config/checkstyle/checkstyle.xml')
     maxWarnings = 0  // treat warnings as errors
     sourceSets = [sourceSets.main]  // exclude test source
@@ -240,7 +240,7 @@ JaCoCo instruments compiled bytecode to track which lines and branches are exerc
 
 ```groovy
 jacoco {
-    toolVersion = '0.8.4'
+    toolVersion = '0.8.3'
 }
 
 jacocoTestReport {
