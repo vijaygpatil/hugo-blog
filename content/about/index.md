@@ -4,6 +4,8 @@ date: 2026-05-19
 layout: "simple"
 ---
 
+{{< figure src="avatar.jpeg" alt="Vijay Patil" class="rounded-full w-48 h-48 object-cover mx-auto mt-4 mb-6" >}}
+
 # Vijay Patil
 
 **Technical Lead · Senior Software Engineer**
