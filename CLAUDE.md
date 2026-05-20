@@ -26,7 +26,13 @@ sips -Z 800 input.jpeg --out output.jpeg
 
 ## Architecture
 
-This is a Hugo static site using the [Congo theme](https://github.com/jpanther/congo) as a git submodule at `themes/congo/`. The site is hosted at `notebook.patilvijayg.com`.
+This is a Hugo static site using the [Congo theme](https://github.com/jpanther/congo) as a git submodule at `themes/congo/`. The site is hosted at `notebook.patilvijayg.com` (custom domain via Namecheap CNAME → Synology NAS).
+
+**Custom domain setup:**
+- `notebook.patilvijayg.com` → CNAME to Synology NAS in Namecheap Advanced DNS
+- SSL certificate for `notebook.patilvijayg.com` issued via Let's Encrypt on the NAS (Control Panel → Security → Certificate)
+- Certificate must be **assigned** to the correct Web Station portal in Certificate → Settings — if this isn't done, the NAS serves the `*.synology.me` cert instead and the browser shows "Not Secure"
+- `baseURL` in `hugo.toml` must match the custom domain — if it points to `*.synology.me`, all CSS/links will redirect back to that domain
 
 **Config** lives in `config/_default/`:
 - `hugo.toml` — base URL, theme, markup settings
@@ -44,6 +50,29 @@ This is a Hugo static site using the [Congo theme](https://github.com/jpanther/c
 **Post format**: Posts can be flat `.md` files or page bundles (`posts/slug/index.md` + `feature.jpg`). Page bundles are required for feature images. The `scripts/add_feature_images.py` script converts flat posts to bundles by fetching photos from Unsplash.
 
 **Poetry content**: Ghazals, nazms, and kavitas use a custom CSS (`assets/css/ghazal.css`) loaded via `layouts/_partials/extend-head.html` only for those sections. Google Fonts (Noto Sans Devanagari) is also injected there for Devanagari script rendering. Poetry frontmatter supports a `youtube:` field that renders an embedded video via the YouTube shortcode.
+
+**Reading time** is hidden for ghazal, nazm and kavita sections (but kept for posts) via a `cascade` block in each section's `_index.md`:
+```yaml
+cascade:
+  showReadingTime: false
+```
+
+**YouTube thumbnails on index pages**: `layouts/_partials/article-link.html` is overridden to show a YouTube thumbnail when a post has `youtube: "VIDEO_ID"` in its frontmatter. The thumbnail URL is `https://img.youtube.com/vi/VIDEO_ID/mqdefault.jpg`. All existing kavita, ghazal and nazm posts already have this param set. When creating a new poem post with a YouTube video, add:
+```yaml
+youtube: "VIDEO_ID"
+```
+The VIDEO_ID is the part after `?v=` in the YouTube URL (e.g. for `https://youtube.com/watch?v=Qy5y4BgPnRI` the ID is `Qy5y4BgPnRI`).
+
+**Hugo template gotcha**: Congo's `with/else` blocks do not support `else if`. Use a nested `if` inside the `else` branch instead:
+```html
+{{- with $feature }}
+  ...
+{{- else }}
+  {{- if $youtubeID }}
+    ...
+  {{- end }}
+{{- end }}
+```
 
 **Custom layouts** in `layouts/_partials/`:
 - `logo.html` — SVG notebook icon in the header
@@ -154,3 +183,46 @@ When Claude Code runs as a background job, the `Edit` and `Write` tools are bloc
    open('file.md', 'w').write(content)
    "
    ```
+
+---
+
+## Poetry Section Notes (Kavita / Ghazal / Nazm)
+
+**Section index pages** (`content/kavita/_index.md`, `content/ghazals/_index.md`, `content/nazms/_index.md`) each have:
+- A featured sher/kavita in a styled `<div>` with Devanagari font
+- A short English (or Marathi) paragraph explaining the lines
+- A descriptive closing line about the section's content
+- `cascade: showReadingTime: false` to hide reading time on all posts in the section
+
+**Kavita index page** uses Marathi for both the sher and the description paragraph. Keep edits in Marathi — do not revert to English without checking with the user.
+
+**Adding a new poem post:**
+1. Create `content/<section>/slug.md`
+2. Frontmatter must include:
+   ```yaml
+   ---
+   title: "Title of the poem — Poet Name"
+   tags: ["poet-name", "language", "section-type"]
+   description: "One line description for SEO/preview."
+   showDate: false
+   showAuthor: false
+   youtube: "VIDEO_ID"   # add if a YouTube video exists
+   ---
+   ```
+3. Start body with `{{< youtube VIDEO_ID >}}` shortcode if there's a video
+4. Follow with the poem text using `<br>` line breaks
+
+**Batch updating frontmatter** across many posts: use Python (not bash sed) — more reliable with Unicode content:
+```python
+import os, re
+for fname in os.listdir("content/kavita"):
+    if fname == "_index.md": continue
+    fpath = f"content/kavita/{fname}"
+    content = open(fpath).read()
+    m = re.search(r'\{\{< youtube (\S+) >\}\}', content)
+    if m:
+        content = re.sub(r'^(showAuthor: false)', f'showAuthor: false\nyoutube: "{m.group(1)}"', content, count=1, flags=re.MULTILINE)
+        open(fpath, 'w').write(content)
+```
+
+**Git divergence fix**: If local and remote branches diverge (common when worktrees push intermediate commits), use `git pull --rebase origin main` before pushing.
