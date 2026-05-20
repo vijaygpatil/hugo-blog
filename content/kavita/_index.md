@@ -15,5 +15,5 @@ cascade:
 
 Somewhere, unplanned, two souls meet — and from that meeting, a song blooms on the lips. The story of those two hearts still lives in its melody, still being sung. Such is the nature of these moments: like birds that come and go, they leave behind only memories — and yet, those memories become the song itself.
 
-The poems in this section are the ones that have stayed with me — songs that became poems, or poems that became songs, or songs so inseparable from their melody that to read them on the page is to hear them anyway.
+या विभागातील कविता म्हणजे माझ्या मनात घर करून राहिलेल्या रचना — काही गाणी जी कविता बनली, काही कविता ज्या गाणी झाल्या, किंवा काही गाणी जी त्यांच्या चालीपासून इतकी अविभाज्य आहेत की ती पानावर वाचताना सुद्धा कानी ऐकू येतात.
 
