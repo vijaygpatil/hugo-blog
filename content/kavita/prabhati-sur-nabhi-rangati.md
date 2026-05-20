@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "asha-bhosle", "vasant-prabhu", "ramesh-anavkar"]
 description: "प्रभाती सूर नभी रंगती — आशा भोसले यांनी गायलेले एक सुंदर मराठी प्रभातगीत. संगीत: वसंत प्रभू, गीत: रमेश आणवकर. अल्बम: प्रभात गीते."
 showDate: false
 showAuthor: false
+youtube: "8PEOEeu1zNE"
 ---
 
 {{< youtube 8PEOEeu1zNE >}}

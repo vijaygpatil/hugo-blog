@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "archana-kanhere", "jitendra-abhisheki", "vv-shirwad
 description: "हे सुरांनो चंद्र व्हा — अर्चना कानहेरे यांनी गायलेले एक सुंदर मराठी गीत. संगीत: पं. जितेंद्र अभिषेकी, गीत: वि.वा. शिरवाडकर."
 showDate: false
 showAuthor: false
+youtube: "BXl-TJZSDG0"
 ---
 
 {{< youtube BXl-TJZSDG0 >}}

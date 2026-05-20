@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "suresh-wadkar"]
 description: "पाहिले न मी तुला — सुरेश वाडकर यांनी गायलेले एक सुंदर मराठी गीत."
 showDate: false
 showAuthor: false
+youtube: "Hp45RzOdNLs"
 ---
 
 {{< youtube Hp45RzOdNLs >}}

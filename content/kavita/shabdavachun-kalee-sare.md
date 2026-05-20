@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "jitendra-abhisheki", "mangesh-padgaonkar", "pu-la-d
 description: "शब्दावाचुन कळले सारे — पं. जितेंद्र अभिषेकी यांनी गायलेले, मंगेश पाडगावकर लिखित आणि पु. ल. देशपांडे संगीतबद्ध केलेले एक सुंदर मराठी गीत."
 showDate: false
 showAuthor: false
+youtube: "xgI6O5MvXN8"
 ---
 
 {{< youtube xgI6O5MvXN8 >}}

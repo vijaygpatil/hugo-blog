@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "asha-bhosle", "hridaynath-mangeshkar"]
 description: "चांदणे शिंपीत जाशी — आशा भोसले यांनी गायलेले एक सुंदर मराठी गीत. संगीत: पं. हृदयनाथ मंगेशकर, गीत: राजा बढे."
 showDate: false
 showAuthor: false
+youtube: "XZwi5u6iiS0"
 ---
 
 {{< youtube XZwi5u6iiS0 >}}

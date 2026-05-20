@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "sudhir-phadke", "asha-bhosle", "shridhar-phadke"]
 description: "फिटे अंधाराचे जाळे — सुधीर फडके आणि आशा भोसले यांनी गायलेले, श्रीधर फडके संगीतबद्ध केलेले गीत."
 showDate: false
 showAuthor: false
+youtube: "FoaA75BXPKY"
 ---
 
 {{< youtube FoaA75BXPKY >}}

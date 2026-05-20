@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "sudhir-phadke", "jagdish-khebudkar"]
 description: "आकाशी झेप घे रे पाखरा — सुधीर फडके यांनी गायलेले व संगीतबद्ध केलेले, जगदीश खेबुडकर लिखित गीत. चित्रपट: आराम हराम आहे."
 showDate: false
 showAuthor: false
+youtube: "mPyM8UTyhKA"
 ---
 
 {{< youtube mPyM8UTyhKA >}}

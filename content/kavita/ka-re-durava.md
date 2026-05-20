@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "asha-bhosle", "sudhir-phadke", "ga-di-madgulkar"]
 description: "का रे दुरावा — आशा भोसले यांनी गायलेले, ग. दि. माडगूळकर लिखित आणि सुधीर फडके संगीतबद्ध केलेले एक सुंदर मराठी गीत."
 showDate: false
 showAuthor: false
+youtube: "_yKnXPHpI64"
 ---
 
 {{< youtube _yKnXPHpI64 >}}

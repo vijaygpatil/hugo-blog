@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "asha-bhosle", "c-ramchandra", "suresh-bhat"]
 description: "मल्मली तारुण्य माझे — आशा भोसले यांनी गायलेले एक सुंदर मराठी गीत. संगीत: सी. रामचंद्र, गीत: सुरेश भट. अल्बम: घरकुल."
 showDate: false
 showAuthor: false
+youtube: "lRRS-9ndUqY"
 ---
 
 {{< youtube lRRS-9ndUqY >}}

@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "sudhir-phadke"]
 description: "त्या तरूतळी विसरलें गीत — सुधीर फडके यांनी गायलेले एक सुंदर मराठी गीत. संगीत: सुधीर फडके."
 showDate: false
 showAuthor: false
+youtube: "2a1Tin7vRF0"
 ---
 
 {{< youtube 2a1Tin7vRF0 >}}

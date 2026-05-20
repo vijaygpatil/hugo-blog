@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "arun-date", "mangesh-padgaonkar", "yashwant-deo"]
 description: "या जन्मावर या जगण्यावर — अरुण दाते यांनी गायलेले, मंगेश पाडगावकर लिखित आणि यशवंत देव संगीतबद्ध केलेले गीत."
 showDate: false
 showAuthor: false
+youtube: "2v_TyKTz94A"
 ---
 
 {{< youtube 2v_TyKTz94A >}}

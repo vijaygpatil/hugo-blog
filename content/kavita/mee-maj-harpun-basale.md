@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "asha-bhosle", "hridaynath-mangeshkar", "suresh-bhat
 description: "मी मज हरपुन बसले — आशा भोसले यांनी गायलेले एक सुंदर मराठी गीत. संगीत: पं. हृदयनाथ मंगेशकर, गीत: सुरेश भट. अल्बम: येऊ कशी प्रिया."
 showDate: false
 showAuthor: false
+youtube: "WuYZLo-H63I"
 ---
 
 {{< youtube WuYZLo-H63I >}}

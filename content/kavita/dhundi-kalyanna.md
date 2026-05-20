@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "sudhir-phadke", "asha-bhosle"]
 description: "धुंदी कळ्यांना, धुंदी फुलांना — सुधीर फडके आणि आशा भोसले यांनी गायलेले एक सुंदर मराठी गीत."
 showDate: false
 showAuthor: false
+youtube: "t2-iag3P3Do"
 ---
 
 {{< youtube t2-iag3P3Do >}}

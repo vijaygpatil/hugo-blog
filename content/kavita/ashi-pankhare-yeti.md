@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "sudhir-phadke", "yeshwant-deo", "mangesh-padgaonkar
 description: "अशी पाखरे येती — सुधीर फडके यांनी गायलेले एक सुंदर मराठी गीत. संगीत: यशवंत देव, गीत: मंगेश पाडगांवकर."
 showDate: false
 showAuthor: false
+youtube: "SGXlaek3-Ds"
 ---
 
 {{< youtube SGXlaek3-Ds >}}

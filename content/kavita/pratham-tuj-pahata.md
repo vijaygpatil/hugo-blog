@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "ramdas-kamat", "sudhir-phadke", "ga-di-madgulkar"]
 description: "प्रथम तुज पाहता — रामदास कामत यांनी गायलेले, ग. दि. माडगूळकर लिखित आणि सुधीर फडके संगीतबद्ध केलेले एक सुंदर मराठी गीत."
 showDate: false
 showAuthor: false
+youtube: "feH8MKkuojg"
 ---
 
 {{< youtube feH8MKkuojg >}}

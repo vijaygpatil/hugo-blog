@@ -4,6 +4,7 @@ tags: ["marathi", "kavita", "asha-bhosle", "sudhir-phadke", "jagdish-khebudkar"]
 description: "पान जागे फूल जागे — आशा भोसले आणि सुधीर फडके यांनी गायलेले, जगदीश खेबुडकर लिखित एक सुंदर मराठी गीत."
 showDate: false
 showAuthor: false
+youtube: "-IDTaWOj8g4"
 ---
 
 {{< youtube -IDTaWOj8g4 >}}
