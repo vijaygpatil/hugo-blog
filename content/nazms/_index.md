@@ -2,6 +2,8 @@
 title: "Nazm"
 description: "Urdu nazms — lyric and narrative poems where the form follows the thought, not a fixed scheme. The original verse, word-by-word meanings, and English explanations."
 groupByYear: false
+cascade:
+  showReadingTime: false
 ---
 
 <div style="font-family: 'Noto Sans Devanagari', sans-serif; font-size: 1.15em; line-height: 2; margin-bottom: 1.2em; padding-left: 1em; border-left: 3px solid; opacity: 0.85; font-style: italic;">

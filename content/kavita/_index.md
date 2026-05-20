@@ -2,6 +2,8 @@
 title: "Kavita"
 showDate: false
 groupByYear: false
+cascade:
+  showReadingTime: false
 ---
 
 <div style="font-family: 'Noto Sans Devanagari', sans-serif; font-size: 1.15em; line-height: 2; margin-bottom: 1.2em; padding-left: 1em; border-left: 3px solid; opacity: 0.85; font-style: italic;">

@@ -2,6 +2,8 @@
 title: "Ghazal"
 description: "Urdu ghazals — the original verse, word-by-word meanings, and English explanations. An attempt to share the depth of this poetic tradition with those who don't read Urdu."
 groupByYear: false
+cascade:
+  showReadingTime: false
 ---
 
 <div style="font-family: 'Noto Sans Devanagari', sans-serif; font-size: 1.15em; line-height: 2; margin-bottom: 1.2em; padding-left: 1em; border-left: 3px solid; opacity: 0.85; font-style: italic;">
