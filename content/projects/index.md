@@ -52,4 +52,16 @@ The system handles 32-bit/384kHz FLAC, DSD, Tidal, and Spotify. No compression, 
 
 ---
 
+## Deck Patio Cover
+
+**A 20×12 ft wooden patio cover built from scratch over our deck in Bothell, WA.**
+
+Bothell gets a lot of rain. For years the deck sat unused for most of the year. In June 2025 I fixed that — designing the structure myself in SketchUp, getting HOA approval, and building it over the course of a month. Six 4×4 columns on the deck, two taller columns off the ground on the stair side, a vaulted polycarbonate roof at 2:12 pitch, and gutters routing rainwater away from the house. My first build of this kind.
+
+The roof is partly clear polycarbonate (for light) and partly opaque (to cut glare near the house). The deck is now usable year-round.
+
+→ [Read the full build story](/posts/deck-patio-cover-build/)
+
+---
+
 *More engineering notes and project writeups in [Posts](/posts/).*
