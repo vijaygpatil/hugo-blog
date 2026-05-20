@@ -30,7 +30,8 @@
         />
       </a>
     </div>
-  {{- else if $youtubeID }}
+  {{- else }}
+    {{- if $youtubeID }}
     <div class="flex-none pe-4 sm:pe-6">
       <a href="{{ $.Permalink }}" aria-label="{{ $.Title | emojify }}">
         <img
@@ -44,6 +45,7 @@
         />
       </a>
     </div>
+    {{- end }}
   {{- end }}
   <div>
     <h3 class="flex items-center text-xl font-semibold">
