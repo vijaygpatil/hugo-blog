@@ -54,7 +54,8 @@ I have **20+ years of experience** in the IT industry, with a deep specialisatio
 - **Distributed systems** — event-driven design, message queues (SQS, Kafka), eventual consistency patterns
 - **Data** — relational databases (SQL Server, PostgreSQL), NoSQL (MongoDB, DynamoDB, Redis), schema migrations
 - **Cloud & infrastructure** — AWS (EC2, Lambda, S3, RDS, CloudFormation), Kubernetes, Docker, CI/CD pipelines
-- **Observability** — structured logging, distributed tracing, Kibana/ELK, metrics and alerting
+- **Observability & testing** — structured logging (Logstash/MDC/ELK), distributed tracing, Testcontainers, parallel test suites
+- **AI & developer tooling** — Claude, MCP toolserver development, agentic workflows, Git worktrees, IntelliJ
 - **Engineering leadership** — technical direction, code review culture, cross-team collaboration, mentoring engineers at all levels
 
 Over the course of my career I have moved from writing every line of code myself to knowing when to step back and make the people around me better. I have learned that the best technical decisions are rarely purely technical — they are about tradeoffs, context, and the humans who have to live with the outcome.
