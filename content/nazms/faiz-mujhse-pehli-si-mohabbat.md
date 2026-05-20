@@ -4,6 +4,7 @@ tags: ["faiz", "urdu", "nazm", "classical"]
 description: "A close reading of Faiz's great nazm of divided loyalty — do not ask me for the same love as before. The world's suffering has entered the lover, and the beloved must now share him with everything that hurts."
 showDate: false
 showAuthor: false
+youtube: "3vpfwvHdxOk"
 ---
 
 {{< youtube 3vpfwvHdxOk >}}

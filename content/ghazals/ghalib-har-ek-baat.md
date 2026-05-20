@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal of wounded pride and reckless feeling — ten shers moving from the beloved's dismissiveness to blood that runs only if it falls from the eye, to the maqta's bitter self-knowledge: without the king's patronage, what is Ghalib's reputation in this city worth? Sung by Abida Parveen."
 showDate: false
 showAuthor: false
+youtube: "BosJMWa4C1c"
 ---
 
 {{< youtube BosJMWa4C1c >}}

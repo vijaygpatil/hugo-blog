@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal in which the poet addresses his own naive heart — questioning it, diagnosing it, and finally confessing that he himself does not understand what ails it."
 showDate: false
 showAuthor: false
+youtube: "MyfUOGcNdsg"
 ---
 
 {{< youtube MyfUOGcNdsg >}}

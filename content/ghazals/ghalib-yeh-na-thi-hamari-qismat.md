@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal of missed arrival — the meeting that was not in one's fate, the city one dies just outside of, a delay that is the whole story of a life."
 showDate: false
 showAuthor: false
+youtube: "34MDD93NIyQ"
 ---
 
 {{< youtube 34MDD93NIyQ >}}

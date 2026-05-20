@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's brief, luminous ghazal — the mood that arrives with a single glance at the beloved, the freshness that one glance returns to a face, the whole world reconstituted by one sight."
 showDate: false
 showAuthor: false
+youtube: "Ecsrx1lah2A"
 ---
 
 {{< youtube Ecsrx1lah2A >}}

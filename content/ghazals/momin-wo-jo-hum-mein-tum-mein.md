@@ -4,6 +4,7 @@ tags: ["momin", "urdu", "ghazal", "classical", "ghulam-ali"]
 description: "A close reading of Momin Khan Momin's most celebrated ghazal — each couplet unpacked word by word, the language of a love remembered in fragments, suspended between presence and forgetting."
 showDate: false
 showAuthor: false
+youtube: "45gODg3jHDQ"
 ---
 
 {{< youtube 45gODg3jHDQ >}}

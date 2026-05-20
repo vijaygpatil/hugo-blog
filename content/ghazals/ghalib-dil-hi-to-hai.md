@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal defending the heart's right to feel — the heart is not stone, it will grieve, it will cry. And if it cries, let it cry — that is what hearts are for."
 showDate: false
 showAuthor: false
+youtube: "6X91l5k7Vd4"
 ---
 
 {{< youtube 6X91l5k7Vd4 >}}

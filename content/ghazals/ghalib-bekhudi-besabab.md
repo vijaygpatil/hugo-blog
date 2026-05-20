@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal of recurring madness — the heart seeks its wound again, the nails dig again, the same faithless beloved, the same ruination willingly returned to. Fourteen shers building to the maqta: this self-loss is not without cause."
 showDate: false
 showAuthor: false
+youtube: "Pz1j01JkM8c"
 ---
 
 {{< youtube Pz1j01JkM8c >}}

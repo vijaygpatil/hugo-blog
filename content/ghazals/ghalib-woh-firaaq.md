@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal of total loss — where is that separation, where is that union? Both are gone. What remains is neither grief nor joy but the exhausted aftermath of both."
 showDate: false
 showAuthor: false
+youtube: "Nq8wdvKg_ss"
 ---
 
 {{< youtube Nq8wdvKg_ss >}}

@@ -4,6 +4,7 @@ tags: ["faiz", "urdu", "ghazal", "classical"]
 description: "A close reading of Faiz Ahmad Faiz's ghazal of spring and separation — flowers filling with colour, a cage gone quiet, a torn collar carried like a credential of love. Each couplet a different station on the road from the beloved's lane."
 showDate: false
 showAuthor: false
+youtube: "VtHKWUX7jDQ"
 ---
 
 {{< youtube VtHKWUX7jDQ >}}

@@ -4,6 +4,7 @@ tags: ["ghalib", "urdu", "ghazal", "classical"]
 description: "A close reading of Ghalib's ghazal of dispersal — the beauty of the world is scattered into tulips and roses, and the whole world of lovers and beloveds has dissolved into the colours of flowers."
 showDate: false
 showAuthor: false
+youtube: "QqiQwIL0uS8"
 ---
 
 {{< youtube QqiQwIL0uS8 >}}

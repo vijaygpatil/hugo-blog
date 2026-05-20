@@ -4,6 +4,7 @@ tags: ["hasrat-mohani", "urdu", "ghazal", "classical", "ghulam-ali"]
 description: "Chupke Chupke Raat Din — Hasrat Mohani's most intimate ghazal, rendered by Ghulam Ali. A lover's memory catalogue — each sher a small recovered moment, precise and unbearably tender."
 showDate: false
 showAuthor: false
+youtube: "MWjaK_nW72E"
 ---
 
 {{< youtube MWjaK_nW72E >}}

@@ -4,6 +4,7 @@ tags: ["nida-fazli", "urdu", "ghazal", "jagjit-singh", "chitra-singh", "sadness"
 description: "Duniya Jise Kahte Hain — Nida Fazli की एक मशहूर ग़ज़ल, जगजीत सिंह और चित्रा सिंह की आवाज़ में. दुनिया की बेसबाती और वक़्त के गुज़र जाने का बयान."
 showDate: false
 showAuthor: false
+youtube: "kkYjO26NNWM"
 ---
 
 {{< youtube kkYjO26NNWM >}}
