@@ -11,7 +11,7 @@ groupByYear: false
 अशी पाखरे येती आणिक स्मृती ठेवुनी जाती
 </div>
 
-Somewhere, unplanned, two souls met — and from that meeting, a song bloomed on the lips. The story of those two hearts that found each other still lives in its melody, still being sung. Such is the nature of these moments: like birds that come and go, they leave behind only memory — and yet, that memory becomes the song itself.
+Somewhere, unplanned, two souls meet — and from that meeting, a song blooms on the lips. The story of those two hearts still lives in its melody, still being sung. Such is the nature of these moments: like birds that come and go, they leave behind only memories — and yet, those memories become the song itself.
 
 The poems in this section are the ones that have stayed with me — songs that became poems, or poems that became songs, or songs so inseparable from their melody that to read them on the page is to hear them anyway.
 
