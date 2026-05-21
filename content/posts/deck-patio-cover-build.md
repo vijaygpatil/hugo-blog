@@ -24,7 +24,7 @@ The structure covers the full 20×12 ft deck footprint. The roof is vaulted — 
 
 For the roof pitch I referenced the Snohomish County residential building standards. The minimum slope for a solid residential roof is approximately **2:12 pitch** (~9.5°). I went with exactly that — enough slope to shed water reliably without making the structure feel heavy or imposing.
 
-> 📐 **[SketchUp design screenshot / render — add here]**
+{{< youtube MM0MAdgWNRI >}}
 
 **Roof panel layout:**
 - Flat deck side: 12×4 ft polycarbonate panels — 2 opaque (near house), remaining clear
