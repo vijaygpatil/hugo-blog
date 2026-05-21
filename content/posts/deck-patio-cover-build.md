@@ -27,8 +27,8 @@ For the roof pitch I referenced the Snohomish County residential building standa
 {{< youtube MM0MAdgWNRI >}}
 
 **Roof panel layout:**
-- Flat deck side: 12×4 ft polycarbonate panels — 2 opaque (near house), remaining clear
-- Stair side: 8×4 ft clear polycarbonate panels
+- Flat deck side: 5 × 12×4 ft polycarbonate panels — 2 opaque (near house), 3 clear
+- Stair side: 3 × 8×4 ft clear polycarbonate panels
 
 The combination of clear and opaque was deliberate. The far end of the deck gets full light. The two opaque panels near the house cut glare into the interior rooms while still letting diffused light through.
 
@@ -51,8 +51,8 @@ Don't skip this step. A covered patio structure of this size has setback require
 | Columns on deck | 6 × 4×4 posts, 8 ft tall |
 | Columns off deck (stair side) | 2 × 4×4 posts, 12 ft tall (ground to ridge) |
 | Roof pitch | 2:12 (~9.5°), vaulted |
-| Roof panels — deck side | 12×4 ft polycarbonate: 2 opaque + clear |
-| Roof panels — stair side | 8×4 ft clear polycarbonate |
+| Roof panels — deck side | 5 × 12×4 ft polycarbonate: 2 opaque + 3 clear |
+| Roof panels — stair side | 3 × 8×4 ft clear polycarbonate |
 | Drainage | Gutters routing to nearest rainwater inlet |
 
 ---
@@ -62,12 +62,15 @@ Don't skip this step. A covered patio structure of this size has setback require
 The deck sits 4 feet above ground. The two stair-side columns needed to be anchored directly into the ground — not attached to the deck — because they carry significant downward and lateral load from the taller side of the vaulted roof.
 
 For each ground footing:
-1. Dug a hole into the ground
-2. Filled with gravel for drainage and stability
-3. Set a concrete block on top of the gravel bed
-4. The 12 ft 4×4 post stands on the concrete block
+1. Dug a hole 1.5 ft deep
+2. Filled the bottom 0.5 ft with gravel for drainage and stability
+3. Poured concrete into the remaining 1 ft
+4. Set a 4×4 post bracket into the wet concrete before it cured — levelled and plumb so the post would stand straight
+5. Once cured, seated the 12 ft 4×4 post in the bracket
 
-The six deck-side columns are anchored to the existing deck framing. Before installing them I added blocking and reinforced the deck joists to make sure the structure could handle the new load without flex or bounce.
+Getting the bracket perfectly plumb before the concrete sets is the critical step here. A bracket that is even slightly off forces you to fight the post for the rest of the build.
+
+For the six deck-side columns I used the same approach, mirroring how the original deck footings were built. The deck's own joists rest on 6×4 beams — three beams supporting six footing points. I added six new footings using the same method: 1.5 ft hole, 0.5 ft gravel, concrete pour, with a concrete footing block (pre-cast with a 4×4 post bracket already integrated) set into each one. Each of the six deck-side columns sits on one of these blocks, directly below a deck joist bearing point.
 
 > 📸 **[Photo: hole dug with gravel fill — add here]**
 > 📸 **[Photo: concrete block set, before post — add here]**
