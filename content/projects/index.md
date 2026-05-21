@@ -64,4 +64,16 @@ The roof is partly clear polycarbonate (for light) and partly opaque (to cut gla
 
 ---
 
+## Honda Odyssey Campervan Conversion
+
+**A 2018 Honda Odyssey minivan converted into a fully equipped family campervan for four.**
+
+In 2021, with two young kids and a list of national parks to see, I converted our Odyssey into a self-contained campervan. The build includes a near full-size sleeping platform, a built-in kitchen with sink and induction cooktop, a 200Ah solar-charged battery system, and running water — all removable so the van doubles as a daily driver. Camp mode setup takes 15–20 minutes.
+
+We took it to Glacier, Banff, and Yellowstone. The kids remember sleeping in the van as vividly as they remember the parks.
+
+→ [Read the full build](/posts/honda-odyssey-campervan-conversion/)
+
+---
+
 *More engineering notes and project writeups in [Posts](/posts/).*
