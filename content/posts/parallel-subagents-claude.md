@@ -13,7 +13,7 @@ A single AI agent working sequentially is like a senior developer who reads one 
 
 A subagent is an AI instance invoked by an orchestrating AI to handle a specific subtask within a larger workflow. Think of it like a tech lead and a team: the tech lead doesn't do everything — they decompose the problem, assign the right people, and synthesize the results. Claude does the same thing.
 
-```mermaid
+{{< mermaid >}}
 graph TD
     TL["🧠 Tech Lead / Orchestrator"]
     TL -->|delegates| A["👩‍💻 Developer A"]
@@ -22,7 +22,7 @@ graph TD
     A -->|reports back| R["✅ Synthesized Result"]
     B -->|reports back| R
     C -->|reports back| R
-```
+{{< /mermaid >}}
 
 The orchestrator reasons about what needs to happen, who should do it, and what constitutes a useful answer. It doesn't execute everything itself.
 
@@ -32,7 +32,7 @@ The orchestrator reasons about what needs to happen, who should do it, and what 
 
 Sequential execution is the default. Parallel execution is the unlock:
 
-```mermaid
+{{< mermaid >}}
 gantt
     title Sequential vs Parallel Execution
     dateFormat X
@@ -47,7 +47,7 @@ gantt
     Task A :0, 10
     Task B :0, 10
     Task C :0, 10
-```
+{{< /mermaid >}}
 
 Three independent tasks that each take ten minutes take thirty minutes sequentially and ten minutes in parallel. That's the whole case.
 
@@ -55,7 +55,7 @@ Three independent tasks that each take ten minutes take thirty minutes sequentia
 
 Each subagent gets its own fresh context window. The orchestrator passes only what's relevant to each agent, and each agent returns only the relevant result — not its entire reasoning trace.
 
-```mermaid
+{{< mermaid >}}
 graph TD
     O["🧠 Orchestrator\n(200K context)"]
     O -->|focused prompt| A["Agent A\nfresh context"]
@@ -64,7 +64,7 @@ graph TD
     A -->|concise result only| R["🧠 Orchestrator\n(clean signal)"]
     B -->|concise result only| R
     C -->|concise result only| R
-```
+{{< /mermaid >}}
 
 This matters more than it looks. A single agent investigating multiple things accumulates noise — log lines from task A pollute the reasoning about task B. Isolated agents stay focused. The orchestrator only absorbs what it needs.
 
@@ -80,7 +80,7 @@ Every multi-agent system is built from three patterns. Understanding them lets y
 
 *"I have N independent tasks — run them all at once."*
 
-```mermaid
+{{< mermaid >}}
 graph TD
     O["🧠 Orchestrator"]
     O --> A["Agent A\nTask 1"]
@@ -91,7 +91,7 @@ graph TD
     B --> S
     C --> S
     D --> S
-```
+{{< /mermaid >}}
 
 Best for: analyzing multiple documents, investigating multiple systems, tracing multiple test failures simultaneously.
 
@@ -99,13 +99,13 @@ Best for: analyzing multiple documents, investigating multiple systems, tracing 
 
 *"Each step depends on the previous — chain them."*
 
-```mermaid
+{{< mermaid >}}
 graph LR
     A["Agent A\nResearch"] -->|findings| B["Agent B\nDraft"]
     B -->|draft| C["Agent C\nEdit"]
     C -->|edited| D["Agent D\nFormat"]
     D --> R["✅ Final Output"]
-```
+{{< /mermaid >}}
 
 Best for: research → analysis → recommendation chains. Any workflow with hard dependencies between steps.
 
@@ -113,7 +113,7 @@ Best for: research → analysis → recommendation chains. Any workflow with har
 
 *"A subagent becomes an orchestrator for its own subtasks."*
 
-```mermaid
+{{< mermaid >}}
 graph TD
     Root["🧠 Root Orchestrator"]
     Root --> S1["Sub-Orchestrator 1"]
@@ -122,7 +122,7 @@ graph TD
     S1 --> B["Agent B"]
     S2 --> C["Agent C"]
     S2 --> D["Agent D"]
-```
+{{< /mermaid >}}
 
 Best for: genuinely complex problems that decompose recursively — where the orchestrator must reason about which sub-problems need their own orchestration layer.
 
@@ -159,7 +159,7 @@ With subagents, an orchestrator runs all of this in parallel after one sequentia
 
 The orchestrator reasons about the dependency graph before dispatching anything:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
     Q1{"Do I know which\ntest run to analyze?"}
     Q1 -->|NO| Run["Run summary first\nSEQUENTIAL"]
@@ -169,7 +169,7 @@ flowchart TD
     Q2 -->|NO| SP["Sequential Pipeline\n(one by one)"]
     PF --> Syn["Synthesize\nSEQUENTIAL"]
     SP --> Syn
-```
+{{< /mermaid >}}
 
 You didn't write that decision tree. Claude reasoned it.
 
@@ -177,7 +177,7 @@ You didn't write that decision tree. Claude reasoned it.
 
 An integration test analysis tool like this uses all three patterns in a single workflow:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
     Start(["Run integration test analysis"]) --> O["🧠 ORCHESTRATOR"]
 
@@ -204,7 +204,7 @@ flowchart TD
     end
 
     Step3 --> Report["📄 Markdown report saved to disk"]
-```
+{{< /mermaid >}}
 
 Step 1 is sequential — you can't trace a test run you haven't identified yet. Step 2 is a full parallel fan-out — all four agents run simultaneously because none of them depend on each other. Step 3 is sequential again — synthesis requires all the data from Step 2 to be present.
 
@@ -245,14 +245,14 @@ RECOMMENDATIONS
 
 This is the part that trips people up when designing multi-agent systems:
 
-```mermaid
+{{< mermaid >}}
 graph TD
     O["🧠 Orchestrator\n'full context passed in every prompt'"]
     O --> A["Agent A\nfresh context\n(no memory of B)"]
     O --> B["Agent B\nfresh context\n(no memory of A)"]
     A -->|concise result only| R["🧠 Orchestrator\n(clean signal)"]
     B -->|concise result only| R
-```
+{{< /mermaid >}}
 
 Each subagent starts completely fresh. It has no memory of what other agents found. This means:
 
@@ -266,7 +266,7 @@ A well-designed trace agent returns: correlation ID, timeline of key events, exc
 
 Not everything needs orchestration. Here's the decision tree:
 
-```mermaid
+{{< mermaid >}}
 flowchart TD
     Q1{"Can the task be broken\ninto independent subtasks?"}
     Q1 -->|NO| Single1["Single Agent is fine ✓"]
@@ -275,7 +275,7 @@ flowchart TD
     Q2 -->|YES| Q3{"Are the subtasks\nindependent / parallelizable?"}
     Q3 -->|YES| SA["Use Subagents ✅"]
     Q3 -->|NO| Seq["Sequential Pipeline ✅"]
-```
+{{< /mermaid >}}
 
 Start with a single agent. Introduce orchestration only when the complexity genuinely demands it.
 
