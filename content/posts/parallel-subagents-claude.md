@@ -57,11 +57,11 @@ Each subagent gets its own fresh context window. The orchestrator passes only wh
 
 {{< mermaid >}}
 graph TD
-    O["🧠 Orchestrator\n(200K context)"]
-    O -->|focused prompt| A["Agent A\nfresh context"]
-    O -->|focused prompt| B["Agent B\nfresh context"]
-    O -->|focused prompt| C["Agent C\nfresh context"]
-    A -->|concise result only| R["🧠 Orchestrator\n(clean signal)"]
+    O["🧠 Orchestrator<br/>(200K context)"]
+    O -->|focused prompt| A["Agent A<br/>fresh context"]
+    O -->|focused prompt| B["Agent B<br/>fresh context"]
+    O -->|focused prompt| C["Agent C<br/>fresh context"]
+    A -->|concise result only| R["🧠 Orchestrator<br/>(clean signal)"]
     B -->|concise result only| R
     C -->|concise result only| R
 {{< /mermaid >}}
@@ -83,10 +83,10 @@ Every multi-agent system is built from three patterns. Understanding them lets y
 {{< mermaid >}}
 graph TD
     O["🧠 Orchestrator"]
-    O --> A["Agent A\nTask 1"]
-    O --> B["Agent B\nTask 2"]
-    O --> C["Agent C\nTask 3"]
-    O --> D["Agent D\nTask 4"]
+    O --> A["Agent A<br/>Task 1"]
+    O --> B["Agent B<br/>Task 2"]
+    O --> C["Agent C<br/>Task 3"]
+    O --> D["Agent D<br/>Task 4"]
     A --> S["🔀 Synthesize"]
     B --> S
     C --> S
@@ -101,9 +101,9 @@ Best for: analyzing multiple documents, investigating multiple systems, tracing 
 
 {{< mermaid >}}
 graph LR
-    A["Agent A\nResearch"] -->|findings| B["Agent B\nDraft"]
-    B -->|draft| C["Agent C\nEdit"]
-    C -->|edited| D["Agent D\nFormat"]
+    A["Agent A<br/>Research"] -->|findings| B["Agent B<br/>Draft"]
+    B -->|draft| C["Agent C<br/>Edit"]
+    C -->|edited| D["Agent D<br/>Format"]
     D --> R["✅ Final Output"]
 {{< /mermaid >}}
 
@@ -161,13 +161,13 @@ The orchestrator reasons about the dependency graph before dispatching anything:
 
 {{< mermaid >}}
 flowchart TD
-    Q1{"Do I know which\ntest run to analyze?"}
-    Q1 -->|NO| Run["Run summary first\nSEQUENTIAL"]
-    Q1 -->|YES| Q2{"Are these tasks\nindependent?"}
+    Q1{"Do I know which<br/>test run to analyze?"}
+    Q1 -->|NO| Run["Run summary first<br/>SEQUENTIAL"]
+    Q1 -->|YES| Q2{"Are these tasks<br/>independent?"}
     Run --> Q2
-    Q2 -->|YES| PF["Parallel Fan-Out\n(all at once)"]
-    Q2 -->|NO| SP["Sequential Pipeline\n(one by one)"]
-    PF --> Syn["Synthesize\nSEQUENTIAL"]
+    Q2 -->|YES| PF["Parallel Fan-Out<br/>(all at once)"]
+    Q2 -->|NO| SP["Sequential Pipeline<br/>(one by one)"]
+    PF --> Syn["Synthesize<br/>SEQUENTIAL"]
     SP --> Syn
 {{< /mermaid >}}
 
@@ -184,23 +184,23 @@ flowchart TD
     O --> Step1
 
     subgraph Step1 ["STEP 1 — Sequential Pipeline"]
-        S1["Get latest test run summary\n→ version · pod · start/end time\n→ Must complete — everything else needs it"]
+        S1["Get latest test run summary<br/>→ version · pod · start/end time<br/>→ Must complete — everything else needs it"]
     end
 
     Step1 -->|has test run ID| Step2
 
     subgraph Step2 ["STEP 2 — Parallel Fan-Out"]
         direction LR
-        A["Agent A\nGet all\nexceptions\n+ stack traces"]
-        B["Agent B\nTrace test 1\nlogs\n(corr. ID)"]
-        C["Agent C\nTrace test 2\nlogs\n(corr. ID)"]
-        D["Agent D\nCheck if EA\nactually ran"]
+        A["Agent A<br/>Get all<br/>exceptions<br/>+ stack traces"]
+        B["Agent B<br/>Trace test 1<br/>logs<br/>(corr. ID)"]
+        C["Agent C<br/>Trace test 2<br/>logs<br/>(corr. ID)"]
+        D["Agent D<br/>Check if EA<br/>actually ran"]
     end
 
     Step2 -->|all results in| Step3
 
     subgraph Step3 ["STEP 3 — Sequential Pipeline"]
-        S3["Synthesize findings\nGroup by root cause\nGenerate report + recommendations"]
+        S3["Synthesize findings<br/>Group by root cause<br/>Generate report + recommendations"]
     end
 
     Step3 --> Report["📄 Markdown report saved to disk"]
@@ -247,10 +247,10 @@ This is the part that trips people up when designing multi-agent systems:
 
 {{< mermaid >}}
 graph TD
-    O["🧠 Orchestrator\n'full context passed in every prompt'"]
-    O --> A["Agent A\nfresh context\n(no memory of B)"]
-    O --> B["Agent B\nfresh context\n(no memory of A)"]
-    A -->|concise result only| R["🧠 Orchestrator\n(clean signal)"]
+    O["🧠 Orchestrator<br/>'full context passed in every prompt'"]
+    O --> A["Agent A<br/>fresh context<br/>(no memory of B)"]
+    O --> B["Agent B<br/>fresh context<br/>(no memory of A)"]
+    A -->|concise result only| R["🧠 Orchestrator<br/>(clean signal)"]
     B -->|concise result only| R
 {{< /mermaid >}}
 
@@ -268,11 +268,11 @@ Not everything needs orchestration. Here's the decision tree:
 
 {{< mermaid >}}
 flowchart TD
-    Q1{"Can the task be broken\ninto independent subtasks?"}
+    Q1{"Can the task be broken<br/>into independent subtasks?"}
     Q1 -->|NO| Single1["Single Agent is fine ✓"]
-    Q1 -->|YES| Q2{"Does each subtask need\ndifferent tools or context?"}
+    Q1 -->|YES| Q2{"Does each subtask need<br/>different tools or context?"}
     Q2 -->|NO| Single2["Single Agent is fine ✓"]
-    Q2 -->|YES| Q3{"Are the subtasks\nindependent / parallelizable?"}
+    Q2 -->|YES| Q3{"Are the subtasks<br/>independent / parallelizable?"}
     Q3 -->|YES| SA["Use Subagents ✅"]
     Q3 -->|NO| Seq["Sequential Pipeline ✅"]
 {{< /mermaid >}}
