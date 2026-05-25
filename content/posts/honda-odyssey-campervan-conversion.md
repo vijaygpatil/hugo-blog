@@ -20,7 +20,7 @@ This is a writeup of everything in the build — the sleeping setup, the kitchen
 
 ## The Full Build Walkthrough
 
-> 🎬 **[Video: Full campervan conversion walkthrough — add YouTube link here]**
+{{< youtube MrVdE0J5ie0 >}}
 
 The video covers every system in detail. The sections below go through each one in writing for reference.
 
