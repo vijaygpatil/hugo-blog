@@ -14,6 +14,11 @@ Those constraints shaped every decision in this build. The goal: a self-containe
 
 ---
 
+> 📸 **[Photo: 2018 Honda Odyssey in travel mode, parked roadside — add here]**
+> *Travel mode — roof box, solar panels hidden under the rack rails, and nothing that says campervan.*
+
+---
+
 ## Build Specs at a Glance
 
 | System | Spec |
