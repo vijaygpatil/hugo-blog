@@ -8,7 +8,7 @@ description: "How I converted a 2018 Honda Odyssey minivan into a fully function
 showToc: true
 ---
 
-A Honda Odyssey has 169 cubic feet of interior volume, a 150A alternator, sliding doors that open to exactly counter height, and enough roof rack real estate for 200W of solar. It also fits in a standard parking spot, seats four in road mode, and doesn't announce itself as a campervan.
+A Honda Odyssey has up to 144.9 cubic feet of cargo volume with the seats removed, sliding doors that open to exactly counter height, and enough roof rack real estate for 200W of solar. It also fits in a standard parking spot, seats four in road mode, and doesn't announce itself as a campervan.
 
 Those constraints shaped every decision in this build. The goal: a self-contained living platform for a family of four — full-size beds, a real kitchen with running water, a 200Ah lithium power system with three charging sources — without permanently gutting a daily-driver minivan.
 
