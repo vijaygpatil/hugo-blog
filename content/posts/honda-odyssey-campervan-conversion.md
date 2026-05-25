@@ -172,28 +172,6 @@ Packing up is equally fast. Mattresses into the roof box, cooktop back in the bo
 
 ---
 
-## The Trips
-
-### Glacier National Park
-
-> 📸 **[Photo: Glacier — add here]**
-
-Our first real outing. Going-to-the-Sun Road in a converted minivan is a legitimate way to see Glacier. We camped inside the park, woke up to mountain views, and cooked breakfast at the tailgate every morning. The kids thought sleeping in the van was the best part.
-
-### Banff National Park
-
-> 📸 **[Photo: Banff — add here]**
-
-Banff required crossing into Canada, which means a tidy van and the water system properly accounted for at the border. No issues. The Icefields Parkway is one of the best drives in North America — doing it in your own kitchen-equipped campervan, stopping where you want, eating when you want, is the right way to experience it.
-
-### Yellowstone National Park
-
-> 📸 **[Photo: Yellowstone — add here]**
-
-Yellowstone campsites fill up fast. Having a self-contained setup meant we weren't dependent on hookup sites — we could take any available site. We cooked every meal without needing any campground facilities beyond a fire ring.
-
----
-
 ## What Worked
 
 **The minivan format.** Easier to drive than a cargo van, fits anywhere, and the sliding doors make the kitchen setup genuinely pleasant to use.
@@ -230,4 +208,3 @@ The build is done once and ready every summer. The van is back to normal daily d
 
 And as the kids get older and want their own tent, the van becomes just mine and my wife's. This gets more useful over time, not less.
 
-> 📸 **[Final photo: family at a national park campsite with the van — add here]**
