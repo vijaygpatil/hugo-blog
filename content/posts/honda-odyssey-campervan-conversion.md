@@ -106,6 +106,81 @@ One of my favourite small details on this build. Under the sink, mounted on the 
 
 All campervan power runs from a dedicated 200Ah lithium battery bank — completely separate from the van's starter battery. The system has three charging sources and a custom control panel.
 
+### System Diagram
+
+{{< mermaid >}}
+flowchart TD
+    %% Charging sources
+    SOLAR["☀️ Solar Panels<br/>200W Renogy Flexible"]
+    ALT["🚗 Alternator<br/>Honda Odyssey"]
+    SHORE["🔌 Shore Power<br/>Campsite Hookup"]
+
+    %% Charging controllers
+    MPPT["MPPT Controller<br/>Renogy"]
+    DCDC["DC-DC Charger<br/>Renogy 10A"]
+    NOCO["NOCO Genius<br/>10A Charger"]
+
+    %% Battery
+    BATT["🔋 Ampere Time<br/>12V 200Ah Lithium"]
+
+    %% Master cutoff and distribution
+    CUT["🔴 Master Cutoff<br/>Red Knob"]
+    BUS["Bus Bar + Fuse Block"]
+    PANEL["⚡ Power Panel<br/>Rocker Switches"]
+    INV["Inverter<br/>Pure Sine Wave<br/>12V DC → 120V AC"]
+
+    %% 120V AC loads
+    COOK["🍳 Induction Cooktop<br/>NutriChef Dual Burner"]
+    MICRO["📦 Microwave"]
+    KEU["☕ Keurig"]
+    BLEND["🥤 Blender"]
+
+    %% 12V DC loads
+    COOL["❄️ 12V Cooler<br/>Cig Lighter Switch"]
+    LIGHTS["💡 LED Lights<br/>3 Zones"]
+    PUMP["💧 Water Pump<br/>12V"]
+    USB["🔌 USB Ports<br/>A + C"]
+
+    %% Charging flow
+    SOLAR --> MPPT --> BATT
+    ALT --> DCDC --> BATT
+    SHORE --> NOCO --> BATT
+
+    %% Distribution flow
+    BATT --> CUT --> BUS
+    BUS --> INV
+    BUS --> PANEL
+
+    %% 120V AC loads
+    INV --> COOK
+    INV --> MICRO
+    INV --> KEU
+    INV --> BLEND
+
+    %% 12V DC loads
+    PANEL --> COOL
+    PANEL --> LIGHTS
+    PANEL --> PUMP
+    PANEL --> USB
+
+    %% Colours
+    classDef source fill:#f4a261,stroke:#e76f51,color:#000
+    classDef charger fill:#457b9d,stroke:#1d3557,color:#fff
+    classDef battery fill:#2d6a4f,stroke:#1b4332,color:#fff
+    classDef control fill:#9b5de5,stroke:#6a0dad,color:#fff
+    classDef inverter fill:#e63946,stroke:#9d0208,color:#fff
+    classDef ac fill:#f72585,stroke:#b5179e,color:#fff
+    classDef dc fill:#4cc9f0,stroke:#4361ee,color:#000
+
+    class SOLAR,ALT,SHORE source
+    class MPPT,DCDC,NOCO charger
+    class BATT battery
+    class CUT,BUS,PANEL control
+    class INV inverter
+    class COOK,MICRO,KEU,BLEND ac
+    class COOL,LIGHTS,PUMP,USB dc
+{{< /mermaid >}}
+
 ### Battery Bank
 
 **Ampere Time 12V 200Ah Plus lithium battery.** The reason for lithium over lead-acid: lithium gives you almost the full capacity usably. You can draw it down to near zero without damaging it. A lead-acid battery you can only realistically use about half of before damaging it — so 200Ah lithium is effectively equivalent to a 400Ah lead-acid setup.
