@@ -8,13 +8,28 @@ description: "How I converted a 2018 Honda Odyssey minivan into a fully function
 showToc: true
 ---
 
-In 2021 our kids were small enough that we could fold them anywhere, but old enough to want adventure. We had a 2018 Honda Odyssey, a few weeks of vacation, and a long list of national parks we wanted to see. Hotel rooms at park entrances cost more than they're worth and don't get you close to anything. A rooftop tent felt impractical with a toddler. A full van conversion was more than I wanted to take on.
+A Honda Odyssey has 169 cubic feet of interior volume, a 150A alternator, sliding doors that open to exactly counter height, and enough roof rack real estate for 200W of solar. It also fits in a standard parking spot, seats four in road mode, and doesn't announce itself as a campervan.
 
-So I converted the Odyssey.
+Those constraints shaped every decision in this build. The goal: a self-contained living platform for a family of four — full-size beds, a real kitchen with running water, a 200Ah lithium power system with three charging sources — without permanently gutting a daily-driver minivan.
 
-A minivan is an underrated campervan base. It fits in a normal parking spot. It gets reasonable fuel economy. The sliding doors give you a kitchen entrance that no cargo van can match. And a Honda Odyssey has enough interior volume that, with the second-row seats removed and a platform built, you get a sleeping space that comfortably fits two adults and two young kids. From the outside it still looks like a minivan with a roof rack. That was intentional.
+The result has done Glacier, Banff, and Yellowstone. It does the school run on Tuesdays.
 
-This is a writeup of everything in the build — the sleeping setup, the kitchen, the power system, the water system — and how we used it across three national park trips.
+---
+
+## Build Specs at a Glance
+
+| System | Spec |
+|---|---|
+| **Battery** | Ampere Time 200Ah lithium |
+| **Solar** | 200W Renogy flexible panels |
+| **Charging** | Solar (MPPT) + alternator (DC-DC) + shore power (NOCO) |
+| **Inverter** | Pure sine wave, 12V DC → 120V AC |
+| **Sleeping** | 4 people — 2 adults + 2 kids, independent platforms |
+| **Kitchen** | Induction cooktop, sink, running water, Keurig, microwave |
+| **Camp setup time** | ~15 minutes |
+| **Power depleted across 3 trips** | 0 times |
+
+This is a writeup of every system — the decisions, the engineering, and what worked.
 
 ---
 
@@ -244,6 +259,24 @@ Pull into a campsite and the van goes from road mode to camp mode in about 15 mi
 My wife starts the Keurig while I'm still laying out the mat. No chaos, no circus.
 
 Packing up is equally fast. Mattresses into the roof box, cooktop back in the box, griddle strapped down, shelf folded flat, kids in the third row — twenty minutes and we're driving. From the outside it's just a Honda Odyssey again.
+
+---
+
+## Key Design Decisions
+
+Every build involves tradeoffs. These were the non-obvious ones.
+
+| Decision | Chose | Rejected | Reasoning |
+|---|---|---|---|
+| **Van platform** | Honda Odyssey | Cargo van (Transit, Promaster) | Fits standard parking, better fuel economy, sliding doors open to counter height, seats 4 in road mode |
+| **Cooktop fuel** | Induction | Propane | No tank, no open flame, no smell inside sleeping area — runs off existing battery bank |
+| **Battery chemistry** | Lithium (LiFePO4) | AGM lead-acid | ~100% usable capacity vs ~50% for lead-acid — 200Ah lithium ≈ 400Ah lead-acid in practice |
+| **Inverter type** | Pure sine wave | Modified sine wave | Induction cooktops and sensitive electronics require clean AC — modified sine can cause erratic behaviour or damage |
+| **Alternator charging** | DC-DC charger (Renogy 10A) | Direct connection | DC-DC charger conditions the output and charges lithium at the correct voltage profile — direct connection risks overcharging |
+| **Solar charge controller** | MPPT | PWM | MPPT continuously optimises power extraction based on sun angle and temperature — meaningfully more efficient at partial shade or low angles |
+| **Cooler** | 12V powered cooler | Ice chest | No ice resupply needed on multi-day park trips — runs continuously off the battery |
+| **Cooler mounting** | DIY drawer with ratchet straps | Loose on platform | Safe at highway speed, fully accessible without removal — slides out through the sliding door |
+| **Reversibility** | Fully removable platform and kitchen | Permanent conversion | Van needed to remain a functional daily driver — nothing is bolted in that can't come out |
 
 ---
 
