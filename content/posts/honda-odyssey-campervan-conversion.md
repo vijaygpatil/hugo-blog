@@ -12,8 +12,6 @@ A Honda Odyssey has 158.0 cubic feet of cargo volume behind the first row with s
 
 Those constraints shaped every decision in this build. The goal: a self-contained living platform for a family of four — full-size beds, a real kitchen with running water, a 200Ah lithium power system with three charging sources — without permanently gutting a daily-driver minivan.
 
-The result has done Glacier, Banff, and Yellowstone. It does the school run on Tuesdays.
-
 ---
 
 ## Build Specs at a Glance
