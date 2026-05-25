@@ -4,7 +4,7 @@ date: 2026-05-20
 draft: false
 tags: ["diy", "vanlife", "camping", "roadtrip", "homeowner", "familytravel"]
 categories: ["Projects"]
-description: "How I converted a 2018 Honda Odyssey minivan into a fully functional campervan for a family of 4 — with beds, a full kitchen, 200Ah solar power, and running water. We took it to Glacier, Banff, and Yellowstone."
+description: "How I converted a 2018 Honda Odyssey minivan into a fully functional campervan for a family of 4 — with beds, a full kitchen, 200Ah lithium solar power, running water, and a DIY awning. We took it to Glacier, Banff, and Yellowstone."
 showToc: true
 ---
 
@@ -12,7 +12,7 @@ In 2021 our kids were small enough that we could fold them anywhere, but old eno
 
 So I converted the Odyssey.
 
-A minivan is an underrated campervan base. It fits in a normal parking spot. It gets reasonable fuel economy. The sliding doors give you a kitchen entrance that no cargo van can match. And a Honda Odyssey has enough interior volume that, with the seats removed and a platform built, you get a sleeping space that comfortably fits two adults and two young kids.
+A minivan is an underrated campervan base. It fits in a normal parking spot. It gets reasonable fuel economy. The sliding doors give you a kitchen entrance that no cargo van can match. And a Honda Odyssey has enough interior volume that, with the second-row seats removed and a platform built, you get a sleeping space that comfortably fits two adults and two young kids. From the outside it still looks like a minivan with a roof rack. That was intentional.
 
 This is a writeup of everything in the build — the sleeping setup, the kitchen, the power system, the water system — and how we used it across three national park trips.
 
@@ -26,15 +26,35 @@ The video covers every system in detail. The sections below go through each one 
 
 ---
 
+## Exterior and Roof Setup
+
+The roof rack carries two things: a large hard-shell cargo box and 200-watt Renogy flexible solar panels. The panels are mounted flat under the rack rails — they're completely invisible from outside. From a distance this is just a minivan with a roof box. No obvious solar panels sticking up, no "campervan" aesthetic. It fits in a normal parking spot and can go anywhere — city, campground, trailhead.
+
+The cargo box is where bulky gear lives in travel mode: foam mattresses, sleeping bags, hiking gear. Keeping it on the roof frees up the entire interior.
+
+There's also a DIY awning mounted along the roofline next to the solar panels, built from scratch. When you're parked up and the sun is beating down or it starts drizzling, you roll it out and you have shade and weather cover over the entire kitchen and sliding door area. It makes a genuine difference.
+
+---
+
 ## Sleeping Setup
 
-The third-row seat comes out completely (Honda makes this easy — the Odyssey's Magic Seat system is designed for exactly this). The second-row seats also come out to create a fully flat floor.
+The third-row seats stay in permanently. When we're driving, the kids sit there like normal — it's still a functioning minivan. The second-row seats are removed, and that space is where the platform lives.
 
-A wooden platform spans the full rear of the van. The main sleeping surface is nearly full-size — wide enough for two adults lying side by side with room to spare. A foam mattress goes on top. On the passenger side, a second raised platform extends from the sliding door area and tucks under the main bed level, giving the kids their own sleeping zone accessible directly from the sliding door.
+**Main platform:** A wooden platform spans the second-row area. In travel mode it folds up into a table. In camping mode it unfolds and rests on top of the third-row seat, giving a full-size sleeping surface. Me, my wife, and our daughter all sleep on it. Foam mattresses go on top — cut to fit the platform exactly. In travel mode the mattresses fold up and go into the rooftop cargo box, so the interior is completely clear on the road.
 
-Privacy curtains hang on all the sliding door windows and the rear. Once the curtains are drawn the interior is completely blacked out — you sleep as well as you would in a tent, without the ground.
+**Second platform:** On the passenger side, a smaller raised platform rests on the hand rest above the wheel well on the third row. My son gets his own sleeping spot — right next to us but on his own level. Works well for him.
 
-Under the platform there is significant storage: a floor hatch gives access to the space below where camping gear, bags, and supplies live.
+**Privacy curtains** hang on all the sliding door windows. Once drawn the interior is fully blacked out.
+
+**Microwave:** Tucked below the main platform, accessible from the sliding door. Runs off the battery bank.
+
+### DIY Cooler Drawer
+
+The 12-volt cooler lives on the platform table in travel mode — but not just sitting there loose. I built a DIY drawer system that slides out through the sliding door opening, sitting on top of the platform. The cooler is secured inside the drawer with two ratchet straps crossing over the top.
+
+While driving it's completely locked down. When you pull over and want something from the fridge, you slide the drawer out through the door opening — cooler still strapped in — and you have full access without ever lifting it out of the van. The drawer runs on heavy-duty full-extension slides rated to 500 pounds. The platform has the battery box, microwave, and all the other gear sitting on it, so the whole assembly is solid. Even with the cooler full and the drawer completely extended, nothing tips or shifts.
+
+No ice. Ever. That's one of the best things about this setup.
 
 ---
 
@@ -42,63 +62,113 @@ Under the platform there is significant storage: a floor hatch gives access to t
 
 The kitchen is built into the rear of the van and deploys when you open the tailgate. It has everything you need to cook a real meal.
 
-**Counter and sink:**
-A marble-look laminate countertop runs across the full rear width. A stainless steel sink sits on the left side, plumbed to the fresh water and grey water systems. There is enough counter space to prep food comfortably.
+### Counter and Sink
 
-**Induction cooktop:**
-A full-size induction cooktop sits on a custom wooden pull-out unit on the passenger side. The unit slides out from under the counter and extends beyond the tailgate — so the cooktop is outside the van when in use, keeping heat and cooking smells out of the sleeping area. The wooden box has two drawers below for utensils, spices, and cooking supplies.
+A marble-look laminate countertop runs the full width of the rear. A stainless steel sink sits on the left side, plumbed to the fresh water and grey water systems. There is enough counter space to prep food properly on either side.
 
-**Coffee:**
-A Keurig sits on the counter. Morning coffee at a national park campsite, no compromise.
+### Induction Cooktop
 
-**The tailgate as a wind break:**
-When the tailgate is open and the cooktop is extended, the tailgate itself acts as a partial wind and weather break for the cooking area. In practice this works well even in variable weather.
+A NutriChef dual-burner induction cooktop sits in a custom wooden box on the passenger side. In travel mode, the cooktop is stored inside the box and the griddle is strapped on top with a bungee cord — nothing rattles. At camp, the whole door unit swings out from under the countertop and extends past the tailgate, so the cooktop is fully outside the van when in use. Heat and cooking smells stay out of the sleeping area entirely.
 
----
+The box is secured to the kitchen door with turnbuckle hooks and heavy-duty shelf brackets. No propane anywhere in this setup — the induction cooktop runs purely off the battery bank through the inverter. Induction heats up instantly and works as well as a kitchen stove. One of the best decisions in the whole build.
 
-## Power System
+### Folding Side Shelf
 
-**200 Ah lithium battery bank** charged by solar panels mounted on the roof rack. The solar setup keeps the battery topped up through normal driving days and sunny campsites — in practice we never ran low on power across any of the three trips.
+On the side of the kitchen door there's a folding shelf on a heavy-duty bracket rated to 330 pounds. The door itself is three-quarter inch plywood, and the whole kitchen door assembly hangs off three door hinges connected to the main unit, which is tied to the van's body using half-inch turnbuckle-style hooks rated at 1,500 pounds. The whole thing is genuinely overbuilt.
 
-A custom wood-mounted power panel is accessible from inside the van near the sleeping area. It has:
-- Rocker switches for individual circuits
-- Volt and amp display showing battery state
-- USB-A and USB-C charging ports
-- 12V outlets
-- Shore power input for when you have hookups
+The shelf folds completely flat when not needed and flips out in seconds. Useful as extra prep space with the kitchen fully deployed, but also handy on its own — flip it out for a quick roadside stop without opening the full kitchen.
 
-The induction cooktop, the water pump, phone charging, and interior lighting all run off this system. With 200 Ah you have more than enough capacity for a family for multiple days between solar recharges.
+### Under-Counter Storage
+
+A shelf underneath the counter holds cooking supplies — paper towels, spices, ingredients. Everything within reach from the tailgate.
+
+### Coffee and Appliances
+
+A Keurig sits on the counter. Morning coffee at a national park campsite — not compromising on that. A blender also lives on the counter for smoothies. Both run off the battery bank.
 
 ---
 
 ## Water System
 
-**Fresh water:** A blue jerry can lives under the sink inside the van. A small 12V pump pulls water from the can to the sink faucet — proper running water for dishwashing and handwashing.
+**Fresh water:** Two blue jerry cans live under the sink. A 12-volt pump pulls water up to the sink faucet — proper running water for cooking and washing up. The system also has a 10-foot steel-reinforced hose connected to a handheld sprayer with adjustable pressure modes, useful for outdoor rinse-offs and muddy kids. The pump only activates when you press the lever on the sprayer, so there's no waste.
 
-**Grey water:** A separate container collects drain water from the sink. You empty it at campground dump stations or designated grey water disposal points.
+**Grey water:** A separate container collects drain water from the sink, emptied at campground dump stations.
 
-The system is simple, lightweight, and completely self-contained. No hookups needed.
+The whole system is self-contained. No hookups needed.
+
+### DIY Water Level Indicator
+
+One of my favourite small details on this build. Under the sink, mounted on the side wall of the kitchen unit, there's a water level indicator I made from scratch — housed in a Lego brick enclosure. Inside is a column of LEDs wired to 3-pin diode contacts positioned at different heights in the jerry can. Green LEDs at the top (full), yellow in the middle, red at the bottom (low). It's visible the moment you open the kitchen door. Simple circuit, costs almost nothing to build, and you never get surprised by running out of water mid-cook.
 
 ---
 
-## Roof Storage
+## Power System
 
-A large cargo box sits on the roof rack alongside the solar panels. This is where bulky camping gear lives — sleeping bags, extra bedding, hiking gear, the kids' gear. Keeping it on the roof frees up the interior and the under-bed storage for kitchen supplies and daily-use items.
+All campervan power runs from a dedicated 200Ah lithium battery bank — completely separate from the van's starter battery. The system has three charging sources and a custom control panel.
+
+### Battery Bank
+
+**Ampere Time 12V 200Ah Plus lithium battery.** The reason for lithium over lead-acid: lithium gives you almost the full capacity usably. You can draw it down to near zero without damaging it. A lead-acid battery you can only realistically use about half of before damaging it — so 200Ah lithium is effectively equivalent to a 400Ah lead-acid setup.
+
+### Inverter
+
+**Pure sine wave inverter.** Converts 12V DC from the battery into clean 120V AC for household appliances. Pure sine wave is important here — the induction cooktop, anything with a motor, and sensitive electronics need clean AC. Cheaper modified sine wave inverters can damage these appliances or cause erratic behaviour.
+
+The inverter has a dedicated on/off button on the power panel and should not be left on continuously — it draws power even when nothing is plugged in. The habit is: on before you cook, off when done.
+
+### Charging Sources
+
+Three ways the battery charges:
+
+1. **Solar — Renogy 200W flexible panels** on the roof, fed through a Renogy MPPT solar charge controller. MPPT (Maximum Power Point Tracking) continuously adjusts to pull maximum available power from the panels depending on sun angle, cloud cover, and temperature — significantly more efficient than a basic PWM controller. The panels sit flat under the rack rails and are invisible from outside.
+
+2. **Alternator — Renogy DC to DC charger, 10A.** Handles charging from the van's alternator while driving. A DC-DC charger is smarter than a direct connection — it conditions the alternator output and charges the lithium battery at the correct voltage profile, rather than just passing through whatever voltage the alternator happens to be putting out.
+
+3. **Shore power — NOCO Genius 10A lithium battery charger.** Kicks in when plugged into a campsite hookup.
+
+Across three trips — Glacier, Banff, Yellowstone — we never ran the battery down. Not once. Between solar during the day, alternator charging while driving, and shore power at hookup sites, it just stays topped up.
+
+A Renogy battery monitor is mounted in the front cockpit. During a typical morning breakfast cook (induction cooktop at 300°F, cooler running simultaneously), the monitor showed 192Ah remaining, 97% charge, and a net positive current of +0.47A — solar was putting in slightly more than the appliances were drawing.
+
+### Battery Backup Box
+
+All the electrical components live in a custom wooden enclosure in the van interior — the Battery Backup Box. It houses the battery, inverter, MPPT controller, DC-DC charger, NOCO charger, battery monitor, and bus bar. A large red master cutoff knob on the outside disconnects the battery from everything that charges or discharges it.
+
+### Power Panel
+
+A custom wooden power panel is accessible from inside the van. It has:
+
+- Rocker switches for individual circuits — lights, water pump, cooler, USB bank, inverter — each independently switched
+- Volt display showing battery state at a glance
+- USB-A and USB-C charging ports
+- 12V outlets
+- 120V AC outlet (fed from the inverter)
+- Shore power input for campsite hookups
+
+The cigarette lighter output that powers the 12V cooler is on its own switch. Nothing draws from the battery in the background unless you've deliberately turned it on.
+
+**LED lighting:** Three independently controlled LED strips — one for the tailgate and kitchen area, one above the counter for task lighting, and one inside the cabin. Bright enough to cook by at night.
+
+One thing I'd do differently: cable management inside the panel area. Functional but not clean. On the list for next season.
 
 ---
 
 ## Camp Mode Setup
 
-Pull into a campsite, open the tailgate, and the van goes from road mode to camp mode in about 15–20 minutes:
+Pull into a campsite and the van goes from road mode to camp mode in about 15 minutes:
 
-1. Open tailgate, slide out the cooktop extension unit
-2. Pull out the foam mattresses from under the rear hatch storage
-3. Lay mattresses on the sleeping platforms
-4. Hang privacy curtains on sliding door windows
-5. Set up the fresh water can and check the pump
-6. Lay out a ground mat outside the sliding door
+1. Open tailgate — kitchen is already built in
+2. Swing out the cooktop door unit, unclip the griddle bungee, set up the cooktop on top of the box
+3. Check water level on the LED indicator under the sink
+4. Flip the water pump switch, confirm flow at the sprayer
+5. Inverter on, plug cooktop into the 120V outlet via the green cord
+6. Pull mattresses from the rooftop cargo box, lay on the sleeping platforms
+7. Slide the cooler drawer out through the sliding door, unstrap the cooler
+8. Lay out the ground mat outside the sliding door
 
-That's it. The kitchen is already built in — nothing to set up there. By the time the kids are out of their car seats, camp is ready.
+My wife starts the Keurig while I'm still laying out the mat. No chaos, no circus.
+
+Packing up is equally fast. Mattresses into the roof box, cooktop back in the box, griddle strapped down, shelf folded flat, kids in the third row — twenty minutes and we're driving. From the outside it's just a Honda Odyssey again.
 
 ---
 
@@ -108,50 +178,56 @@ That's it. The kitchen is already built in — nothing to set up there. By the t
 
 > 📸 **[Photo: Glacier — add here]**
 
-Our first real outing in the converted van. Going-to-the-Sun Road in a minivan campervan is a legitimate way to see Glacier. We camped inside the park, woke up to mountain views, and cooked breakfast at the tailgate every morning. The kids thought sleeping in the van was the best part.
+Our first real outing. Going-to-the-Sun Road in a converted minivan is a legitimate way to see Glacier. We camped inside the park, woke up to mountain views, and cooked breakfast at the tailgate every morning. The kids thought sleeping in the van was the best part.
 
 ### Banff National Park
 
 > 📸 **[Photo: Banff — add here]**
 
-Banff required crossing into Canada, which means the van needed to be tidy and the water system properly accounted for at the border. No issues. The Icefields Parkway is one of the best drives in North America and doing it in your own kitchen-equipped campervan — stopping where you want, eating when you want — is the right way to experience it.
+Banff required crossing into Canada, which means a tidy van and the water system properly accounted for at the border. No issues. The Icefields Parkway is one of the best drives in North America — doing it in your own kitchen-equipped campervan, stopping where you want, eating when you want, is the right way to experience it.
 
 ### Yellowstone National Park
 
 > 📸 **[Photo: Yellowstone — add here]**
 
-Yellowstone campsites fill up fast. Having a self-contained setup meant we weren't dependent on sites with hookups — we could take any site that was available. The induction cooktop and full battery system meant we cooked every meal without needing any campground facilities beyond a fire ring.
+Yellowstone campsites fill up fast. Having a self-contained setup meant we weren't dependent on hookup sites — we could take any available site. We cooked every meal without needing any campground facilities beyond a fire ring.
 
 ---
 
 ## What Worked
 
-**The minivan format.** A lot of van conversion content defaults to full-size cargo vans. The Odyssey was the right call for a family with young kids — it's easier to drive, fits anywhere, and the sliding doors make the kitchen setup genuinely pleasant to use.
+**The minivan format.** Easier to drive than a cargo van, fits anywhere, and the sliding doors make the kitchen setup genuinely pleasant to use.
 
-**Induction over propane.** No propane tank, no gas smell, no open flame. The induction cooktop runs off the battery system and works as well as a kitchen stove. This was one of the best decisions in the build.
+**Induction over propane.** No gas tank, no smell, no open flame. Works as well as a kitchen stove and runs off the battery system.
 
-**Under-bed storage.** The floor hatch and the under-platform storage space is where the build really earns its keep. Everything has a place and nothing is piled on the sleeping surface.
+**The cooler drawer.** Probably the most-used convenience feature. Slide it out, grab what you need, slide it back. Not having to manage ice across a multi-day park trip is a significant quality-of-life improvement.
 
-**Privacy curtains.** Simple and cheap, but they transform the sleeping experience. The van feels like a real sleeping space, not a vehicle you're camping in.
+**The DIY water level indicator.** Cheap to build, immediately useful. Never had to guess whether we had enough water to cook with.
+
+**The awning.** DIY build, but it earns its keep every trip. Shade over the kitchen and door area changes how you use the outdoor space.
+
+**Under-bed storage with floor hatch.** Everything has a place. Nothing piled on the sleeping surface.
+
+**Privacy curtains.** Simple and cheap, but they transform the sleeping experience.
 
 ---
 
 ## What I Would Do Differently
 
-**Better cable management in the power panel area.** Functional, but not clean. I would route cables more carefully from the start rather than cleaning up after the fact.
+**Better cable management in the power panel area.** Functional, but not clean. Route cables carefully from the start.
 
-**A dedicated spot for the water cans.** The fresh water can lives under the sink but isn't secured. On long drives it shifts. A proper mount would fix this.
+**A dedicated mount for the water jerry cans.** They live under the sink but aren't secured against lateral movement on long drives. A proper mount would fix this.
 
-**More counter workspace.** The kitchen works well but counter space is always the constraint. A fold-out side table off the sliding door would add useful prep space.
+**More counter workspace.** The kitchen works well but counter space is always the constraint. A fold-out side extension would add useful prep space.
 
 ---
 
 ## Is It Worth It?
 
-For a family with young kids: yes, without question. Three national park trips that would have cost thousands in hotels cost us campsite fees and groceries. The kids remember sleeping in the van as vividly as they remember the parks themselves. And the build — done once — is ready to go every summer with almost no setup.
+For a family with young kids: yes, without question. Three national park trips that would have cost thousands in hotels cost us campsite fees and groceries. The kids remember sleeping in the van as vividly as they remember the parks themselves.
 
-The Odyssey is back to normal daily driver configuration now. The platform, the kitchen unit, and the power system are all removable. That reversibility was intentional: the van needed to work as a school-run car in September and a Yellowstone campervan in August.
+The build is done once and ready every summer. The van is back to normal daily driver configuration now — school runs in September, Yellowstone in August. Same vehicle, completely different life.
 
-It did both.
+And as the kids get older and want their own tent, the van becomes just mine and my wife's. This gets more useful over time, not less.
 
 > 📸 **[Final photo: family at a national park campsite with the van — add here]**
