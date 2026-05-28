@@ -15,7 +15,7 @@ showAuthor: false
 
 Hello everyone! I'm Vijay, and welcome to the first video in my deck shade build series. Today, I'm going to show you the critical first step: reinforcing the deck foundation to support the heavy shade structure we'll be building.
 
-I sourced some quality mounting brackets from Amazon and picked up several 4x4 columns that I painted a crisp white. I've got quite a bit of lumber for this project - which, as you can see, is currently soaking up some sun right here.
+Before we can build anything above the deck, we need to make sure the foundation can handle the additional weight. I'll be adding six new deck footings and installing support beams to distribute the load properly.
 
 ## The Foundation Problem (0:15-0:45)
 
