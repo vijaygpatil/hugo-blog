@@ -49,7 +49,7 @@ The final step was adding side supports to prevent the footings from slipping ou
 
 In total, I added six new footings. Now, you might think that's overkill, but I didn't want to take any chances. I'm also planning to add some heavy deck furniture in the future, so this extra reinforcement will definitely come in handy.
 
-In the next video, I'll show you how I built the actual shade structure on top of this reinforced foundation. If you found this helpful, please subscribe and let me know in the comments what other DIY projects you'd like to see!
+In the next video, I'll show you how I built the actual shade structure on top of this reinforced foundation. If you found this helpful, please subscribe and hit the like button - and make sure to watch the next video in the series to see how this reinforced deck supports the complete shade build!
 
 ---
 
