@@ -7,13 +7,13 @@ showAuthor: false
 ---
 
 # Deck Shade Reinforcement — YouTube Narration Script
-# Target length: ~4 minutes | First YouTube video, conversational delivery
+# Target length: ~4 minutes | First video in deck shade series, conversational delivery
 
 ---
 
 ## Opening Hook (0:00-0:15)
 
-Hello everyone! I'm Vijay, and welcome to my very first YouTube video. Today, I'm going to walk you through how I built a custom shade structure for our backyard deck.
+Hello everyone! I'm Vijay, and welcome to the first video in my deck shade build series. Today, I'm going to walk you through how I built a custom shade structure for our backyard deck.
 
 I sourced some quality mounting brackets from Amazon and picked up several 4x4 columns that I painted a crisp white. I've got quite a bit of lumber for this project - which, as you can see, is currently soaking up some sun right here.
 
