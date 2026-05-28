@@ -15,13 +15,11 @@ showAuthor: false
 
 Hello everyone! I'm Vijay, and welcome to the first video in my deck shade build series. Today, I'm going to show you the critical first step: reinforcing the deck foundation to support the heavy shade structure we'll be building.
 
-Before we can build anything above the deck, we need to make sure the foundation can handle the additional weight. I'll be adding six new deck footings and installing support beams to distribute the load properly.
-
 ## The Foundation Problem (0:15-0:45)
 
-But before we dive into the shade construction, let's talk about something crucial: reinforcing the deck foundation. This step is absolutely essential because this shade structure is going to cover the entire deck, and it's going to be heavy. We need a rock-solid foundation to support it safely.
+Before we can build anything above the deck, we need to make sure the foundation can handle the additional weight. This step is absolutely essential because this shade structure is going to cover the entire deck, and it's going to be heavy. We need a rock-solid foundation to support it safely.
 
-Here's what I did: I added six additional deck footings to supplement the existing ones.
+Here's what I did: I added six additional deck footings to supplement the existing ones, plus installed support beams to distribute the load properly.
 
 ## Footing Construction Process (0:45-1:30)
 
