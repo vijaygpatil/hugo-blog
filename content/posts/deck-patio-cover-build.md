@@ -74,7 +74,7 @@ For the six deck-side columns I used the same approach, mirroring how the origin
 
 > 📸 **[Photo: hole dug with gravel fill — add here]**
 > 📸 **[Photo: concrete block set, before post — add here]**
-> 🎬 **[Video: footing installation — add here]**
+> 🎬 **[Video: Deck Shade Reinforcement - Foundation Build](https://youtu.be/bW99m0QjJoA)**
 
 ---
 
