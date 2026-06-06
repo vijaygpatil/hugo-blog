@@ -78,17 +78,43 @@ For the six deck-side columns I used the same approach, mirroring how the origin
 
 ---
 
-## Phase 2: Columns
+## Phase 2: Framework Construction
 
-With footings solid, the columns went up. Six 4×4 posts at 8 ft on the deck, two 4×4 posts at 12 ft on the stair side.
+With the reinforced foundation complete, it was time to build the actual shade structure framework. This phase involved creating a complete grid system using a modular bracket approach that would support the entire polycarbonate roof system.
 
-Getting columns plumb — perfectly vertical in both planes — is the most important thing at this stage. Everything else follows from it. I used a digital angle gauge to check each post before securing it, checking both faces.
+**SketchUp Design Planning**
 
-Post base hardware anchors the deck columns to the framing. Post cap brackets connect the beam to the top of each column.
+Before starting construction, I created a complete 3D model in SketchUp showing the finished structure from multiple angles. This planning phase was crucial for:
+- Material ordering and quantity calculations
+- Visualizing the complete coverage area and proportions
+- Planning column spacing to avoid window obstruction
+- Understanding the grid system and bracket connections
 
-> 📸 **[Photo: first column going up — add here]**
-> 📸 **[Photo: all columns standing, before beams — add here]**
-> 🎬 **[Video: column installation — add here]**
+**Modular Bracket System**
+
+The key to this build was using a modular bracket system with 3-way, 4-way, and 5-way brackets that could accept beams from multiple directions. This eliminated complex joinery while providing incredible strength and flexibility.
+
+**Framework Construction Process:**
+1. **Column Installation**: 4×4 columns at 9 feet tall, positioned to clear windows
+2. **Grid Assembly**: 10-foot beam spans connecting with modular brackets
+3. **Precision Cutting**: Using "measure twice, cut once" principle with kerf considerations
+4. **Wood Protection**: Shelf liner plastic on all exposed wood ends
+5. **Laser Measuring**: Bosch Pro laser measure for 1/16" accuracy up to 165 feet
+6. **Secure Connections**: Pilot hole drilling before impact driver use
+7. **45-Degree Reinforcement**: Steel angle brackets between columns and beams
+8. **Fence Integration**: Heavy-duty brackets connecting framework to deck fence
+
+**Key Technical Details:**
+- Complete deck coverage with extension beyond perimeter
+- Modular system allowing custom grid patterns
+- Steel reinforcement brackets for long-term structural integrity
+- Level checking at every connection point
+- Family-friendly build process (my 6-year-old daughter helped!)
+
+> 📸 **[Photo: SketchUp design views — add here]**
+> 📸 **[Photo: modular bracket system assembly — add here]**
+> 📸 **[Photo: completed grid framework — add here]**
+> 🎬 **[Video: Complete Framework Construction](https://youtu.be/mccFjysBwrM)**
 
 ---
 
