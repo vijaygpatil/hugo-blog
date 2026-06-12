@@ -6,6 +6,7 @@ tags: ["diy", "vanlife", "camping", "roadtrip", "homeowner", "familytravel"]
 categories: ["Projects"]
 description: "How I converted a 2018 Honda Odyssey minivan into a fully functional campervan for a family of 4 — with beds, a full kitchen, 200Ah lithium solar power, running water, and a DIY awning. We took it to Glacier, Banff, and Yellowstone."
 showToc: true
+showHeader: false
 ---
 
 A Honda Odyssey has 158.0 cubic feet of cargo volume behind the first row with seats removed, a 155A Denso alternator, power sliding doors, and enough roof rack real estate for 200W of solar panels, a hard-shell cargo box, and a DIY awning. It also fits in a standard parking spot, seats four in road mode, and doesn't announce itself as a campervan.
