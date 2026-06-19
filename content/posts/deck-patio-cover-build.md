@@ -128,11 +128,36 @@ Every rafter-to-beam connection used joist hanger hardware — no toenailing int
 
 > 📸 **[Photo: beams in place — add here]**
 > 📸 **[Photo: ridge beam and rafters taking shape — add here]**
-> 🎬 **[Video: framing assembly — add here]**
+> 🎬 **[Video: Ridge System and Roof Preparation](https://youtu.be/M-9NMOm5C9s)**
 
 ---
 
-## Phase 4: Roof
+## Phase 4: Rafter Construction
+
+Before installing the polycarbonate panels, I needed to build the rafter system that would support them. This phase involved precise birdsmouth cuts, hurricane bracket installation, and purlin placement for structural integrity.
+
+**Birdsmouth Cut Calculations:**
+- 2:12 roof pitch with 19" rise and 9'6" horizontal run
+- 10-degree plumb and seat cuts
+- 5/8" heel cut depth and 3.5" seat cut width
+- Template rafter creation for consistency
+
+**Professional Installation Techniques:**
+- Hurricane bracket spacing at 24" on center for 4-foot panel support
+- Palm nailer tool for efficient fastening of hundreds of connections
+- Purlin installation between rafters for load distribution
+- Proper alignment with building walls for structural integrity
+
+The rafter system creates the framework that transfers all roof loads down to the supporting structure while maintaining the correct pitch for water drainage.
+
+> 📸 **[Photo: birdsmouth cut demonstration — add here]**
+> 📸 **[Photo: rafter installation in progress — add here]**
+> 📸 **[Photo: completed rafter and purlin framework — add here]**
+> 🎬 **[Video: Rafter Construction & Installation](https://youtu.be/zjH_2QmgYic)**
+
+---
+
+## Phase 5: Roof Panels
 
 The most satisfying phase to watch come together. Polycarbonate panels go on one by one, starting from the low edge and working up toward the ridge.
 
@@ -153,7 +178,7 @@ A few things that matter here and that I had to figure out:
 
 ---
 
-## Phase 5: Gutters and Drainage
+## Phase 6: Gutters and Drainage
 
 A roof without gutters deposits all the water at the drip line. In Bothell, that means a significant volume of water hitting the deck perimeter and the ground directly below the stair-side columns. Gutters were not optional.
 
@@ -165,7 +190,7 @@ I ran gutters along the lower edges of both roof sections — deck side and stai
 
 ---
 
-## Phase 6: Finishing
+## Phase 7: Finishing
 
 Raw lumber weathers poorly without protection — it greys, checks, and can warp if moisture cycles through it repeatedly. Once all structural work was done I applied a weather-resistant exterior wood finish to every exposed surface: posts, beams, rafters, and fascia boards.
 
